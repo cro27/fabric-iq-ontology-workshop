@@ -1,0 +1,1098 @@
+employee_id,name,role,department,location_id,location_type,employment_type,hire_date,base_salary_aud,manager_employee_id
+EMP-00001,Isla Robinson,CMO,Marketing,HEAD-OFFICE,Head Office,Part-Time,2017-12-16,61940,
+EMP-00002,William Brown,CMO,Marketing,HEAD-OFFICE,Head Office,Part-Time,2017-01-31,118508,
+EMP-00003,Henry Taylor,CMO,Marketing,HEAD-OFFICE,Head Office,Casual,2023-09-28,68055,
+EMP-00004,Grace Chen,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Casual,2020-06-12,157215,
+EMP-00005,Oliver Williams,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Part-Time,2014-01-18,117264,
+EMP-00006,Henry Nguyen,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Full-Time,2019-09-30,141424,
+EMP-00007,Henry Chen,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Casual,2012-11-07,70135,
+EMP-00008,Ruby Robinson,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Full-Time,2015-01-08,90137,
+EMP-00009,Ruby Kim,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Part-Time,2016-08-02,87009,
+EMP-00010,Mia Brown,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Full-Time,2024-12-29,63447,
+EMP-00011,James Singh,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Full-Time,2021-01-15,78980,
+EMP-00012,Mia Chen,Campaign Manager,Marketing,HEAD-OFFICE,Head Office,Full-Time,2014-08-23,80039,
+EMP-00013,Ethan Jones,Digital Analyst,Marketing,HEAD-OFFICE,Head Office,Full-Time,2021-03-12,66473,EMP-00001
+EMP-00014,Olivia Lee,Digital Analyst,Marketing,HEAD-OFFICE,Head Office,Part-Time,2016-07-10,117242,EMP-00011
+EMP-00015,Ethan Taylor,Digital Analyst,Marketing,HEAD-OFFICE,Head Office,Casual,2024-01-14,118193,EMP-00010
+EMP-00016,Lucas Taylor,Digital Analyst,Marketing,HEAD-OFFICE,Head Office,Full-Time,2021-08-11,134348,EMP-00003
+EMP-00017,Liam Wilson,Designer,Marketing,HEAD-OFFICE,Head Office,Full-Time,2018-09-28,181359,EMP-00013
+EMP-00018,Amelia Patel,Designer,Marketing,HEAD-OFFICE,Head Office,Full-Time,2022-06-22,175120,EMP-00011
+EMP-00019,Ava Lee,Designer,Marketing,HEAD-OFFICE,Head Office,Casual,2021-08-26,187461,EMP-00002
+EMP-00020,Amelia Kim,Designer,Marketing,HEAD-OFFICE,Head Office,Full-Time,2017-10-10,131326,EMP-00001
+EMP-00021,Noah Robinson,CHRO,HR,HEAD-OFFICE,Head Office,Full-Time,2021-11-13,216225,
+EMP-00022,Amelia Wilson,CHRO,HR,HEAD-OFFICE,Head Office,Part-Time,2022-06-20,173263,
+EMP-00023,James Smith,CHRO,HR,HEAD-OFFICE,Head Office,Casual,2013-07-28,144700,
+EMP-00024,Mia Chen,CHRO,HR,HEAD-OFFICE,Head Office,Full-Time,2014-01-16,167339,
+EMP-00025,Charlotte Patel,CHRO,HR,HEAD-OFFICE,Head Office,Part-Time,2017-04-23,181083,
+EMP-00026,Olivia Nguyen,CHRO,HR,HEAD-OFFICE,Head Office,Part-Time,2019-06-18,171337,
+EMP-00027,Grace Smith,CHRO,HR,HEAD-OFFICE,Head Office,Full-Time,2023-07-28,112203,
+EMP-00028,Lucas Brown,CHRO,HR,HEAD-OFFICE,Head Office,Full-Time,2018-02-25,81103,
+EMP-00029,Ethan Walker,CHRO,HR,HEAD-OFFICE,Head Office,Part-Time,2013-10-24,143969,
+EMP-00030,Mia Jones,HR Business Partner,HR,HEAD-OFFICE,Head Office,Casual,2015-10-01,55113,EMP-00006
+EMP-00031,Ruby Murphy,HR Business Partner,HR,HEAD-OFFICE,Head Office,Full-Time,2018-07-18,78945,EMP-00005
+EMP-00032,Charlotte Williams,HR Business Partner,HR,HEAD-OFFICE,Head Office,Full-Time,2017-03-28,213448,EMP-00023
+EMP-00033,Noah Robinson,Recruiter,HR,HEAD-OFFICE,Head Office,Casual,2021-04-12,126718,EMP-00027
+EMP-00034,Sophia Lee,Recruiter,HR,HEAD-OFFICE,Head Office,Casual,2019-10-23,218918,EMP-00033
+EMP-00035,Ruby Wilson,Recruiter,HR,HEAD-OFFICE,Head Office,Full-Time,2019-08-23,205894,EMP-00003
+EMP-00036,Ruby Chen,Recruiter,HR,HEAD-OFFICE,Head Office,Full-Time,2018-11-02,120591,EMP-00012
+EMP-00037,Liam Williams,Recruiter,HR,HEAD-OFFICE,Head Office,Full-Time,2019-03-27,149632,EMP-00003
+EMP-00038,William Walker,Recruiter,HR,HEAD-OFFICE,Head Office,Full-Time,2013-06-17,158001,EMP-00036
+EMP-00039,William Brown,Recruiter,HR,HEAD-OFFICE,Head Office,Part-Time,2023-12-01,137958,EMP-00018
+EMP-00040,Grace Robinson,Payroll,HR,HEAD-OFFICE,Head Office,Part-Time,2012-06-08,219946,EMP-00020
+EMP-00041,James Robinson,Payroll,HR,HEAD-OFFICE,Head Office,Part-Time,2025-02-14,193538,EMP-00036
+EMP-00042,Sophia Robinson,Payroll,HR,HEAD-OFFICE,Head Office,Part-Time,2013-03-16,140095,EMP-00004
+EMP-00043,Ethan Jones,Payroll,HR,HEAD-OFFICE,Head Office,Casual,2018-10-21,126855,EMP-00019
+EMP-00044,Olivia Williams,Payroll,HR,HEAD-OFFICE,Head Office,Full-Time,2016-04-23,119725,EMP-00019
+EMP-00045,Grace Walker,Payroll,HR,HEAD-OFFICE,Head Office,Full-Time,2019-09-06,72694,EMP-00013
+EMP-00046,Lucas Taylor,CIO,IT,HEAD-OFFICE,Head Office,Part-Time,2017-08-31,206578,
+EMP-00047,Olivia Williams,CIO,IT,HEAD-OFFICE,Head Office,Casual,2015-02-14,179863,
+EMP-00048,Grace Taylor,CIO,IT,HEAD-OFFICE,Head Office,Full-Time,2013-03-11,207693,
+EMP-00049,Liam Lee,CIO,IT,HEAD-OFFICE,Head Office,Full-Time,2024-04-15,196430,
+EMP-00050,James Wilson,CIO,IT,HEAD-OFFICE,Head Office,Full-Time,2019-12-01,128283,
+EMP-00051,Lucas Lee,CIO,IT,HEAD-OFFICE,Head Office,Full-Time,2012-10-18,198967,
+EMP-00052,Olivia Smith,CIO,IT,HEAD-OFFICE,Head Office,Part-Time,2014-04-28,75901,
+EMP-00053,Grace Taylor,CIO,IT,HEAD-OFFICE,Head Office,Full-Time,2017-11-02,95630,
+EMP-00054,Grace Chen,Solution Architect,IT,HEAD-OFFICE,Head Office,Casual,2021-12-11,138656,EMP-00017
+EMP-00055,Jack Jones,Solution Architect,IT,HEAD-OFFICE,Head Office,Part-Time,2021-04-12,136271,EMP-00012
+EMP-00056,Noah Kim,Solution Architect,IT,HEAD-OFFICE,Head Office,Full-Time,2025-09-08,202622,EMP-00046
+EMP-00057,William Singh,Solution Architect,IT,HEAD-OFFICE,Head Office,Full-Time,2020-01-17,84458,EMP-00051
+EMP-00058,Oliver Jones,Solution Architect,IT,HEAD-OFFICE,Head Office,Casual,2012-09-02,82462,EMP-00020
+EMP-00059,Liam Robinson,Solution Architect,IT,HEAD-OFFICE,Head Office,Part-Time,2019-04-28,100967,EMP-00014
+EMP-00060,Ava Robinson,Solution Architect,IT,HEAD-OFFICE,Head Office,Full-Time,2017-09-01,92697,EMP-00026
+EMP-00061,William Patel,Solution Architect,IT,HEAD-OFFICE,Head Office,Part-Time,2014-12-14,126923,EMP-00041
+EMP-00062,William Garcia,Solution Architect,IT,HEAD-OFFICE,Head Office,Part-Time,2017-08-02,172573,EMP-00044
+EMP-00063,Grace Chen,Solution Architect,IT,HEAD-OFFICE,Head Office,Full-Time,2020-10-15,79444,EMP-00023
+EMP-00064,Ruby Jones,Data Engineer,IT,HEAD-OFFICE,Head Office,Casual,2021-06-20,192467,EMP-00034
+EMP-00065,Ethan Robinson,Data Engineer,IT,HEAD-OFFICE,Head Office,Full-Time,2015-08-18,189638,EMP-00062
+EMP-00066,Sophia Kim,Data Engineer,IT,HEAD-OFFICE,Head Office,Casual,2023-03-07,65347,EMP-00059
+EMP-00067,Oliver Singh,Data Engineer,IT,HEAD-OFFICE,Head Office,Full-Time,2021-05-26,141446,EMP-00041
+EMP-00068,Charlotte Patel,Data Engineer,IT,HEAD-OFFICE,Head Office,Part-Time,2024-02-01,140331,EMP-00016
+EMP-00069,Noah Walker,Data Engineer,IT,HEAD-OFFICE,Head Office,Casual,2013-07-26,172573,EMP-00051
+EMP-00070,Lucas Singh,Data Engineer,IT,HEAD-OFFICE,Head Office,Full-Time,2015-10-10,121624,EMP-00053
+EMP-00071,Ethan Nguyen,Support Engineer,IT,HEAD-OFFICE,Head Office,Casual,2022-06-23,187818,EMP-00041
+EMP-00072,Isla Nguyen,Support Engineer,IT,HEAD-OFFICE,Head Office,Part-Time,2015-03-29,77288,EMP-00020
+EMP-00073,Liam Jones,Support Engineer,IT,HEAD-OFFICE,Head Office,Full-Time,2014-04-18,129778,EMP-00032
+EMP-00074,James Brown,Support Engineer,IT,HEAD-OFFICE,Head Office,Part-Time,2014-02-27,164467,EMP-00030
+EMP-00075,Sophia Nguyen,Support Engineer,IT,HEAD-OFFICE,Head Office,Part-Time,2016-11-01,199724,EMP-00037
+EMP-00076,Lucas Jones,Support Engineer,IT,HEAD-OFFICE,Head Office,Full-Time,2018-11-29,117599,EMP-00040
+EMP-00077,Olivia Williams,Security Analyst,IT,HEAD-OFFICE,Head Office,Part-Time,2022-09-01,182561,EMP-00054
+EMP-00078,Jack Singh,Security Analyst,IT,HEAD-OFFICE,Head Office,Full-Time,2018-03-16,62850,EMP-00041
+EMP-00079,William Kim,Security Analyst,IT,HEAD-OFFICE,Head Office,Full-Time,2021-10-29,58861,EMP-00015
+EMP-00080,Olivia Murphy,Store Manager,Stores,STR-0001,Store,Casual,2025-03-24,115064,EMP-00023
+EMP-00081,Jack Robinson,Store Manager,Stores,STR-0001,Store,Full-Time,2022-05-26,56320,EMP-00003
+EMP-00082,Grace Smith,Store Manager,Stores,STR-0001,Store,Full-Time,2020-10-12,53657,EMP-00080
+EMP-00083,Olivia Smith,Store Manager,Stores,STR-0001,Store,Casual,2015-01-30,99216,EMP-00021
+EMP-00084,Noah Wilson,Store Manager,Stores,STR-0001,Store,Full-Time,2015-04-28,86627,EMP-00049
+EMP-00085,Sophia Brown,Store Manager,Stores,STR-0001,Store,Full-Time,2022-09-26,46458,EMP-00029
+EMP-00086,Lucas Jones,Assistant Manager,Stores,STR-0001,Store,Part-Time,2015-02-02,75526,EMP-00021
+EMP-00087,Ava Nguyen,Assistant Manager,Stores,STR-0001,Store,Part-Time,2018-09-01,121626,EMP-00031
+EMP-00088,Jack Walker,Assistant Manager,Stores,STR-0001,Store,Part-Time,2017-04-10,80778,EMP-00034
+EMP-00089,Charlotte Taylor,Assistant Manager,Stores,STR-0001,Store,Part-Time,2023-04-28,78540,EMP-00064
+EMP-00090,Liam Taylor,Assistant Manager,Stores,STR-0001,Store,Full-Time,2022-04-22,65913,EMP-00007
+EMP-00091,Amelia Brown,Department Lead,Stores,STR-0001,Store,Casual,2021-11-20,113142,EMP-00069
+EMP-00092,William Robinson,Department Lead,Stores,STR-0001,Store,Full-Time,2018-09-10,94393,EMP-00070
+EMP-00093,Ava Chen,Department Lead,Stores,STR-0001,Store,Part-Time,2020-07-09,78340,EMP-00086
+EMP-00094,Liam Singh,Checkout Operator,Stores,STR-0001,Store,Full-Time,2019-11-10,115570,EMP-00048
+EMP-00095,Ethan Smith,Checkout Operator,Stores,STR-0001,Store,Part-Time,2017-08-10,115068,EMP-00078
+EMP-00096,Sophia Walker,Checkout Operator,Stores,STR-0001,Store,Casual,2019-04-22,114703,EMP-00009
+EMP-00097,Liam Murphy,Stocker,Stores,STR-0001,Store,Full-Time,2021-09-10,101094,EMP-00074
+EMP-00098,Lucas Brown,Baker,Stores,STR-0001,Store,Full-Time,2022-10-21,107779,EMP-00062
+EMP-00099,Charlotte Smith,Butcher,Stores,STR-0001,Store,Casual,2020-04-27,63762,EMP-00060
+EMP-00100,Amelia Wilson,Sales Associate,Sales,STR-0001,Store,Part-Time,2023-11-06,85657,EMP-00074
+EMP-00101,Olivia Lee,Sales Associate,Sales,STR-0001,Store,Casual,2016-03-20,55278,EMP-00048
+EMP-00102,Sophia Jones,Sales Associate,Sales,STR-0001,Store,Casual,2025-11-21,92856,EMP-00065
+EMP-00103,Liam Williams,Promotions Lead,Sales,STR-0001,Store,Full-Time,2022-01-14,87975,EMP-00019
+EMP-00104,James Robinson,Customer Service,Sales,STR-0001,Store,Part-Time,2020-06-16,75063,EMP-00042
+EMP-00105,Ruby Singh,Store Manager,Stores,STR-0002,Store,Full-Time,2015-01-15,109405,EMP-00011
+EMP-00106,Ava Singh,Store Manager,Stores,STR-0002,Store,Part-Time,2020-08-16,99612,EMP-00066
+EMP-00107,Henry Brown,Store Manager,Stores,STR-0002,Store,Full-Time,2024-02-25,105469,EMP-00106
+EMP-00108,Lucas Murphy,Store Manager,Stores,STR-0002,Store,Casual,2022-12-01,99943,EMP-00004
+EMP-00109,Oliver Kim,Store Manager,Stores,STR-0002,Store,Casual,2020-12-10,125446,EMP-00049
+EMP-00110,Oliver Chen,Store Manager,Stores,STR-0002,Store,Part-Time,2022-04-29,124589,EMP-00016
+EMP-00111,Noah Chen,Assistant Manager,Stores,STR-0002,Store,Part-Time,2019-01-28,106578,EMP-00047
+EMP-00112,Noah Jones,Assistant Manager,Stores,STR-0002,Store,Full-Time,2025-02-01,116127,EMP-00104
+EMP-00113,Charlotte Kim,Department Lead,Stores,STR-0002,Store,Casual,2023-01-26,86832,EMP-00042
+EMP-00114,Sophia Smith,Department Lead,Stores,STR-0002,Store,Casual,2015-03-03,67922,EMP-00086
+EMP-00115,Grace Chen,Department Lead,Stores,STR-0002,Store,Casual,2023-05-18,106213,EMP-00009
+EMP-00116,Noah Lee,Department Lead,Stores,STR-0002,Store,Casual,2021-12-01,113319,EMP-00057
+EMP-00117,Ruby Patel,Checkout Operator,Stores,STR-0002,Store,Part-Time,2021-09-04,62338,EMP-00048
+EMP-00118,Liam Robinson,Stocker,Stores,STR-0002,Store,Full-Time,2023-10-30,63195,EMP-00107
+EMP-00119,Olivia Taylor,Stocker,Stores,STR-0002,Store,Full-Time,2023-12-09,76504,EMP-00010
+EMP-00120,James Brown,Baker,Stores,STR-0002,Store,Part-Time,2022-12-12,104530,EMP-00021
+EMP-00121,Mia Brown,Baker,Stores,STR-0002,Store,Casual,2023-05-25,128455,EMP-00086
+EMP-00122,William Jones,Baker,Stores,STR-0002,Store,Part-Time,2023-07-14,122103,EMP-00080
+EMP-00123,Grace Smith,Baker,Stores,STR-0002,Store,Part-Time,2017-10-20,112172,EMP-00010
+EMP-00124,Olivia Nguyen,Butcher,Stores,STR-0002,Store,Casual,2021-08-19,115784,EMP-00016
+EMP-00125,Isla Nguyen,Butcher,Stores,STR-0002,Store,Part-Time,2015-05-03,124180,EMP-00107
+EMP-00126,Isla Smith,Butcher,Stores,STR-0002,Store,Casual,2023-02-14,86179,EMP-00110
+EMP-00127,Mia Patel,Butcher,Stores,STR-0002,Store,Casual,2025-11-01,103791,EMP-00014
+EMP-00128,William Singh,Sales Associate,Sales,STR-0002,Store,Casual,2019-12-29,86294,EMP-00100
+EMP-00129,Ruby Singh,Sales Associate,Sales,STR-0002,Store,Full-Time,2024-07-29,65050,EMP-00031
+EMP-00130,Oliver Taylor,Sales Associate,Sales,STR-0002,Store,Casual,2024-10-07,63422,EMP-00085
+EMP-00131,William Taylor,Promotions Lead,Sales,STR-0002,Store,Part-Time,2019-07-03,81109,EMP-00016
+EMP-00132,Ethan Williams,Promotions Lead,Sales,STR-0002,Store,Casual,2024-03-26,86809,EMP-00043
+EMP-00133,James Brown,Promotions Lead,Sales,STR-0002,Store,Full-Time,2020-04-23,70774,EMP-00017
+EMP-00134,Olivia Williams,Promotions Lead,Sales,STR-0002,Store,Part-Time,2018-01-22,53433,EMP-00109
+EMP-00135,Oliver Lee,Customer Service,Sales,STR-0002,Store,Part-Time,2024-11-15,53119,EMP-00087
+EMP-00136,Ava Brown,Customer Service,Sales,STR-0002,Store,Full-Time,2016-04-28,75154,EMP-00028
+EMP-00137,Mia Kim,Customer Service,Sales,STR-0002,Store,Casual,2019-07-03,81872,EMP-00099
+EMP-00138,Noah Taylor,Customer Service,Sales,STR-0002,Store,Casual,2021-11-16,69228,EMP-00096
+EMP-00139,Noah Taylor,Store Manager,Stores,STR-0003,Store,Full-Time,2022-12-19,117055,EMP-00135
+EMP-00140,Lucas Murphy,Store Manager,Stores,STR-0003,Store,Casual,2023-03-27,56109,EMP-00075
+EMP-00141,Ava Murphy,Assistant Manager,Stores,STR-0003,Store,Part-Time,2025-09-20,62907,EMP-00074
+EMP-00142,Lucas Murphy,Assistant Manager,Stores,STR-0003,Store,Full-Time,2019-02-11,73141,EMP-00079
+EMP-00143,Isla Garcia,Assistant Manager,Stores,STR-0003,Store,Casual,2019-10-18,47073,EMP-00082
+EMP-00144,Henry Patel,Assistant Manager,Stores,STR-0003,Store,Full-Time,2017-01-17,124095,EMP-00138
+EMP-00145,William Williams,Department Lead,Stores,STR-0003,Store,Part-Time,2025-03-26,117774,EMP-00110
+EMP-00146,Jack Walker,Department Lead,Stores,STR-0003,Store,Part-Time,2021-07-29,79020,EMP-00073
+EMP-00147,Noah Wilson,Department Lead,Stores,STR-0003,Store,Full-Time,2019-04-26,99498,EMP-00068
+EMP-00148,Grace Singh,Checkout Operator,Stores,STR-0003,Store,Part-Time,2017-10-30,94975,EMP-00086
+EMP-00149,William Nguyen,Checkout Operator,Stores,STR-0003,Store,Casual,2019-02-07,71842,EMP-00125
+EMP-00150,Noah Brown,Checkout Operator,Stores,STR-0003,Store,Casual,2024-01-26,53885,EMP-00108
+EMP-00151,Mia Brown,Checkout Operator,Stores,STR-0003,Store,Casual,2019-02-13,52129,EMP-00009
+EMP-00152,Sophia Walker,Checkout Operator,Stores,STR-0003,Store,Full-Time,2022-10-08,61312,EMP-00076
+EMP-00153,Lucas Wilson,Stocker,Stores,STR-0003,Store,Full-Time,2020-05-07,116148,EMP-00104
+EMP-00154,Olivia Jones,Stocker,Stores,STR-0003,Store,Part-Time,2020-12-11,116211,EMP-00120
+EMP-00155,Isla Williams,Stocker,Stores,STR-0003,Store,Part-Time,2020-02-17,55487,EMP-00134
+EMP-00156,Ruby Singh,Stocker,Stores,STR-0003,Store,Full-Time,2022-01-04,78183,EMP-00016
+EMP-00157,Amelia Smith,Stocker,Stores,STR-0003,Store,Casual,2017-06-15,67941,EMP-00040
+EMP-00158,Ethan Williams,Baker,Stores,STR-0003,Store,Casual,2020-05-21,56325,EMP-00142
+EMP-00159,Henry Chen,Baker,Stores,STR-0003,Store,Full-Time,2025-09-29,82473,EMP-00042
+EMP-00160,Jack Lee,Baker,Stores,STR-0003,Store,Full-Time,2021-07-17,88450,EMP-00020
+EMP-00161,James Williams,Baker,Stores,STR-0003,Store,Casual,2024-01-28,82160,EMP-00143
+EMP-00162,Charlotte Williams,Baker,Stores,STR-0003,Store,Casual,2021-08-06,104235,EMP-00156
+EMP-00163,Oliver Murphy,Baker,Stores,STR-0003,Store,Casual,2017-09-06,53138,EMP-00074
+EMP-00164,Grace Nguyen,Butcher,Stores,STR-0003,Store,Full-Time,2021-02-19,56224,EMP-00014
+EMP-00165,Noah Kim,Butcher,Stores,STR-0003,Store,Part-Time,2016-09-14,81084,EMP-00117
+EMP-00166,Henry Brown,Butcher,Stores,STR-0003,Store,Part-Time,2016-06-19,52498,EMP-00108
+EMP-00167,Liam Walker,Butcher,Stores,STR-0003,Store,Part-Time,2021-08-16,120557,EMP-00082
+EMP-00168,Mia Garcia,Butcher,Stores,STR-0003,Store,Casual,2017-03-27,106547,EMP-00006
+EMP-00169,Noah Williams,Butcher,Stores,STR-0003,Store,Casual,2021-11-17,53800,EMP-00059
+EMP-00170,Mia Smith,Sales Associate,Sales,STR-0003,Store,Casual,2017-01-18,78763,EMP-00078
+EMP-00171,Charlotte Nguyen,Sales Associate,Sales,STR-0003,Store,Part-Time,2018-07-14,63671,EMP-00095
+EMP-00172,Charlotte Taylor,Sales Associate,Sales,STR-0003,Store,Casual,2024-03-04,52093,EMP-00068
+EMP-00173,Liam Kim,Promotions Lead,Sales,STR-0003,Store,Part-Time,2024-06-18,62213,EMP-00065
+EMP-00174,Noah Nguyen,Customer Service,Sales,STR-0003,Store,Casual,2025-09-06,76253,EMP-00073
+EMP-00175,Mia Kim,Customer Service,Sales,STR-0003,Store,Casual,2022-08-15,67350,EMP-00015
+EMP-00176,Amelia Chen,Customer Service,Sales,STR-0003,Store,Casual,2019-03-30,51610,EMP-00069
+EMP-00177,Olivia Taylor,Customer Service,Sales,STR-0003,Store,Part-Time,2022-12-03,61784,EMP-00109
+EMP-00178,Mia Taylor,Store Manager,Stores,STR-0004,Store,Casual,2023-07-18,53875,EMP-00098
+EMP-00179,Liam Jones,Store Manager,Stores,STR-0004,Store,Casual,2022-07-25,65668,EMP-00077
+EMP-00180,Lucas Jones,Store Manager,Stores,STR-0004,Store,Part-Time,2023-10-25,119227,EMP-00126
+EMP-00181,Oliver Kim,Store Manager,Stores,STR-0004,Store,Casual,2015-01-24,82018,EMP-00078
+EMP-00182,Lucas Wilson,Assistant Manager,Stores,STR-0004,Store,Full-Time,2025-10-13,104741,EMP-00037
+EMP-00183,Oliver Walker,Assistant Manager,Stores,STR-0004,Store,Full-Time,2019-06-29,119254,EMP-00056
+EMP-00184,Jack Nguyen,Assistant Manager,Stores,STR-0004,Store,Casual,2017-12-06,90473,EMP-00178
+EMP-00185,Jack Williams,Assistant Manager,Stores,STR-0004,Store,Part-Time,2017-01-01,102531,EMP-00180
+EMP-00186,Lucas Chen,Assistant Manager,Stores,STR-0004,Store,Part-Time,2016-03-11,125035,EMP-00164
+EMP-00187,William Nguyen,Assistant Manager,Stores,STR-0004,Store,Full-Time,2021-04-18,52237,EMP-00178
+EMP-00188,Sophia Singh,Department Lead,Stores,STR-0004,Store,Casual,2023-10-12,115695,EMP-00004
+EMP-00189,Henry Walker,Department Lead,Stores,STR-0004,Store,Part-Time,2022-11-03,112804,EMP-00100
+EMP-00190,Jack Smith,Department Lead,Stores,STR-0004,Store,Part-Time,2017-11-08,53386,EMP-00002
+EMP-00191,Henry Brown,Checkout Operator,Stores,STR-0004,Store,Casual,2024-11-01,54741,EMP-00010
+EMP-00192,Sophia Smith,Checkout Operator,Stores,STR-0004,Store,Casual,2021-05-09,126135,EMP-00001
+EMP-00193,Sophia Jones,Checkout Operator,Stores,STR-0004,Store,Casual,2018-04-09,72177,EMP-00080
+EMP-00194,Sophia Chen,Checkout Operator,Stores,STR-0004,Store,Full-Time,2025-02-13,73496,EMP-00010
+EMP-00195,Lucas Nguyen,Checkout Operator,Stores,STR-0004,Store,Full-Time,2018-01-02,104161,EMP-00070
+EMP-00196,Sophia Wilson,Checkout Operator,Stores,STR-0004,Store,Full-Time,2025-08-01,103712,EMP-00193
+EMP-00197,Noah Garcia,Stocker,Stores,STR-0004,Store,Full-Time,2015-02-11,85566,EMP-00019
+EMP-00198,Sophia Lee,Baker,Stores,STR-0004,Store,Full-Time,2022-10-15,97226,EMP-00068
+EMP-00199,Grace Lee,Baker,Stores,STR-0004,Store,Full-Time,2025-11-30,67612,EMP-00166
+EMP-00200,Grace Patel,Baker,Stores,STR-0004,Store,Casual,2020-03-28,61048,EMP-00055
+EMP-00201,Mia Walker,Baker,Stores,STR-0004,Store,Part-Time,2015-05-18,83816,EMP-00153
+EMP-00202,Isla Murphy,Butcher,Stores,STR-0004,Store,Part-Time,2017-09-01,92556,EMP-00128
+EMP-00203,Ethan Brown,Butcher,Stores,STR-0004,Store,Part-Time,2022-05-03,55002,EMP-00165
+EMP-00204,Henry Jones,Butcher,Stores,STR-0004,Store,Full-Time,2025-01-31,56229,EMP-00038
+EMP-00205,Noah Singh,Butcher,Stores,STR-0004,Store,Full-Time,2023-02-27,62854,EMP-00180
+EMP-00206,Oliver Walker,Sales Associate,Sales,STR-0004,Store,Casual,2025-10-29,54792,EMP-00138
+EMP-00207,Liam Garcia,Sales Associate,Sales,STR-0004,Store,Casual,2015-10-15,76451,EMP-00015
+EMP-00208,Sophia Wilson,Sales Associate,Sales,STR-0004,Store,Casual,2025-10-26,71171,EMP-00133
+EMP-00209,Liam Taylor,Promotions Lead,Sales,STR-0004,Store,Full-Time,2017-01-14,53894,EMP-00178
+EMP-00210,Ruby Smith,Promotions Lead,Sales,STR-0004,Store,Full-Time,2025-07-03,89965,EMP-00155
+EMP-00211,Noah Smith,Promotions Lead,Sales,STR-0004,Store,Part-Time,2025-08-27,74496,EMP-00047
+EMP-00212,Mia Williams,Customer Service,Sales,STR-0004,Store,Full-Time,2015-10-29,50158,EMP-00071
+EMP-00213,Mia Taylor,Customer Service,Sales,STR-0004,Store,Casual,2019-04-12,53228,EMP-00126
+EMP-00214,Grace Taylor,Customer Service,Sales,STR-0004,Store,Part-Time,2025-09-09,79050,EMP-00109
+EMP-00215,Ethan Wilson,Store Manager,Stores,STR-0005,Store,Full-Time,2025-07-02,106918,EMP-00193
+EMP-00216,James Taylor,Store Manager,Stores,STR-0005,Store,Part-Time,2020-05-31,89291,EMP-00022
+EMP-00217,Jack Taylor,Store Manager,Stores,STR-0005,Store,Part-Time,2021-10-04,107393,EMP-00013
+EMP-00218,Noah Smith,Assistant Manager,Stores,STR-0005,Store,Casual,2021-08-26,101332,EMP-00173
+EMP-00219,Ruby Jones,Department Lead,Stores,STR-0005,Store,Part-Time,2022-06-30,73135,EMP-00072
+EMP-00220,Amelia Kim,Department Lead,Stores,STR-0005,Store,Part-Time,2020-04-22,117041,EMP-00044
+EMP-00221,Liam Chen,Department Lead,Stores,STR-0005,Store,Full-Time,2023-04-20,51277,EMP-00119
+EMP-00222,Amelia Wilson,Department Lead,Stores,STR-0005,Store,Full-Time,2020-02-28,67235,EMP-00085
+EMP-00223,Oliver Chen,Department Lead,Stores,STR-0005,Store,Casual,2015-05-18,69622,EMP-00008
+EMP-00224,Charlotte Kim,Department Lead,Stores,STR-0005,Store,Casual,2020-08-06,70466,EMP-00052
+EMP-00225,Ethan Garcia,Checkout Operator,Stores,STR-0005,Store,Casual,2016-02-15,96978,EMP-00185
+EMP-00226,Grace Nguyen,Checkout Operator,Stores,STR-0005,Store,Part-Time,2015-07-31,55155,EMP-00156
+EMP-00227,Mia Murphy,Stocker,Stores,STR-0005,Store,Full-Time,2016-10-22,127763,EMP-00216
+EMP-00228,Sophia Walker,Stocker,Stores,STR-0005,Store,Full-Time,2022-03-28,88213,EMP-00053
+EMP-00229,Ethan Garcia,Stocker,Stores,STR-0005,Store,Casual,2022-05-11,73521,EMP-00042
+EMP-00230,Charlotte Lee,Baker,Stores,STR-0005,Store,Casual,2018-03-25,73030,EMP-00198
+EMP-00231,Amelia Patel,Baker,Stores,STR-0005,Store,Casual,2023-10-19,124401,EMP-00062
+EMP-00232,Noah Chen,Baker,Stores,STR-0005,Store,Part-Time,2021-05-08,59857,EMP-00199
+EMP-00233,Ava Robinson,Butcher,Stores,STR-0005,Store,Casual,2024-08-26,49799,EMP-00124
+EMP-00234,Grace Brown,Butcher,Stores,STR-0005,Store,Part-Time,2019-08-29,101291,EMP-00115
+EMP-00235,Ruby Nguyen,Butcher,Stores,STR-0005,Store,Part-Time,2018-05-23,68439,EMP-00218
+EMP-00236,Ethan Wilson,Sales Associate,Sales,STR-0005,Store,Casual,2025-10-09,57081,EMP-00104
+EMP-00237,Henry Wilson,Sales Associate,Sales,STR-0005,Store,Full-Time,2018-05-27,85273,EMP-00014
+EMP-00238,Henry Lee,Sales Associate,Sales,STR-0005,Store,Casual,2020-12-09,86645,EMP-00177
+EMP-00239,Ethan Brown,Sales Associate,Sales,STR-0005,Store,Part-Time,2016-03-31,94025,EMP-00070
+EMP-00240,Grace Taylor,Promotions Lead,Sales,STR-0005,Store,Casual,2020-05-08,72862,EMP-00202
+EMP-00241,Amelia Murphy,Promotions Lead,Sales,STR-0005,Store,Casual,2016-01-04,81817,EMP-00031
+EMP-00242,Ethan Robinson,Promotions Lead,Sales,STR-0005,Store,Casual,2020-07-24,68142,EMP-00166
+EMP-00243,Noah Taylor,Promotions Lead,Sales,STR-0005,Store,Part-Time,2020-01-05,55516,EMP-00048
+EMP-00244,Jack Chen,Customer Service,Sales,STR-0005,Store,Part-Time,2023-09-30,74512,EMP-00103
+EMP-00245,William Brown,Store Manager,Stores,STR-0006,Store,Full-Time,2015-06-10,74705,EMP-00005
+EMP-00246,Henry Garcia,Store Manager,Stores,STR-0006,Store,Part-Time,2025-05-15,117961,EMP-00140
+EMP-00247,Sophia Williams,Store Manager,Stores,STR-0006,Store,Full-Time,2021-05-12,58591,EMP-00103
+EMP-00248,Sophia Patel,Store Manager,Stores,STR-0006,Store,Casual,2020-12-04,68389,EMP-00146
+EMP-00249,Mia Murphy,Assistant Manager,Stores,STR-0006,Store,Casual,2022-08-14,121491,EMP-00129
+EMP-00250,Ruby Smith,Assistant Manager,Stores,STR-0006,Store,Casual,2021-06-30,64396,EMP-00106
+EMP-00251,Oliver Nguyen,Assistant Manager,Stores,STR-0006,Store,Part-Time,2018-11-14,129480,EMP-00220
+EMP-00252,Isla Walker,Assistant Manager,Stores,STR-0006,Store,Part-Time,2025-04-21,98467,EMP-00168
+EMP-00253,Jack Williams,Assistant Manager,Stores,STR-0006,Store,Full-Time,2022-11-26,52526,EMP-00155
+EMP-00254,Grace Williams,Department Lead,Stores,STR-0006,Store,Part-Time,2021-05-14,109618,EMP-00198
+EMP-00255,Noah Singh,Checkout Operator,Stores,STR-0006,Store,Full-Time,2015-05-30,55599,EMP-00043
+EMP-00256,Ruby Brown,Checkout Operator,Stores,STR-0006,Store,Casual,2020-01-30,114136,EMP-00168
+EMP-00257,Mia Kim,Checkout Operator,Stores,STR-0006,Store,Full-Time,2022-05-02,53490,EMP-00213
+EMP-00258,Noah Nguyen,Checkout Operator,Stores,STR-0006,Store,Part-Time,2025-05-18,51901,EMP-00147
+EMP-00259,Lucas Walker,Stocker,Stores,STR-0006,Store,Part-Time,2021-05-31,115719,EMP-00241
+EMP-00260,Mia Lee,Baker,Stores,STR-0006,Store,Full-Time,2025-01-09,124842,EMP-00179
+EMP-00261,Sophia Brown,Butcher,Stores,STR-0006,Store,Full-Time,2019-10-04,123703,EMP-00029
+EMP-00262,Grace Robinson,Butcher,Stores,STR-0006,Store,Casual,2018-08-28,79646,EMP-00132
+EMP-00263,Ava Wilson,Butcher,Stores,STR-0006,Store,Part-Time,2021-03-01,81024,EMP-00172
+EMP-00264,Ava Kim,Butcher,Stores,STR-0006,Store,Full-Time,2021-01-23,126543,EMP-00204
+EMP-00265,Olivia Lee,Butcher,Stores,STR-0006,Store,Full-Time,2020-09-18,126966,EMP-00194
+EMP-00266,Lucas Nguyen,Butcher,Stores,STR-0006,Store,Full-Time,2015-09-09,107174,EMP-00163
+EMP-00267,Noah Patel,Sales Associate,Sales,STR-0006,Store,Casual,2021-04-25,79577,EMP-00039
+EMP-00268,Grace Patel,Sales Associate,Sales,STR-0006,Store,Part-Time,2021-10-02,50975,EMP-00108
+EMP-00269,James Nguyen,Sales Associate,Sales,STR-0006,Store,Part-Time,2017-03-12,69975,EMP-00034
+EMP-00270,Mia Williams,Promotions Lead,Sales,STR-0006,Store,Full-Time,2017-11-09,94462,EMP-00023
+EMP-00271,Ava Murphy,Promotions Lead,Sales,STR-0006,Store,Part-Time,2019-04-04,79863,EMP-00165
+EMP-00272,Liam Lee,Promotions Lead,Sales,STR-0006,Store,Full-Time,2017-12-18,62993,EMP-00189
+EMP-00273,Lucas Jones,Promotions Lead,Sales,STR-0006,Store,Part-Time,2020-11-02,87265,EMP-00065
+EMP-00274,Isla Singh,Customer Service,Sales,STR-0006,Store,Part-Time,2021-01-10,94759,EMP-00204
+EMP-00275,Isla Singh,Store Manager,Stores,STR-0007,Store,Casual,2019-09-10,80785,EMP-00106
+EMP-00276,James Lee,Assistant Manager,Stores,STR-0007,Store,Casual,2023-06-12,64685,EMP-00149
+EMP-00277,Grace Kim,Assistant Manager,Stores,STR-0007,Store,Part-Time,2018-11-21,71891,EMP-00006
+EMP-00278,Charlotte Wilson,Assistant Manager,Stores,STR-0007,Store,Casual,2024-12-29,50755,EMP-00014
+EMP-00279,Lucas Garcia,Assistant Manager,Stores,STR-0007,Store,Part-Time,2022-04-27,60029,EMP-00043
+EMP-00280,Olivia Walker,Assistant Manager,Stores,STR-0007,Store,Casual,2018-01-21,129924,EMP-00250
+EMP-00281,Ethan Patel,Assistant Manager,Stores,STR-0007,Store,Casual,2016-06-02,102901,EMP-00238
+EMP-00282,Oliver Williams,Department Lead,Stores,STR-0007,Store,Part-Time,2025-08-21,112483,EMP-00204
+EMP-00283,Liam Jones,Department Lead,Stores,STR-0007,Store,Part-Time,2021-06-15,56978,EMP-00112
+EMP-00284,Lucas Chen,Checkout Operator,Stores,STR-0007,Store,Casual,2020-03-13,113358,EMP-00172
+EMP-00285,Charlotte Smith,Stocker,Stores,STR-0007,Store,Full-Time,2025-11-03,74823,EMP-00231
+EMP-00286,Henry Brown,Stocker,Stores,STR-0007,Store,Part-Time,2022-10-13,63897,EMP-00175
+EMP-00287,Noah Williams,Stocker,Stores,STR-0007,Store,Casual,2022-05-20,76674,EMP-00199
+EMP-00288,James Singh,Baker,Stores,STR-0007,Store,Full-Time,2016-04-16,46867,EMP-00145
+EMP-00289,Charlotte Patel,Baker,Stores,STR-0007,Store,Casual,2018-12-06,67906,EMP-00200
+EMP-00290,Lucas Nguyen,Baker,Stores,STR-0007,Store,Part-Time,2020-07-30,94292,EMP-00250
+EMP-00291,James Murphy,Butcher,Stores,STR-0007,Store,Casual,2023-07-31,116945,EMP-00177
+EMP-00292,William Kim,Butcher,Stores,STR-0007,Store,Part-Time,2022-06-30,114693,EMP-00063
+EMP-00293,Ava Kim,Butcher,Stores,STR-0007,Store,Full-Time,2022-05-08,104609,EMP-00109
+EMP-00294,Grace Kim,Butcher,Stores,STR-0007,Store,Part-Time,2020-10-26,47477,EMP-00245
+EMP-00295,William Jones,Butcher,Stores,STR-0007,Store,Full-Time,2017-02-08,55346,EMP-00243
+EMP-00296,Ethan Murphy,Butcher,Stores,STR-0007,Store,Full-Time,2017-06-20,105274,EMP-00179
+EMP-00297,Liam Smith,Sales Associate,Sales,STR-0007,Store,Casual,2020-02-11,90655,EMP-00050
+EMP-00298,Ethan Nguyen,Promotions Lead,Sales,STR-0007,Store,Part-Time,2025-05-29,91874,EMP-00178
+EMP-00299,Charlotte Wilson,Customer Service,Sales,STR-0007,Store,Part-Time,2020-09-03,78756,EMP-00233
+EMP-00300,Ruby Murphy,Store Manager,Stores,STR-0008,Store,Part-Time,2017-03-14,46645,EMP-00238
+EMP-00301,Noah Smith,Store Manager,Stores,STR-0008,Store,Full-Time,2017-02-24,103358,EMP-00158
+EMP-00302,Liam Chen,Store Manager,Stores,STR-0008,Store,Casual,2017-03-14,76227,EMP-00163
+EMP-00303,Noah Walker,Store Manager,Stores,STR-0008,Store,Part-Time,2021-04-19,71544,EMP-00002
+EMP-00304,Lucas Wilson,Assistant Manager,Stores,STR-0008,Store,Part-Time,2019-01-02,128471,EMP-00001
+EMP-00305,James Brown,Assistant Manager,Stores,STR-0008,Store,Full-Time,2019-08-23,105097,EMP-00144
+EMP-00306,Oliver Wilson,Assistant Manager,Stores,STR-0008,Store,Part-Time,2019-09-20,68039,EMP-00282
+EMP-00307,Olivia Murphy,Assistant Manager,Stores,STR-0008,Store,Casual,2023-02-07,105966,EMP-00299
+EMP-00308,Sophia Williams,Department Lead,Stores,STR-0008,Store,Part-Time,2016-07-14,110637,EMP-00287
+EMP-00309,Oliver Kim,Checkout Operator,Stores,STR-0008,Store,Full-Time,2015-11-03,77055,EMP-00243
+EMP-00310,Jack Garcia,Checkout Operator,Stores,STR-0008,Store,Full-Time,2023-04-11,67973,EMP-00243
+EMP-00311,William Lee,Checkout Operator,Stores,STR-0008,Store,Part-Time,2024-05-20,95793,EMP-00145
+EMP-00312,Grace Smith,Checkout Operator,Stores,STR-0008,Store,Casual,2024-10-26,64404,EMP-00167
+EMP-00313,Ruby Williams,Checkout Operator,Stores,STR-0008,Store,Full-Time,2024-05-06,53402,EMP-00056
+EMP-00314,Grace Wilson,Stocker,Stores,STR-0008,Store,Casual,2016-05-01,75553,EMP-00117
+EMP-00315,Ethan Wilson,Stocker,Stores,STR-0008,Store,Part-Time,2022-04-03,54431,EMP-00066
+EMP-00316,Sophia Taylor,Stocker,Stores,STR-0008,Store,Full-Time,2024-05-23,93027,EMP-00220
+EMP-00317,Amelia Williams,Stocker,Stores,STR-0008,Store,Full-Time,2016-06-25,98974,EMP-00284
+EMP-00318,William Nguyen,Stocker,Stores,STR-0008,Store,Part-Time,2024-11-04,125459,EMP-00157
+EMP-00319,Amelia Williams,Baker,Stores,STR-0008,Store,Casual,2021-07-03,91111,EMP-00076
+EMP-00320,Grace Jones,Baker,Stores,STR-0008,Store,Full-Time,2017-01-17,45885,EMP-00023
+EMP-00321,Ruby Taylor,Baker,Stores,STR-0008,Store,Casual,2020-02-29,113376,EMP-00133
+EMP-00322,James Williams,Baker,Stores,STR-0008,Store,Full-Time,2021-05-27,100891,EMP-00291
+EMP-00323,Sophia Singh,Baker,Stores,STR-0008,Store,Part-Time,2025-10-15,123235,EMP-00090
+EMP-00324,Noah Chen,Baker,Stores,STR-0008,Store,Full-Time,2015-01-01,85825,EMP-00049
+EMP-00325,Liam Singh,Butcher,Stores,STR-0008,Store,Full-Time,2021-01-30,50800,EMP-00166
+EMP-00326,Ava Robinson,Sales Associate,Sales,STR-0008,Store,Full-Time,2019-11-12,61503,EMP-00321
+EMP-00327,Sophia Nguyen,Sales Associate,Sales,STR-0008,Store,Part-Time,2024-05-21,93993,EMP-00107
+EMP-00328,Noah Robinson,Sales Associate,Sales,STR-0008,Store,Casual,2018-07-29,84620,EMP-00087
+EMP-00329,Jack Patel,Promotions Lead,Sales,STR-0008,Store,Full-Time,2025-01-01,51045,EMP-00082
+EMP-00330,Ava Garcia,Customer Service,Sales,STR-0008,Store,Casual,2024-06-02,89202,EMP-00194
+EMP-00331,Ava Singh,Customer Service,Sales,STR-0008,Store,Casual,2022-01-08,72112,EMP-00082
+EMP-00332,William Brown,Store Manager,Stores,STR-0009,Store,Casual,2017-03-12,85031,EMP-00045
+EMP-00333,Charlotte Patel,Store Manager,Stores,STR-0009,Store,Casual,2017-07-07,56214,EMP-00052
+EMP-00334,Grace Walker,Store Manager,Stores,STR-0009,Store,Part-Time,2021-11-08,126938,EMP-00007
+EMP-00335,Ruby Robinson,Store Manager,Stores,STR-0009,Store,Casual,2022-03-09,53212,EMP-00207
+EMP-00336,Sophia Brown,Assistant Manager,Stores,STR-0009,Store,Part-Time,2022-12-06,86295,EMP-00079
+EMP-00337,Olivia Murphy,Department Lead,Stores,STR-0009,Store,Part-Time,2025-02-24,52731,EMP-00250
+EMP-00338,Ruby Murphy,Department Lead,Stores,STR-0009,Store,Casual,2022-04-18,101320,EMP-00191
+EMP-00339,Liam Smith,Department Lead,Stores,STR-0009,Store,Casual,2016-02-08,49774,EMP-00011
+EMP-00340,Noah Singh,Department Lead,Stores,STR-0009,Store,Full-Time,2016-11-08,97890,EMP-00152
+EMP-00341,Jack Jones,Department Lead,Stores,STR-0009,Store,Part-Time,2022-09-30,122485,EMP-00247
+EMP-00342,Lucas Williams,Department Lead,Stores,STR-0009,Store,Part-Time,2023-01-07,94759,EMP-00057
+EMP-00343,Ethan Jones,Checkout Operator,Stores,STR-0009,Store,Casual,2021-10-08,75263,EMP-00317
+EMP-00344,Amelia Kim,Checkout Operator,Stores,STR-0009,Store,Part-Time,2025-02-25,55298,EMP-00313
+EMP-00345,Ava Smith,Checkout Operator,Stores,STR-0009,Store,Part-Time,2024-12-30,58818,EMP-00261
+EMP-00346,Isla Lee,Checkout Operator,Stores,STR-0009,Store,Full-Time,2018-09-11,108780,EMP-00163
+EMP-00347,Charlotte Nguyen,Checkout Operator,Stores,STR-0009,Store,Full-Time,2025-03-28,76341,EMP-00108
+EMP-00348,Liam Brown,Checkout Operator,Stores,STR-0009,Store,Part-Time,2017-11-13,70948,EMP-00027
+EMP-00349,Grace Murphy,Stocker,Stores,STR-0009,Store,Full-Time,2024-02-12,109359,EMP-00063
+EMP-00350,Henry Robinson,Stocker,Stores,STR-0009,Store,Part-Time,2016-01-01,62257,EMP-00340
+EMP-00351,Mia Murphy,Stocker,Stores,STR-0009,Store,Casual,2017-03-22,53657,EMP-00088
+EMP-00352,Ethan Smith,Stocker,Stores,STR-0009,Store,Part-Time,2015-09-10,90467,EMP-00153
+EMP-00353,Ava Murphy,Stocker,Stores,STR-0009,Store,Part-Time,2015-09-10,53363,EMP-00183
+EMP-00354,Charlotte Singh,Baker,Stores,STR-0009,Store,Part-Time,2020-07-12,124923,EMP-00059
+EMP-00355,Grace Murphy,Baker,Stores,STR-0009,Store,Casual,2023-09-29,127030,EMP-00063
+EMP-00356,Ruby Walker,Baker,Stores,STR-0009,Store,Full-Time,2020-05-06,123744,EMP-00207
+EMP-00357,Ava Murphy,Baker,Stores,STR-0009,Store,Part-Time,2025-01-15,75154,EMP-00129
+EMP-00358,Ruby Singh,Baker,Stores,STR-0009,Store,Casual,2018-11-15,126987,EMP-00285
+EMP-00359,Ethan Wilson,Baker,Stores,STR-0009,Store,Casual,2015-08-25,46166,EMP-00160
+EMP-00360,Noah Taylor,Butcher,Stores,STR-0009,Store,Casual,2015-12-20,99552,EMP-00309
+EMP-00361,Olivia Patel,Butcher,Stores,STR-0009,Store,Casual,2021-09-19,122897,EMP-00221
+EMP-00362,William Murphy,Butcher,Stores,STR-0009,Store,Full-Time,2020-02-26,108242,EMP-00140
+EMP-00363,Oliver Garcia,Sales Associate,Sales,STR-0009,Store,Casual,2023-06-03,93362,EMP-00149
+EMP-00364,Henry Singh,Sales Associate,Sales,STR-0009,Store,Casual,2025-12-08,50927,EMP-00288
+EMP-00365,Charlotte Chen,Sales Associate,Sales,STR-0009,Store,Casual,2019-12-27,79012,EMP-00262
+EMP-00366,William Smith,Sales Associate,Sales,STR-0009,Store,Full-Time,2023-11-17,92144,EMP-00201
+EMP-00367,Amelia Robinson,Promotions Lead,Sales,STR-0009,Store,Part-Time,2024-09-08,94650,EMP-00140
+EMP-00368,Oliver Walker,Promotions Lead,Sales,STR-0009,Store,Casual,2018-11-28,60132,EMP-00218
+EMP-00369,Charlotte Garcia,Promotions Lead,Sales,STR-0009,Store,Full-Time,2019-05-05,63615,EMP-00031
+EMP-00370,Lucas Robinson,Promotions Lead,Sales,STR-0009,Store,Full-Time,2016-12-09,65192,EMP-00041
+EMP-00371,Ethan Taylor,Customer Service,Sales,STR-0009,Store,Casual,2016-05-26,91409,EMP-00143
+EMP-00372,Lucas Nguyen,Customer Service,Sales,STR-0009,Store,Casual,2024-10-19,53104,EMP-00358
+EMP-00373,Ethan Wilson,Customer Service,Sales,STR-0009,Store,Part-Time,2022-03-02,92844,EMP-00020
+EMP-00374,Jack Singh,Customer Service,Sales,STR-0009,Store,Part-Time,2020-07-11,92095,EMP-00046
+EMP-00375,Noah Taylor,Store Manager,Stores,STR-0010,Store,Casual,2015-02-10,124982,EMP-00248
+EMP-00376,Henry Walker,Store Manager,Stores,STR-0010,Store,Full-Time,2018-07-12,82226,EMP-00187
+EMP-00377,Liam Chen,Store Manager,Stores,STR-0010,Store,Full-Time,2018-10-25,121483,EMP-00354
+EMP-00378,Ava Walker,Assistant Manager,Stores,STR-0010,Store,Full-Time,2015-06-25,107511,EMP-00193
+EMP-00379,Isla Chen,Department Lead,Stores,STR-0010,Store,Part-Time,2018-03-06,127306,EMP-00089
+EMP-00380,Charlotte Walker,Department Lead,Stores,STR-0010,Store,Casual,2023-02-06,57759,EMP-00138
+EMP-00381,Ruby Chen,Checkout Operator,Stores,STR-0010,Store,Part-Time,2024-02-16,120719,EMP-00110
+EMP-00382,Ruby Jones,Checkout Operator,Stores,STR-0010,Store,Full-Time,2020-07-07,99883,EMP-00193
+EMP-00383,Grace Singh,Checkout Operator,Stores,STR-0010,Store,Full-Time,2021-07-18,83361,EMP-00329
+EMP-00384,Ruby Garcia,Checkout Operator,Stores,STR-0010,Store,Part-Time,2023-02-04,129165,EMP-00030
+EMP-00385,Ava Williams,Checkout Operator,Stores,STR-0010,Store,Full-Time,2020-10-09,118882,EMP-00156
+EMP-00386,Ethan Walker,Stocker,Stores,STR-0010,Store,Part-Time,2021-11-27,49686,EMP-00371
+EMP-00387,Sophia Robinson,Stocker,Stores,STR-0010,Store,Part-Time,2023-07-09,96244,EMP-00326
+EMP-00388,Ava Wilson,Baker,Stores,STR-0010,Store,Casual,2020-01-17,53747,EMP-00095
+EMP-00389,Mia Walker,Baker,Stores,STR-0010,Store,Casual,2018-10-20,89730,EMP-00044
+EMP-00390,Grace Chen,Baker,Stores,STR-0010,Store,Part-Time,2017-05-12,109793,EMP-00331
+EMP-00391,Noah Robinson,Baker,Stores,STR-0010,Store,Casual,2024-10-10,66143,EMP-00203
+EMP-00392,Lucas Patel,Baker,Stores,STR-0010,Store,Casual,2022-02-18,102947,EMP-00027
+EMP-00393,Oliver Wilson,Baker,Stores,STR-0010,Store,Part-Time,2018-11-27,69628,EMP-00243
+EMP-00394,Ava Murphy,Butcher,Stores,STR-0010,Store,Full-Time,2018-08-05,84064,EMP-00286
+EMP-00395,Ruby Williams,Butcher,Stores,STR-0010,Store,Full-Time,2018-03-06,115261,EMP-00145
+EMP-00396,Noah Robinson,Sales Associate,Sales,STR-0010,Store,Full-Time,2022-05-14,48974,EMP-00213
+EMP-00397,Isla Walker,Promotions Lead,Sales,STR-0010,Store,Full-Time,2015-05-04,61711,EMP-00370
+EMP-00398,Charlotte Singh,Promotions Lead,Sales,STR-0010,Store,Full-Time,2017-12-15,66769,EMP-00312
+EMP-00399,Henry Williams,Customer Service,Sales,STR-0010,Store,Full-Time,2017-11-01,90222,EMP-00226
+EMP-00400,James Patel,Customer Service,Sales,STR-0010,Store,Part-Time,2022-01-06,63495,EMP-00144
+EMP-00401,Ruby Robinson,Customer Service,Sales,STR-0010,Store,Part-Time,2020-02-08,83594,EMP-00017
+EMP-00402,Oliver Smith,Customer Service,Sales,STR-0010,Store,Part-Time,2023-12-31,79157,EMP-00052
+EMP-00403,Charlotte Smith,Store Manager,Stores,STR-0011,Store,Casual,2022-12-22,94776,EMP-00092
+EMP-00404,Charlotte Robinson,Store Manager,Stores,STR-0011,Store,Full-Time,2019-02-08,56537,EMP-00350
+EMP-00405,Ava Smith,Store Manager,Stores,STR-0011,Store,Casual,2017-11-04,120609,EMP-00337
+EMP-00406,Amelia Brown,Assistant Manager,Stores,STR-0011,Store,Part-Time,2022-04-26,114807,EMP-00298
+EMP-00407,Grace Murphy,Assistant Manager,Stores,STR-0011,Store,Full-Time,2025-10-24,96694,EMP-00382
+EMP-00408,Oliver Williams,Assistant Manager,Stores,STR-0011,Store,Full-Time,2016-01-28,102878,EMP-00387
+EMP-00409,Liam Walker,Assistant Manager,Stores,STR-0011,Store,Part-Time,2016-11-16,110295,EMP-00259
+EMP-00410,William Nguyen,Department Lead,Stores,STR-0011,Store,Casual,2020-01-13,109892,EMP-00085
+EMP-00411,Ruby Taylor,Department Lead,Stores,STR-0011,Store,Casual,2019-11-01,71413,EMP-00040
+EMP-00412,Ruby Nguyen,Department Lead,Stores,STR-0011,Store,Full-Time,2023-02-20,62627,EMP-00224
+EMP-00413,Olivia Robinson,Department Lead,Stores,STR-0011,Store,Full-Time,2023-04-26,68020,EMP-00159
+EMP-00414,Ethan Smith,Checkout Operator,Stores,STR-0011,Store,Casual,2017-07-06,64641,EMP-00184
+EMP-00415,James Garcia,Checkout Operator,Stores,STR-0011,Store,Casual,2021-03-14,46616,EMP-00090
+EMP-00416,James Smith,Checkout Operator,Stores,STR-0011,Store,Casual,2015-07-29,88856,EMP-00310
+EMP-00417,Charlotte Kim,Checkout Operator,Stores,STR-0011,Store,Casual,2016-09-29,87382,EMP-00333
+EMP-00418,Liam Nguyen,Checkout Operator,Stores,STR-0011,Store,Full-Time,2016-09-03,92518,EMP-00366
+EMP-00419,Noah Murphy,Checkout Operator,Stores,STR-0011,Store,Full-Time,2023-04-26,109264,EMP-00290
+EMP-00420,Grace Chen,Stocker,Stores,STR-0011,Store,Full-Time,2023-07-08,49465,EMP-00320
+EMP-00421,James Kim,Stocker,Stores,STR-0011,Store,Part-Time,2015-07-12,57539,EMP-00388
+EMP-00422,Noah Taylor,Stocker,Stores,STR-0011,Store,Full-Time,2016-09-07,105512,EMP-00073
+EMP-00423,Mia Taylor,Stocker,Stores,STR-0011,Store,Part-Time,2017-08-04,95809,EMP-00086
+EMP-00424,Ava Walker,Baker,Stores,STR-0011,Store,Casual,2015-01-30,115082,EMP-00214
+EMP-00425,Noah Garcia,Butcher,Stores,STR-0011,Store,Casual,2020-01-21,46455,EMP-00264
+EMP-00426,Isla Lee,Butcher,Stores,STR-0011,Store,Full-Time,2017-01-05,80161,EMP-00314
+EMP-00427,Ruby Lee,Butcher,Stores,STR-0011,Store,Full-Time,2022-04-27,74634,EMP-00198
+EMP-00428,Liam Williams,Sales Associate,Sales,STR-0011,Store,Part-Time,2017-12-02,65246,EMP-00211
+EMP-00429,James Nguyen,Sales Associate,Sales,STR-0011,Store,Full-Time,2022-04-28,52923,EMP-00040
+EMP-00430,Jack Patel,Sales Associate,Sales,STR-0011,Store,Full-Time,2024-04-01,71211,EMP-00324
+EMP-00431,Jack Walker,Sales Associate,Sales,STR-0011,Store,Full-Time,2024-02-03,63012,EMP-00169
+EMP-00432,Grace Nguyen,Promotions Lead,Sales,STR-0011,Store,Full-Time,2017-12-06,48075,EMP-00040
+EMP-00433,Mia Chen,Promotions Lead,Sales,STR-0011,Store,Part-Time,2015-05-21,87832,EMP-00320
+EMP-00434,Lucas Robinson,Customer Service,Sales,STR-0011,Store,Full-Time,2022-11-25,63600,EMP-00095
+EMP-00435,Liam Murphy,Store Manager,Stores,STR-0012,Store,Full-Time,2023-02-25,66081,EMP-00046
+EMP-00436,Ethan Williams,Store Manager,Stores,STR-0012,Store,Full-Time,2021-09-10,54716,EMP-00059
+EMP-00437,Noah Singh,Store Manager,Stores,STR-0012,Store,Casual,2025-11-29,62899,EMP-00026
+EMP-00438,Mia Smith,Store Manager,Stores,STR-0012,Store,Part-Time,2025-01-17,95332,EMP-00261
+EMP-00439,Ethan Singh,Store Manager,Stores,STR-0012,Store,Part-Time,2025-02-05,125257,EMP-00345
+EMP-00440,Mia Taylor,Assistant Manager,Stores,STR-0012,Store,Casual,2021-08-19,123930,EMP-00157
+EMP-00441,Charlotte Brown,Department Lead,Stores,STR-0012,Store,Part-Time,2020-12-22,77252,EMP-00243
+EMP-00442,Oliver Nguyen,Department Lead,Stores,STR-0012,Store,Casual,2017-08-17,115258,EMP-00241
+EMP-00443,Sophia Walker,Department Lead,Stores,STR-0012,Store,Casual,2024-07-20,90562,EMP-00048
+EMP-00444,Jack Chen,Department Lead,Stores,STR-0012,Store,Casual,2020-07-24,113918,EMP-00076
+EMP-00445,Sophia Nguyen,Department Lead,Stores,STR-0012,Store,Casual,2023-06-03,86500,EMP-00304
+EMP-00446,Ethan Chen,Checkout Operator,Stores,STR-0012,Store,Casual,2019-01-24,60918,EMP-00378
+EMP-00447,Olivia Chen,Checkout Operator,Stores,STR-0012,Store,Part-Time,2024-05-26,105496,EMP-00043
+EMP-00448,Olivia Murphy,Stocker,Stores,STR-0012,Store,Full-Time,2022-07-16,82217,EMP-00154
+EMP-00449,Lucas Taylor,Stocker,Stores,STR-0012,Store,Full-Time,2017-11-01,125340,EMP-00198
+EMP-00450,William Taylor,Stocker,Stores,STR-0012,Store,Casual,2019-06-06,69446,EMP-00102
+EMP-00451,Ava Garcia,Baker,Stores,STR-0012,Store,Casual,2015-05-15,95973,EMP-00270
+EMP-00452,Olivia Jones,Butcher,Stores,STR-0012,Store,Casual,2020-07-24,112885,EMP-00282
+EMP-00453,Jack Nguyen,Sales Associate,Sales,STR-0012,Store,Part-Time,2019-03-08,51454,EMP-00398
+EMP-00454,Oliver Chen,Promotions Lead,Sales,STR-0012,Store,Part-Time,2022-07-09,75035,EMP-00351
+EMP-00455,Mia Singh,Promotions Lead,Sales,STR-0012,Store,Full-Time,2022-03-26,62269,EMP-00072
+EMP-00456,Grace Jones,Customer Service,Sales,STR-0012,Store,Full-Time,2023-01-27,92772,EMP-00009
+EMP-00457,Sophia Taylor,Store Manager,Stores,STR-0013,Store,Casual,2021-04-23,111337,EMP-00147
+EMP-00458,Ethan Jones,Store Manager,Stores,STR-0013,Store,Full-Time,2020-05-15,69962,EMP-00389
+EMP-00459,Noah Robinson,Store Manager,Stores,STR-0013,Store,Full-Time,2017-12-14,79108,EMP-00083
+EMP-00460,Ethan Chen,Store Manager,Stores,STR-0013,Store,Part-Time,2022-12-22,113754,EMP-00389
+EMP-00461,Charlotte Brown,Store Manager,Stores,STR-0013,Store,Part-Time,2025-07-25,116330,EMP-00018
+EMP-00462,Noah Wilson,Store Manager,Stores,STR-0013,Store,Full-Time,2021-08-13,58888,EMP-00148
+EMP-00463,Ruby Patel,Assistant Manager,Stores,STR-0013,Store,Part-Time,2015-02-11,54582,EMP-00388
+EMP-00464,Lucas Williams,Assistant Manager,Stores,STR-0013,Store,Full-Time,2016-03-07,52794,EMP-00009
+EMP-00465,Ava Taylor,Assistant Manager,Stores,STR-0013,Store,Full-Time,2021-12-05,59586,EMP-00351
+EMP-00466,William Murphy,Department Lead,Stores,STR-0013,Store,Casual,2020-10-12,60951,EMP-00047
+EMP-00467,James Murphy,Checkout Operator,Stores,STR-0013,Store,Full-Time,2019-02-21,89020,EMP-00356
+EMP-00468,Isla Lee,Checkout Operator,Stores,STR-0013,Store,Full-Time,2018-04-30,121091,EMP-00012
+EMP-00469,William Walker,Stocker,Stores,STR-0013,Store,Casual,2024-10-09,104320,EMP-00014
+EMP-00470,William Smith,Stocker,Stores,STR-0013,Store,Casual,2016-07-15,70015,EMP-00456
+EMP-00471,James Murphy,Stocker,Stores,STR-0013,Store,Casual,2015-01-05,114572,EMP-00131
+EMP-00472,Oliver Taylor,Baker,Stores,STR-0013,Store,Part-Time,2023-02-12,61855,EMP-00078
+EMP-00473,Henry Nguyen,Baker,Stores,STR-0013,Store,Part-Time,2015-07-08,91313,EMP-00399
+EMP-00474,William Smith,Baker,Stores,STR-0013,Store,Part-Time,2015-11-18,46610,EMP-00399
+EMP-00475,Henry Williams,Baker,Stores,STR-0013,Store,Part-Time,2015-02-09,92050,EMP-00005
+EMP-00476,Noah Murphy,Baker,Stores,STR-0013,Store,Part-Time,2017-12-21,93743,EMP-00444
+EMP-00477,Jack Williams,Butcher,Stores,STR-0013,Store,Casual,2024-06-21,115809,EMP-00253
+EMP-00478,Lucas Smith,Butcher,Stores,STR-0013,Store,Casual,2022-07-22,100182,EMP-00037
+EMP-00479,Ethan Jones,Butcher,Stores,STR-0013,Store,Casual,2020-07-17,110464,EMP-00288
+EMP-00480,William Patel,Sales Associate,Sales,STR-0013,Store,Casual,2017-08-26,81533,EMP-00008
+EMP-00481,Lucas Taylor,Promotions Lead,Sales,STR-0013,Store,Full-Time,2020-11-23,78517,EMP-00365
+EMP-00482,Grace Nguyen,Customer Service,Sales,STR-0013,Store,Full-Time,2017-11-16,84730,EMP-00393
+EMP-00483,Oliver Williams,Store Manager,Stores,STR-0014,Store,Full-Time,2023-05-08,114469,EMP-00475
+EMP-00484,Liam Kim,Store Manager,Stores,STR-0014,Store,Casual,2020-07-26,55418,EMP-00343
+EMP-00485,Mia Garcia,Store Manager,Stores,STR-0014,Store,Part-Time,2019-08-11,124942,EMP-00055
+EMP-00486,Ruby Lee,Store Manager,Stores,STR-0014,Store,Part-Time,2018-09-17,128426,EMP-00469
+EMP-00487,Jack Kim,Assistant Manager,Stores,STR-0014,Store,Casual,2017-08-22,78159,EMP-00215
+EMP-00488,Ava Jones,Assistant Manager,Stores,STR-0014,Store,Part-Time,2025-03-23,97822,EMP-00308
+EMP-00489,Noah Lee,Assistant Manager,Stores,STR-0014,Store,Full-Time,2017-10-25,82532,EMP-00356
+EMP-00490,Oliver Taylor,Department Lead,Stores,STR-0014,Store,Part-Time,2020-10-25,127411,EMP-00027
+EMP-00491,Olivia Smith,Department Lead,Stores,STR-0014,Store,Full-Time,2025-11-27,74685,EMP-00323
+EMP-00492,William Wilson,Checkout Operator,Stores,STR-0014,Store,Part-Time,2016-10-03,63318,EMP-00151
+EMP-00493,Noah Williams,Checkout Operator,Stores,STR-0014,Store,Part-Time,2020-01-08,47506,EMP-00044
+EMP-00494,Liam Jones,Stocker,Stores,STR-0014,Store,Casual,2022-09-13,66660,EMP-00198
+EMP-00495,Lucas Lee,Baker,Stores,STR-0014,Store,Casual,2025-04-13,53076,EMP-00143
+EMP-00496,Grace Patel,Baker,Stores,STR-0014,Store,Part-Time,2024-09-22,86001,EMP-00211
+EMP-00497,Ava Williams,Butcher,Stores,STR-0014,Store,Casual,2019-07-22,50371,EMP-00364
+EMP-00498,Oliver Williams,Butcher,Stores,STR-0014,Store,Casual,2018-06-20,77312,EMP-00156
+EMP-00499,Liam Nguyen,Butcher,Stores,STR-0014,Store,Casual,2015-09-05,99767,EMP-00357
+EMP-00500,Ava Brown,Butcher,Stores,STR-0014,Store,Casual,2018-12-19,86082,EMP-00073
+EMP-00501,Liam Robinson,Sales Associate,Sales,STR-0014,Store,Casual,2024-03-21,82199,EMP-00040
+EMP-00502,Ruby Smith,Sales Associate,Sales,STR-0014,Store,Casual,2017-03-03,87353,EMP-00124
+EMP-00503,Ethan Robinson,Sales Associate,Sales,STR-0014,Store,Casual,2023-03-27,89857,EMP-00173
+EMP-00504,Olivia Patel,Sales Associate,Sales,STR-0014,Store,Part-Time,2015-09-09,67989,EMP-00051
+EMP-00505,Amelia Chen,Promotions Lead,Sales,STR-0014,Store,Full-Time,2023-07-24,78838,EMP-00120
+EMP-00506,Olivia Smith,Promotions Lead,Sales,STR-0014,Store,Full-Time,2017-08-25,71391,EMP-00140
+EMP-00507,Isla Lee,Promotions Lead,Sales,STR-0014,Store,Casual,2021-04-01,83852,EMP-00484
+EMP-00508,Olivia Kim,Customer Service,Sales,STR-0014,Store,Full-Time,2025-02-11,85416,EMP-00232
+EMP-00509,Oliver Kim,Customer Service,Sales,STR-0014,Store,Full-Time,2020-12-26,89298,EMP-00487
+EMP-00510,Ava Murphy,Customer Service,Sales,STR-0014,Store,Casual,2021-08-28,51087,EMP-00241
+EMP-00511,Amelia Jones,Store Manager,Stores,STR-0015,Store,Casual,2022-07-01,88283,EMP-00424
+EMP-00512,James Brown,Store Manager,Stores,STR-0015,Store,Part-Time,2025-03-07,45278,EMP-00144
+EMP-00513,Ava Singh,Store Manager,Stores,STR-0015,Store,Part-Time,2015-02-08,70027,EMP-00449
+EMP-00514,Olivia Singh,Store Manager,Stores,STR-0015,Store,Casual,2022-03-11,125390,EMP-00211
+EMP-00515,Ethan Chen,Store Manager,Stores,STR-0015,Store,Casual,2024-08-08,125064,EMP-00386
+EMP-00516,Sophia Nguyen,Assistant Manager,Stores,STR-0015,Store,Full-Time,2022-04-16,86879,EMP-00145
+EMP-00517,Isla Williams,Assistant Manager,Stores,STR-0015,Store,Full-Time,2018-09-04,103801,EMP-00145
+EMP-00518,Noah Garcia,Assistant Manager,Stores,STR-0015,Store,Part-Time,2022-09-09,122769,EMP-00483
+EMP-00519,Liam Murphy,Assistant Manager,Stores,STR-0015,Store,Casual,2024-02-15,108879,EMP-00516
+EMP-00520,William Smith,Assistant Manager,Stores,STR-0015,Store,Part-Time,2018-10-24,102681,EMP-00406
+EMP-00521,Charlotte Chen,Assistant Manager,Stores,STR-0015,Store,Part-Time,2022-11-19,64073,EMP-00186
+EMP-00522,Jack Nguyen,Department Lead,Stores,STR-0015,Store,Full-Time,2022-05-09,83577,EMP-00437
+EMP-00523,Amelia Wilson,Department Lead,Stores,STR-0015,Store,Part-Time,2017-07-22,109639,EMP-00480
+EMP-00524,Sophia Patel,Department Lead,Stores,STR-0015,Store,Casual,2019-11-27,57244,EMP-00388
+EMP-00525,Charlotte Chen,Department Lead,Stores,STR-0015,Store,Casual,2023-09-18,113842,EMP-00257
+EMP-00526,Grace Taylor,Checkout Operator,Stores,STR-0015,Store,Full-Time,2018-03-27,67171,EMP-00028
+EMP-00527,Olivia Jones,Checkout Operator,Stores,STR-0015,Store,Full-Time,2016-09-17,52011,EMP-00134
+EMP-00528,Mia Lee,Checkout Operator,Stores,STR-0015,Store,Part-Time,2020-01-14,102162,EMP-00195
+EMP-00529,Ava Patel,Checkout Operator,Stores,STR-0015,Store,Part-Time,2024-01-09,86153,EMP-00395
+EMP-00530,Jack Garcia,Checkout Operator,Stores,STR-0015,Store,Casual,2020-01-23,116377,EMP-00286
+EMP-00531,Amelia Jones,Stocker,Stores,STR-0015,Store,Part-Time,2019-09-18,109358,EMP-00158
+EMP-00532,Charlotte Taylor,Stocker,Stores,STR-0015,Store,Casual,2021-04-02,120555,EMP-00495
+EMP-00533,Sophia Jones,Stocker,Stores,STR-0015,Store,Full-Time,2025-08-11,110481,EMP-00026
+EMP-00534,Ava Nguyen,Baker,Stores,STR-0015,Store,Part-Time,2019-09-23,53971,EMP-00184
+EMP-00535,Mia Brown,Baker,Stores,STR-0015,Store,Casual,2020-08-14,116866,EMP-00101
+EMP-00536,Henry Taylor,Baker,Stores,STR-0015,Store,Casual,2025-10-18,79131,EMP-00257
+EMP-00537,William Kim,Baker,Stores,STR-0015,Store,Full-Time,2018-02-04,98611,EMP-00047
+EMP-00538,Henry Lee,Butcher,Stores,STR-0015,Store,Casual,2025-10-25,114995,EMP-00329
+EMP-00539,Charlotte Singh,Butcher,Stores,STR-0015,Store,Casual,2016-10-13,114414,EMP-00360
+EMP-00540,Isla Jones,Butcher,Stores,STR-0015,Store,Casual,2018-12-30,115043,EMP-00109
+EMP-00541,Ava Wilson,Butcher,Stores,STR-0015,Store,Casual,2019-06-05,55899,EMP-00525
+EMP-00542,Isla Patel,Sales Associate,Sales,STR-0015,Store,Full-Time,2025-05-02,52473,EMP-00276
+EMP-00543,Amelia Robinson,Sales Associate,Sales,STR-0015,Store,Casual,2018-08-26,61850,EMP-00039
+EMP-00544,Olivia Robinson,Sales Associate,Sales,STR-0015,Store,Full-Time,2020-02-08,49986,EMP-00334
+EMP-00545,Grace Jones,Promotions Lead,Sales,STR-0015,Store,Full-Time,2025-04-24,90790,EMP-00529
+EMP-00546,Mia Williams,Promotions Lead,Sales,STR-0015,Store,Casual,2017-08-22,74773,EMP-00074
+EMP-00547,William Murphy,Customer Service,Sales,STR-0015,Store,Full-Time,2025-05-09,87139,EMP-00063
+EMP-00548,Amelia Taylor,Customer Service,Sales,STR-0015,Store,Full-Time,2017-04-22,50351,EMP-00106
+EMP-00549,Ava Brown,Customer Service,Sales,STR-0015,Store,Casual,2021-06-16,48581,EMP-00060
+EMP-00550,Ethan Chen,Store Manager,Stores,STR-0016,Store,Full-Time,2016-06-24,51189,EMP-00096
+EMP-00551,Olivia Taylor,Store Manager,Stores,STR-0016,Store,Full-Time,2018-11-25,114257,EMP-00216
+EMP-00552,Jack Chen,Assistant Manager,Stores,STR-0016,Store,Casual,2015-03-30,113763,EMP-00071
+EMP-00553,Noah Kim,Assistant Manager,Stores,STR-0016,Store,Part-Time,2021-05-18,58842,EMP-00477
+EMP-00554,Oliver Smith,Assistant Manager,Stores,STR-0016,Store,Part-Time,2016-03-30,122572,EMP-00224
+EMP-00555,Oliver Lee,Assistant Manager,Stores,STR-0016,Store,Casual,2023-03-27,102409,EMP-00122
+EMP-00556,James Lee,Department Lead,Stores,STR-0016,Store,Part-Time,2025-03-27,50473,EMP-00498
+EMP-00557,Liam Robinson,Department Lead,Stores,STR-0016,Store,Casual,2016-06-03,68279,EMP-00208
+EMP-00558,Olivia Brown,Department Lead,Stores,STR-0016,Store,Full-Time,2022-06-27,79532,EMP-00080
+EMP-00559,Mia Jones,Department Lead,Stores,STR-0016,Store,Casual,2018-09-04,87663,EMP-00552
+EMP-00560,Oliver Murphy,Department Lead,Stores,STR-0016,Store,Part-Time,2020-02-19,111252,EMP-00153
+EMP-00561,James Wilson,Checkout Operator,Stores,STR-0016,Store,Part-Time,2021-07-07,74255,EMP-00306
+EMP-00562,Ruby Smith,Checkout Operator,Stores,STR-0016,Store,Full-Time,2019-02-09,74031,EMP-00349
+EMP-00563,William Walker,Checkout Operator,Stores,STR-0016,Store,Part-Time,2020-07-21,92151,EMP-00520
+EMP-00564,Lucas Robinson,Stocker,Stores,STR-0016,Store,Part-Time,2017-01-19,53462,EMP-00366
+EMP-00565,Lucas Garcia,Stocker,Stores,STR-0016,Store,Part-Time,2024-02-23,70217,EMP-00400
+EMP-00566,Ethan Singh,Baker,Stores,STR-0016,Store,Full-Time,2015-08-01,100593,EMP-00245
+EMP-00567,Lucas Jones,Butcher,Stores,STR-0016,Store,Casual,2015-01-18,87229,EMP-00561
+EMP-00568,Grace Brown,Butcher,Stores,STR-0016,Store,Full-Time,2022-07-14,98350,EMP-00366
+EMP-00569,Liam Jones,Butcher,Stores,STR-0016,Store,Part-Time,2017-01-04,101913,EMP-00564
+EMP-00570,Oliver Jones,Butcher,Stores,STR-0016,Store,Part-Time,2024-04-07,105662,EMP-00266
+EMP-00571,Charlotte Kim,Sales Associate,Sales,STR-0016,Store,Casual,2021-10-18,71094,EMP-00131
+EMP-00572,Isla Garcia,Sales Associate,Sales,STR-0016,Store,Casual,2019-02-07,55988,EMP-00350
+EMP-00573,William Nguyen,Sales Associate,Sales,STR-0016,Store,Part-Time,2017-05-12,93390,EMP-00314
+EMP-00574,Liam Wilson,Sales Associate,Sales,STR-0016,Store,Full-Time,2020-03-02,49448,EMP-00170
+EMP-00575,Isla Murphy,Promotions Lead,Sales,STR-0016,Store,Part-Time,2018-10-21,59800,EMP-00005
+EMP-00576,Liam Nguyen,Promotions Lead,Sales,STR-0016,Store,Casual,2023-04-30,51180,EMP-00149
+EMP-00577,Henry Kim,Customer Service,Sales,STR-0016,Store,Full-Time,2021-04-01,91727,EMP-00281
+EMP-00578,Henry Walker,Customer Service,Sales,STR-0016,Store,Part-Time,2015-01-08,79388,EMP-00511
+EMP-00579,Grace Murphy,Store Manager,Stores,STR-0017,Store,Full-Time,2016-09-01,128983,EMP-00152
+EMP-00580,James Patel,Store Manager,Stores,STR-0017,Store,Casual,2016-03-18,80405,EMP-00515
+EMP-00581,Noah Williams,Assistant Manager,Stores,STR-0017,Store,Full-Time,2020-03-29,73062,EMP-00434
+EMP-00582,Grace Taylor,Department Lead,Stores,STR-0017,Store,Casual,2017-09-02,101974,EMP-00405
+EMP-00583,Noah Robinson,Department Lead,Stores,STR-0017,Store,Casual,2024-01-05,83560,EMP-00478
+EMP-00584,Mia Wilson,Department Lead,Stores,STR-0017,Store,Part-Time,2023-06-13,106310,EMP-00206
+EMP-00585,Henry Garcia,Department Lead,Stores,STR-0017,Store,Part-Time,2021-07-02,92944,EMP-00203
+EMP-00586,William Nguyen,Department Lead,Stores,STR-0017,Store,Full-Time,2017-06-25,67731,EMP-00386
+EMP-00587,Grace Brown,Department Lead,Stores,STR-0017,Store,Full-Time,2019-07-22,117312,EMP-00479
+EMP-00588,Mia Smith,Checkout Operator,Stores,STR-0017,Store,Casual,2019-04-13,45872,EMP-00303
+EMP-00589,William Brown,Checkout Operator,Stores,STR-0017,Store,Full-Time,2016-08-03,96704,EMP-00342
+EMP-00590,Olivia Jones,Checkout Operator,Stores,STR-0017,Store,Part-Time,2018-04-28,123531,EMP-00382
+EMP-00591,Ava Brown,Checkout Operator,Stores,STR-0017,Store,Casual,2021-03-08,87959,EMP-00578
+EMP-00592,Olivia Garcia,Checkout Operator,Stores,STR-0017,Store,Part-Time,2019-12-05,92843,EMP-00433
+EMP-00593,Lucas Garcia,Stocker,Stores,STR-0017,Store,Full-Time,2016-12-10,105035,EMP-00574
+EMP-00594,Olivia Brown,Baker,Stores,STR-0017,Store,Full-Time,2016-11-29,108766,EMP-00105
+EMP-00595,Olivia Singh,Baker,Stores,STR-0017,Store,Full-Time,2016-06-12,125860,EMP-00271
+EMP-00596,James Jones,Baker,Stores,STR-0017,Store,Full-Time,2018-09-26,101508,EMP-00589
+EMP-00597,William Walker,Baker,Stores,STR-0017,Store,Part-Time,2018-04-22,68324,EMP-00589
+EMP-00598,James Nguyen,Baker,Stores,STR-0017,Store,Full-Time,2018-08-06,66910,EMP-00554
+EMP-00599,Jack Walker,Baker,Stores,STR-0017,Store,Full-Time,2015-12-30,90348,EMP-00291
+EMP-00600,Ethan Taylor,Butcher,Stores,STR-0017,Store,Casual,2025-09-30,97294,EMP-00012
+EMP-00601,Ethan Chen,Sales Associate,Sales,STR-0017,Store,Part-Time,2016-08-28,65801,EMP-00404
+EMP-00602,Mia Smith,Promotions Lead,Sales,STR-0017,Store,Full-Time,2019-09-05,48104,EMP-00094
+EMP-00603,Henry Kim,Customer Service,Sales,STR-0017,Store,Part-Time,2022-05-04,50310,EMP-00363
+EMP-00604,Noah Patel,Store Manager,Stores,STR-0018,Store,Casual,2024-05-23,115883,EMP-00276
+EMP-00605,Liam Nguyen,Store Manager,Stores,STR-0018,Store,Casual,2022-07-31,70346,EMP-00261
+EMP-00606,Grace Patel,Store Manager,Stores,STR-0018,Store,Casual,2025-02-14,93352,EMP-00438
+EMP-00607,Henry Brown,Store Manager,Stores,STR-0018,Store,Casual,2016-09-28,104224,EMP-00542
+EMP-00608,Charlotte Williams,Store Manager,Stores,STR-0018,Store,Full-Time,2022-04-27,55746,EMP-00526
+EMP-00609,Charlotte Jones,Store Manager,Stores,STR-0018,Store,Part-Time,2025-10-04,105529,EMP-00441
+EMP-00610,Charlotte Nguyen,Assistant Manager,Stores,STR-0018,Store,Full-Time,2023-08-23,91760,EMP-00194
+EMP-00611,Ruby Wilson,Assistant Manager,Stores,STR-0018,Store,Part-Time,2019-05-13,106865,EMP-00410
+EMP-00612,Henry Lee,Department Lead,Stores,STR-0018,Store,Full-Time,2019-04-14,119371,EMP-00572
+EMP-00613,Ethan Williams,Department Lead,Stores,STR-0018,Store,Part-Time,2015-05-15,111389,EMP-00013
+EMP-00614,Grace Kim,Department Lead,Stores,STR-0018,Store,Full-Time,2019-07-26,71869,EMP-00057
+EMP-00615,Noah Taylor,Department Lead,Stores,STR-0018,Store,Part-Time,2024-09-05,61877,EMP-00235
+EMP-00616,Lucas Jones,Department Lead,Stores,STR-0018,Store,Part-Time,2023-05-19,53001,EMP-00317
+EMP-00617,Sophia Garcia,Department Lead,Stores,STR-0018,Store,Full-Time,2024-03-10,97720,EMP-00081
+EMP-00618,James Taylor,Checkout Operator,Stores,STR-0018,Store,Part-Time,2024-04-29,51034,EMP-00191
+EMP-00619,Amelia Robinson,Checkout Operator,Stores,STR-0018,Store,Casual,2019-07-16,65238,EMP-00161
+EMP-00620,James Robinson,Checkout Operator,Stores,STR-0018,Store,Full-Time,2025-10-23,79149,EMP-00326
+EMP-00621,Olivia Kim,Checkout Operator,Stores,STR-0018,Store,Casual,2015-09-30,96861,EMP-00505
+EMP-00622,Oliver Lee,Checkout Operator,Stores,STR-0018,Store,Full-Time,2025-11-08,65352,EMP-00325
+EMP-00623,Henry Walker,Stocker,Stores,STR-0018,Store,Casual,2020-02-04,129292,EMP-00530
+EMP-00624,Ava Smith,Stocker,Stores,STR-0018,Store,Casual,2019-08-02,117604,EMP-00322
+EMP-00625,Amelia Jones,Stocker,Stores,STR-0018,Store,Full-Time,2019-07-30,78317,EMP-00527
+EMP-00626,Mia Brown,Baker,Stores,STR-0018,Store,Full-Time,2020-06-25,55459,EMP-00344
+EMP-00627,Oliver Walker,Butcher,Stores,STR-0018,Store,Full-Time,2025-03-25,102100,EMP-00201
+EMP-00628,Ethan Robinson,Butcher,Stores,STR-0018,Store,Full-Time,2016-07-04,48434,EMP-00266
+EMP-00629,Ava Chen,Butcher,Stores,STR-0018,Store,Part-Time,2021-04-30,92891,EMP-00495
+EMP-00630,Henry Brown,Butcher,Stores,STR-0018,Store,Part-Time,2020-05-26,89270,EMP-00181
+EMP-00631,Lucas Singh,Sales Associate,Sales,STR-0018,Store,Casual,2020-12-25,62733,EMP-00413
+EMP-00632,Mia Jones,Promotions Lead,Sales,STR-0018,Store,Casual,2024-07-05,72482,EMP-00393
+EMP-00633,Lucas Smith,Promotions Lead,Sales,STR-0018,Store,Casual,2017-05-26,92625,EMP-00306
+EMP-00634,Jack Kim,Promotions Lead,Sales,STR-0018,Store,Full-Time,2018-05-12,66676,EMP-00579
+EMP-00635,Henry Singh,Promotions Lead,Sales,STR-0018,Store,Part-Time,2016-01-11,53594,EMP-00197
+EMP-00636,Liam Nguyen,Customer Service,Sales,STR-0018,Store,Part-Time,2019-12-08,69967,EMP-00143
+EMP-00637,Liam Nguyen,Customer Service,Sales,STR-0018,Store,Casual,2019-12-07,65287,EMP-00083
+EMP-00638,James Brown,Store Manager,Stores,STR-0019,Store,Full-Time,2015-12-27,110489,EMP-00398
+EMP-00639,Liam Walker,Store Manager,Stores,STR-0019,Store,Casual,2016-04-12,68052,EMP-00309
+EMP-00640,Jack Kim,Store Manager,Stores,STR-0019,Store,Full-Time,2023-09-04,54691,EMP-00253
+EMP-00641,Isla Murphy,Store Manager,Stores,STR-0019,Store,Casual,2022-08-14,59309,EMP-00098
+EMP-00642,Mia Williams,Assistant Manager,Stores,STR-0019,Store,Casual,2015-08-22,75684,EMP-00620
+EMP-00643,Mia Murphy,Department Lead,Stores,STR-0019,Store,Casual,2022-10-28,61114,EMP-00525
+EMP-00644,Isla Robinson,Department Lead,Stores,STR-0019,Store,Full-Time,2021-09-29,94170,EMP-00235
+EMP-00645,Liam Kim,Checkout Operator,Stores,STR-0019,Store,Full-Time,2018-03-20,106066,EMP-00435
+EMP-00646,Ruby Wilson,Checkout Operator,Stores,STR-0019,Store,Casual,2025-09-01,111661,EMP-00487
+EMP-00647,Henry Kim,Checkout Operator,Stores,STR-0019,Store,Casual,2017-10-28,63633,EMP-00149
+EMP-00648,Ethan Garcia,Checkout Operator,Stores,STR-0019,Store,Full-Time,2020-07-27,118334,EMP-00065
+EMP-00649,Henry Taylor,Stocker,Stores,STR-0019,Store,Casual,2016-06-11,114061,EMP-00419
+EMP-00650,Jack Walker,Stocker,Stores,STR-0019,Store,Casual,2017-03-09,114589,EMP-00424
+EMP-00651,Isla Nguyen,Stocker,Stores,STR-0019,Store,Casual,2024-12-27,108165,EMP-00080
+EMP-00652,Mia Smith,Stocker,Stores,STR-0019,Store,Casual,2019-07-15,70326,EMP-00013
+EMP-00653,Sophia Kim,Stocker,Stores,STR-0019,Store,Casual,2025-01-23,50677,EMP-00058
+EMP-00654,Grace Lee,Baker,Stores,STR-0019,Store,Casual,2015-10-17,93635,EMP-00317
+EMP-00655,Charlotte Patel,Baker,Stores,STR-0019,Store,Casual,2015-09-29,119918,EMP-00528
+EMP-00656,Lucas Murphy,Baker,Stores,STR-0019,Store,Part-Time,2016-07-19,88365,EMP-00119
+EMP-00657,Henry Jones,Baker,Stores,STR-0019,Store,Casual,2022-06-11,56495,EMP-00333
+EMP-00658,Ruby Walker,Butcher,Stores,STR-0019,Store,Part-Time,2025-10-16,61710,EMP-00158
+EMP-00659,Mia Walker,Sales Associate,Sales,STR-0019,Store,Part-Time,2019-05-01,49838,EMP-00625
+EMP-00660,Ethan Walker,Sales Associate,Sales,STR-0019,Store,Casual,2020-12-28,67324,EMP-00641
+EMP-00661,Liam Williams,Sales Associate,Sales,STR-0019,Store,Part-Time,2023-07-18,79439,EMP-00551
+EMP-00662,Charlotte Robinson,Sales Associate,Sales,STR-0019,Store,Part-Time,2023-11-24,56998,EMP-00466
+EMP-00663,Mia Kim,Promotions Lead,Sales,STR-0019,Store,Casual,2025-08-13,83890,EMP-00203
+EMP-00664,Jack Garcia,Promotions Lead,Sales,STR-0019,Store,Part-Time,2015-01-23,60209,EMP-00283
+EMP-00665,Sophia Chen,Promotions Lead,Sales,STR-0019,Store,Casual,2020-03-21,60210,EMP-00182
+EMP-00666,Olivia Wilson,Promotions Lead,Sales,STR-0019,Store,Part-Time,2020-01-22,82165,EMP-00310
+EMP-00667,Lucas Nguyen,Customer Service,Sales,STR-0019,Store,Full-Time,2016-07-29,59928,EMP-00157
+EMP-00668,Jack Robinson,Customer Service,Sales,STR-0019,Store,Casual,2020-10-14,68390,EMP-00228
+EMP-00669,Henry Robinson,Customer Service,Sales,STR-0019,Store,Casual,2024-12-02,72363,EMP-00598
+EMP-00670,Mia Wilson,Store Manager,Stores,STR-0020,Store,Full-Time,2018-03-08,124727,EMP-00016
+EMP-00671,Mia Garcia,Store Manager,Stores,STR-0020,Store,Full-Time,2023-04-25,81455,EMP-00275
+EMP-00672,Amelia Walker,Store Manager,Stores,STR-0020,Store,Part-Time,2015-03-21,120986,EMP-00094
+EMP-00673,Mia Williams,Store Manager,Stores,STR-0020,Store,Full-Time,2022-08-28,98024,EMP-00189
+EMP-00674,Sophia Chen,Assistant Manager,Stores,STR-0020,Store,Casual,2023-10-23,81571,EMP-00253
+EMP-00675,Isla Wilson,Assistant Manager,Stores,STR-0020,Store,Full-Time,2020-04-17,81244,EMP-00270
+EMP-00676,Oliver Chen,Assistant Manager,Stores,STR-0020,Store,Full-Time,2024-06-08,45017,EMP-00600
+EMP-00677,James Patel,Assistant Manager,Stores,STR-0020,Store,Full-Time,2020-03-12,96735,EMP-00457
+EMP-00678,Mia Williams,Department Lead,Stores,STR-0020,Store,Casual,2016-05-01,55691,EMP-00637
+EMP-00679,Mia Wilson,Checkout Operator,Stores,STR-0020,Store,Casual,2018-01-30,57332,EMP-00675
+EMP-00680,William Lee,Checkout Operator,Stores,STR-0020,Store,Casual,2016-02-07,109271,EMP-00412
+EMP-00681,Amelia Patel,Checkout Operator,Stores,STR-0020,Store,Part-Time,2021-09-11,99166,EMP-00063
+EMP-00682,Grace Walker,Checkout Operator,Stores,STR-0020,Store,Casual,2020-12-31,75545,EMP-00123
+EMP-00683,Liam Chen,Stocker,Stores,STR-0020,Store,Full-Time,2024-10-23,50416,EMP-00474
+EMP-00684,Sophia Murphy,Stocker,Stores,STR-0020,Store,Casual,2023-11-25,56383,EMP-00541
+EMP-00685,Lucas Kim,Stocker,Stores,STR-0020,Store,Full-Time,2022-02-20,98067,EMP-00564
+EMP-00686,William Walker,Stocker,Stores,STR-0020,Store,Part-Time,2025-08-14,56794,EMP-00603
+EMP-00687,Oliver Chen,Stocker,Stores,STR-0020,Store,Casual,2020-03-30,63349,EMP-00485
+EMP-00688,Ava Taylor,Baker,Stores,STR-0020,Store,Part-Time,2020-01-02,93894,EMP-00386
+EMP-00689,Ruby Chen,Baker,Stores,STR-0020,Store,Casual,2017-11-08,57295,EMP-00123
+EMP-00690,Jack Lee,Baker,Stores,STR-0020,Store,Part-Time,2020-06-14,65384,EMP-00101
+EMP-00691,Liam Robinson,Baker,Stores,STR-0020,Store,Part-Time,2020-11-18,76772,EMP-00138
+EMP-00692,Mia Taylor,Butcher,Stores,STR-0020,Store,Full-Time,2022-12-31,69548,EMP-00062
+EMP-00693,Ethan Williams,Butcher,Stores,STR-0020,Store,Casual,2015-01-12,114313,EMP-00192
+EMP-00694,Lucas Walker,Butcher,Stores,STR-0020,Store,Full-Time,2017-10-01,61156,EMP-00095
+EMP-00695,William Patel,Butcher,Stores,STR-0020,Store,Casual,2022-11-05,52331,EMP-00181
+EMP-00696,Olivia Taylor,Butcher,Stores,STR-0020,Store,Casual,2023-09-30,103791,EMP-00023
+EMP-00697,Amelia Murphy,Sales Associate,Sales,STR-0020,Store,Part-Time,2015-12-17,49052,EMP-00543
+EMP-00698,Sophia Chen,Sales Associate,Sales,STR-0020,Store,Part-Time,2019-11-15,60914,EMP-00305
+EMP-00699,Amelia Brown,Promotions Lead,Sales,STR-0020,Store,Full-Time,2018-02-19,77626,EMP-00120
+EMP-00700,Grace Chen,Customer Service,Sales,STR-0020,Store,Casual,2024-09-16,87732,EMP-00044
+EMP-00701,Jack Singh,Store Manager,Stores,STR-0021,Store,Full-Time,2020-01-06,103019,EMP-00482
+EMP-00702,Liam Jones,Store Manager,Stores,STR-0021,Store,Full-Time,2021-04-12,53938,EMP-00690
+EMP-00703,Jack Wilson,Store Manager,Stores,STR-0021,Store,Full-Time,2018-01-09,102716,EMP-00538
+EMP-00704,Isla Jones,Store Manager,Stores,STR-0021,Store,Part-Time,2025-08-25,49218,EMP-00016
+EMP-00705,Ruby Robinson,Store Manager,Stores,STR-0021,Store,Part-Time,2016-02-09,80164,EMP-00216
+EMP-00706,Charlotte Walker,Store Manager,Stores,STR-0021,Store,Full-Time,2016-11-10,109947,EMP-00317
+EMP-00707,Ethan Robinson,Assistant Manager,Stores,STR-0021,Store,Casual,2017-11-19,101617,EMP-00534
+EMP-00708,Ethan Robinson,Department Lead,Stores,STR-0021,Store,Full-Time,2024-06-29,100116,EMP-00506
+EMP-00709,Olivia Nguyen,Department Lead,Stores,STR-0021,Store,Casual,2023-08-18,94585,EMP-00702
+EMP-00710,Grace Wilson,Department Lead,Stores,STR-0021,Store,Part-Time,2020-10-24,56286,EMP-00620
+EMP-00711,Isla Murphy,Checkout Operator,Stores,STR-0021,Store,Casual,2022-06-07,90288,EMP-00049
+EMP-00712,William Robinson,Stocker,Stores,STR-0021,Store,Full-Time,2017-05-31,64154,EMP-00463
+EMP-00713,Noah Taylor,Stocker,Stores,STR-0021,Store,Full-Time,2023-08-22,46186,EMP-00083
+EMP-00714,Ruby Brown,Stocker,Stores,STR-0021,Store,Casual,2016-02-22,112977,EMP-00346
+EMP-00715,Noah Chen,Stocker,Stores,STR-0021,Store,Casual,2023-11-11,127092,EMP-00101
+EMP-00716,Olivia Smith,Baker,Stores,STR-0021,Store,Part-Time,2015-07-10,98483,EMP-00514
+EMP-00717,Grace Garcia,Baker,Stores,STR-0021,Store,Casual,2019-07-24,47638,EMP-00666
+EMP-00718,Olivia Smith,Baker,Stores,STR-0021,Store,Casual,2024-10-17,127823,EMP-00426
+EMP-00719,William Brown,Baker,Stores,STR-0021,Store,Casual,2016-01-17,92648,EMP-00417
+EMP-00720,Charlotte Singh,Baker,Stores,STR-0021,Store,Full-Time,2023-03-17,68261,EMP-00148
+EMP-00721,Ethan Williams,Butcher,Stores,STR-0021,Store,Full-Time,2020-02-25,58241,EMP-00518
+EMP-00722,Olivia Lee,Sales Associate,Sales,STR-0021,Store,Full-Time,2020-12-15,76936,EMP-00153
+EMP-00723,Liam Patel,Sales Associate,Sales,STR-0021,Store,Part-Time,2020-06-30,55073,EMP-00281
+EMP-00724,Oliver Brown,Promotions Lead,Sales,STR-0021,Store,Casual,2025-11-06,78388,EMP-00110
+EMP-00725,Charlotte Kim,Promotions Lead,Sales,STR-0021,Store,Casual,2024-08-21,58252,EMP-00500
+EMP-00726,Ava Chen,Customer Service,Sales,STR-0021,Store,Part-Time,2024-06-30,71457,EMP-00176
+EMP-00727,Lucas Wilson,Store Manager,Stores,STR-0022,Store,Full-Time,2019-06-24,95723,EMP-00238
+EMP-00728,William Smith,Assistant Manager,Stores,STR-0022,Store,Casual,2025-03-02,67983,EMP-00352
+EMP-00729,Grace Murphy,Assistant Manager,Stores,STR-0022,Store,Full-Time,2023-01-10,126836,EMP-00466
+EMP-00730,Sophia Lee,Assistant Manager,Stores,STR-0022,Store,Casual,2023-08-14,109980,EMP-00198
+EMP-00731,Olivia Murphy,Assistant Manager,Stores,STR-0022,Store,Full-Time,2016-06-03,97242,EMP-00098
+EMP-00732,Ethan Patel,Department Lead,Stores,STR-0022,Store,Part-Time,2020-09-04,91155,EMP-00376
+EMP-00733,Ruby Wilson,Department Lead,Stores,STR-0022,Store,Part-Time,2025-05-19,79871,EMP-00085
+EMP-00734,Sophia Chen,Department Lead,Stores,STR-0022,Store,Full-Time,2023-06-27,129556,EMP-00531
+EMP-00735,Amelia Smith,Department Lead,Stores,STR-0022,Store,Casual,2022-12-21,121579,EMP-00593
+EMP-00736,Amelia Robinson,Department Lead,Stores,STR-0022,Store,Full-Time,2020-11-08,91127,EMP-00731
+EMP-00737,Oliver Singh,Department Lead,Stores,STR-0022,Store,Casual,2018-01-03,74215,EMP-00530
+EMP-00738,Ava Garcia,Checkout Operator,Stores,STR-0022,Store,Full-Time,2015-11-06,120516,EMP-00673
+EMP-00739,Liam Walker,Checkout Operator,Stores,STR-0022,Store,Casual,2015-10-22,78120,EMP-00664
+EMP-00740,Liam Brown,Checkout Operator,Stores,STR-0022,Store,Full-Time,2020-04-04,83222,EMP-00125
+EMP-00741,Grace Lee,Checkout Operator,Stores,STR-0022,Store,Part-Time,2023-07-10,46426,EMP-00270
+EMP-00742,Jack Lee,Checkout Operator,Stores,STR-0022,Store,Part-Time,2020-02-07,111072,EMP-00600
+EMP-00743,Oliver Smith,Checkout Operator,Stores,STR-0022,Store,Casual,2021-06-28,84847,EMP-00617
+EMP-00744,Noah Robinson,Stocker,Stores,STR-0022,Store,Casual,2016-01-11,112667,EMP-00417
+EMP-00745,Grace Brown,Stocker,Stores,STR-0022,Store,Part-Time,2025-01-23,65047,EMP-00102
+EMP-00746,Ruby Smith,Stocker,Stores,STR-0022,Store,Part-Time,2023-09-06,103713,EMP-00450
+EMP-00747,Mia Murphy,Baker,Stores,STR-0022,Store,Part-Time,2025-09-01,114796,EMP-00491
+EMP-00748,Olivia Singh,Butcher,Stores,STR-0022,Store,Full-Time,2023-09-05,71145,EMP-00731
+EMP-00749,Olivia Jones,Butcher,Stores,STR-0022,Store,Casual,2024-02-20,99646,EMP-00409
+EMP-00750,Ethan Nguyen,Butcher,Stores,STR-0022,Store,Part-Time,2020-03-31,60081,EMP-00509
+EMP-00751,Jack Murphy,Butcher,Stores,STR-0022,Store,Full-Time,2022-09-30,108683,EMP-00677
+EMP-00752,Oliver Nguyen,Sales Associate,Sales,STR-0022,Store,Casual,2020-04-06,61642,EMP-00313
+EMP-00753,Lucas Garcia,Promotions Lead,Sales,STR-0022,Store,Part-Time,2024-05-06,70051,EMP-00563
+EMP-00754,Ava Chen,Promotions Lead,Sales,STR-0022,Store,Casual,2018-08-14,88993,EMP-00692
+EMP-00755,Olivia Singh,Promotions Lead,Sales,STR-0022,Store,Full-Time,2019-05-08,84852,EMP-00352
+EMP-00756,Jack Wilson,Promotions Lead,Sales,STR-0022,Store,Full-Time,2017-06-17,91364,EMP-00124
+EMP-00757,Lucas Walker,Customer Service,Sales,STR-0022,Store,Part-Time,2021-01-08,50152,EMP-00712
+EMP-00758,Ava Robinson,Customer Service,Sales,STR-0022,Store,Part-Time,2019-02-04,93243,EMP-00537
+EMP-00759,Jack Brown,Warehouse Manager,Distribution,WH-NSW,Warehouse,Full-Time,2022-07-28,136706,EMP-00437
+EMP-00760,Amelia Williams,Warehouse Manager,Distribution,WH-NSW,Warehouse,Casual,2024-07-16,102568,EMP-00301
+EMP-00761,Lucas Lee,Warehouse Manager,Distribution,WH-NSW,Warehouse,Part-Time,2015-10-07,105421,EMP-00525
+EMP-00762,Ruby Chen,Warehouse Manager,Distribution,WH-NSW,Warehouse,Full-Time,2017-02-25,115110,EMP-00696
+EMP-00763,Ava Lee,Warehouse Manager,Distribution,WH-NSW,Warehouse,Full-Time,2014-09-20,96775,EMP-00760
+EMP-00764,Ethan Brown,Warehouse Manager,Distribution,WH-NSW,Warehouse,Part-Time,2024-03-27,128463,EMP-00030
+EMP-00765,Sophia Murphy,Warehouse Manager,Distribution,WH-NSW,Warehouse,Part-Time,2016-08-30,79083,EMP-00081
+EMP-00766,Isla Williams,Picker,Distribution,WH-NSW,Warehouse,Casual,2024-01-19,136960,EMP-00193
+EMP-00767,Grace Robinson,Picker,Distribution,WH-NSW,Warehouse,Full-Time,2014-05-29,101291,EMP-00074
+EMP-00768,Liam Robinson,Picker,Distribution,WH-NSW,Warehouse,Casual,2025-06-10,67511,EMP-00465
+EMP-00769,Sophia Lee,Picker,Distribution,WH-NSW,Warehouse,Casual,2023-02-17,97708,EMP-00195
+EMP-00770,Charlotte Brown,Packer,Distribution,WH-NSW,Warehouse,Casual,2014-09-10,108158,EMP-00678
+EMP-00771,Amelia Smith,Packer,Distribution,WH-NSW,Warehouse,Part-Time,2014-12-06,126284,EMP-00164
+EMP-00772,Isla Robinson,Packer,Distribution,WH-NSW,Warehouse,Full-Time,2025-11-30,61018,EMP-00256
+EMP-00773,William Brown,Packer,Distribution,WH-NSW,Warehouse,Part-Time,2025-09-20,94091,EMP-00705
+EMP-00774,Lucas Taylor,Forklift Operator,Distribution,WH-NSW,Warehouse,Full-Time,2021-03-13,99275,EMP-00424
+EMP-00775,Liam Walker,Forklift Operator,Distribution,WH-NSW,Warehouse,Full-Time,2023-02-18,66475,EMP-00565
+EMP-00776,Amelia Taylor,Forklift Operator,Distribution,WH-NSW,Warehouse,Casual,2014-03-31,76643,EMP-00534
+EMP-00777,Ethan Patel,Forklift Operator,Distribution,WH-NSW,Warehouse,Casual,2021-12-12,65085,EMP-00178
+EMP-00778,Noah Singh,Forklift Operator,Distribution,WH-NSW,Warehouse,Part-Time,2025-08-21,58830,EMP-00080
+EMP-00779,Ethan Patel,Forklift Operator,Distribution,WH-NSW,Warehouse,Part-Time,2016-12-30,122227,EMP-00331
+EMP-00780,Ruby Patel,Forklift Operator,Distribution,WH-NSW,Warehouse,Part-Time,2022-03-01,58629,EMP-00408
+EMP-00781,Jack Brown,Forklift Operator,Distribution,WH-NSW,Warehouse,Casual,2022-08-28,78165,EMP-00768
+EMP-00782,Noah Lee,Inventory Analyst,Distribution,WH-NSW,Warehouse,Part-Time,2023-07-05,118473,EMP-00227
+EMP-00783,Olivia Jones,Inventory Analyst,Distribution,WH-NSW,Warehouse,Part-Time,2016-03-07,92377,EMP-00023
+EMP-00784,Olivia Kim,Inventory Analyst,Distribution,WH-NSW,Warehouse,Full-Time,2024-09-17,108165,EMP-00585
+EMP-00785,Mia Walker,Inventory Analyst,Distribution,WH-NSW,Warehouse,Casual,2026-03-06,92950,EMP-00596
+EMP-00786,Henry Lee,Inventory Analyst,Distribution,WH-NSW,Warehouse,Casual,2017-05-29,92231,EMP-00547
+EMP-00787,Oliver Walker,Fleet Manager,Fleet Management,WH-NSW,Warehouse,Full-Time,2019-12-27,127961,EMP-00212
+EMP-00788,Amelia Wilson,Fleet Manager,Fleet Management,WH-NSW,Warehouse,Full-Time,2017-11-09,67061,EMP-00461
+EMP-00789,Isla Williams,Fleet Manager,Fleet Management,WH-NSW,Warehouse,Full-Time,2014-01-08,118093,EMP-00156
+EMP-00790,Liam Chen,Fleet Manager,Fleet Management,WH-NSW,Warehouse,Casual,2023-10-06,70736,EMP-00150
+EMP-00791,Grace Murphy,Fleet Manager,Fleet Management,WH-NSW,Warehouse,Casual,2018-07-19,71841,EMP-00583
+EMP-00792,Olivia Jones,Driver,Fleet Management,WH-NSW,Warehouse,Casual,2016-09-20,94827,EMP-00414
+EMP-00793,Isla Brown,Driver,Fleet Management,WH-NSW,Warehouse,Casual,2022-03-18,114599,EMP-00600
+EMP-00794,James Murphy,Driver,Fleet Management,WH-NSW,Warehouse,Part-Time,2020-03-23,124080,EMP-00372
+EMP-00795,Olivia Williams,Mechanic,Fleet Management,WH-NSW,Warehouse,Casual,2017-12-04,131233,EMP-00572
+EMP-00796,James Singh,Mechanic,Fleet Management,WH-NSW,Warehouse,Full-Time,2014-08-20,135719,EMP-00759
+EMP-00797,Isla Wilson,Mechanic,Fleet Management,WH-NSW,Warehouse,Casual,2018-01-27,121800,EMP-00203
+EMP-00798,William Robinson,Mechanic,Fleet Management,WH-NSW,Warehouse,Casual,2016-11-02,129003,EMP-00695
+EMP-00799,Sophia Garcia,Mechanic,Fleet Management,WH-NSW,Warehouse,Casual,2017-05-13,65627,EMP-00474
+EMP-00800,Ethan Kim,Mechanic,Fleet Management,WH-NSW,Warehouse,Casual,2020-04-12,137571,EMP-00532
+EMP-00801,Ava Taylor,Route Planner,Fleet Management,WH-NSW,Warehouse,Part-Time,2014-07-02,70662,EMP-00302
+EMP-00802,Isla Smith,Route Planner,Fleet Management,WH-NSW,Warehouse,Casual,2022-01-12,79557,EMP-00257
+EMP-00803,Charlotte Chen,Warehouse Manager,Distribution,WH-VIC,Warehouse,Full-Time,2020-03-08,118162,EMP-00402
+EMP-00804,Grace Murphy,Warehouse Manager,Distribution,WH-VIC,Warehouse,Part-Time,2021-10-09,71306,EMP-00688
+EMP-00805,Charlotte Singh,Picker,Distribution,WH-VIC,Warehouse,Full-Time,2016-11-15,130207,EMP-00336
+EMP-00806,Olivia Murphy,Picker,Distribution,WH-VIC,Warehouse,Casual,2023-10-28,97847,EMP-00386
+EMP-00807,Liam Nguyen,Picker,Distribution,WH-VIC,Warehouse,Casual,2018-10-30,109200,EMP-00358
+EMP-00808,Olivia Wilson,Picker,Distribution,WH-VIC,Warehouse,Casual,2015-08-06,60851,EMP-00182
+EMP-00809,James Brown,Picker,Distribution,WH-VIC,Warehouse,Part-Time,2019-09-28,113869,EMP-00739
+EMP-00810,Ruby Wilson,Picker,Distribution,WH-VIC,Warehouse,Full-Time,2017-07-13,57935,EMP-00620
+EMP-00811,Olivia Nguyen,Picker,Distribution,WH-VIC,Warehouse,Full-Time,2020-07-11,83975,EMP-00086
+EMP-00812,Charlotte Nguyen,Packer,Distribution,WH-VIC,Warehouse,Casual,2015-03-01,78576,EMP-00446
+EMP-00813,Isla Nguyen,Packer,Distribution,WH-VIC,Warehouse,Full-Time,2015-12-15,78399,EMP-00810
+EMP-00814,Jack Nguyen,Packer,Distribution,WH-VIC,Warehouse,Full-Time,2025-05-21,68018,EMP-00721
+EMP-00815,Henry Chen,Packer,Distribution,WH-VIC,Warehouse,Full-Time,2017-02-12,73984,EMP-00326
+EMP-00816,Lucas Singh,Packer,Distribution,WH-VIC,Warehouse,Full-Time,2025-08-07,75843,EMP-00135
+EMP-00817,Lucas Nguyen,Packer,Distribution,WH-VIC,Warehouse,Full-Time,2025-06-04,120915,EMP-00422
+EMP-00818,Henry Lee,Forklift Operator,Distribution,WH-VIC,Warehouse,Full-Time,2020-03-30,108862,EMP-00129
+EMP-00819,Mia Nguyen,Forklift Operator,Distribution,WH-VIC,Warehouse,Full-Time,2021-06-17,120090,EMP-00074
+EMP-00820,Ethan Garcia,Forklift Operator,Distribution,WH-VIC,Warehouse,Full-Time,2026-04-11,71324,EMP-00357
+EMP-00821,Mia Taylor,Forklift Operator,Distribution,WH-VIC,Warehouse,Casual,2015-07-11,124665,EMP-00054
+EMP-00822,Ava Nguyen,Forklift Operator,Distribution,WH-VIC,Warehouse,Part-Time,2024-05-31,124219,EMP-00592
+EMP-00823,Ruby Smith,Forklift Operator,Distribution,WH-VIC,Warehouse,Full-Time,2022-01-14,110180,EMP-00284
+EMP-00824,Oliver Taylor,Forklift Operator,Distribution,WH-VIC,Warehouse,Part-Time,2025-01-09,86551,EMP-00235
+EMP-00825,Amelia Nguyen,Forklift Operator,Distribution,WH-VIC,Warehouse,Casual,2023-07-14,113900,EMP-00241
+EMP-00826,Ava Jones,Inventory Analyst,Distribution,WH-VIC,Warehouse,Full-Time,2024-11-30,111886,EMP-00103
+EMP-00827,Amelia Kim,Inventory Analyst,Distribution,WH-VIC,Warehouse,Full-Time,2024-07-10,89614,EMP-00044
+EMP-00828,Ethan Taylor,Inventory Analyst,Distribution,WH-VIC,Warehouse,Part-Time,2014-11-15,83144,EMP-00627
+EMP-00829,Sophia Jones,Inventory Analyst,Distribution,WH-VIC,Warehouse,Full-Time,2022-02-11,104153,EMP-00062
+EMP-00830,Ethan Robinson,Inventory Analyst,Distribution,WH-VIC,Warehouse,Full-Time,2021-10-17,126016,EMP-00381
+EMP-00831,Amelia Jones,Inventory Analyst,Distribution,WH-VIC,Warehouse,Casual,2022-06-01,109651,EMP-00633
+EMP-00832,Olivia Kim,Inventory Analyst,Distribution,WH-VIC,Warehouse,Full-Time,2025-10-19,134037,EMP-00219
+EMP-00833,Mia Patel,Inventory Analyst,Distribution,WH-VIC,Warehouse,Casual,2026-01-17,117668,EMP-00740
+EMP-00834,Ethan Smith,Fleet Manager,Fleet Management,WH-VIC,Warehouse,Casual,2025-02-25,115387,EMP-00570
+EMP-00835,Sophia Robinson,Fleet Manager,Fleet Management,WH-VIC,Warehouse,Full-Time,2025-11-14,106703,EMP-00715
+EMP-00836,Mia Brown,Driver,Fleet Management,WH-VIC,Warehouse,Full-Time,2021-02-20,96901,EMP-00350
+EMP-00837,Jack Chen,Driver,Fleet Management,WH-VIC,Warehouse,Part-Time,2019-07-17,74408,EMP-00590
+EMP-00838,Ava Walker,Driver,Fleet Management,WH-VIC,Warehouse,Casual,2020-11-28,112811,EMP-00104
+EMP-00839,Amelia Murphy,Driver,Fleet Management,WH-VIC,Warehouse,Part-Time,2021-04-16,64887,EMP-00362
+EMP-00840,Olivia Taylor,Mechanic,Fleet Management,WH-VIC,Warehouse,Casual,2015-07-21,104281,EMP-00623
+EMP-00841,Henry Robinson,Mechanic,Fleet Management,WH-VIC,Warehouse,Part-Time,2020-08-07,95558,EMP-00758
+EMP-00842,Noah Chen,Mechanic,Fleet Management,WH-VIC,Warehouse,Casual,2022-08-13,69180,EMP-00243
+EMP-00843,William Brown,Route Planner,Fleet Management,WH-VIC,Warehouse,Casual,2025-06-20,99423,EMP-00143
+EMP-00844,Ethan Williams,Route Planner,Fleet Management,WH-VIC,Warehouse,Full-Time,2016-07-28,60165,EMP-00246
+EMP-00845,Isla Nguyen,Warehouse Manager,Distribution,WH-QLD,Warehouse,Full-Time,2022-04-10,139758,EMP-00476
+EMP-00846,Noah Wilson,Warehouse Manager,Distribution,WH-QLD,Warehouse,Part-Time,2025-08-21,55795,EMP-00240
+EMP-00847,Ava Kim,Warehouse Manager,Distribution,WH-QLD,Warehouse,Part-Time,2014-07-27,120757,EMP-00430
+EMP-00848,Ethan Nguyen,Warehouse Manager,Distribution,WH-QLD,Warehouse,Casual,2018-05-15,124058,EMP-00460
+EMP-00849,Grace Wilson,Warehouse Manager,Distribution,WH-QLD,Warehouse,Full-Time,2016-05-29,88090,EMP-00314
+EMP-00850,Henry Chen,Warehouse Manager,Distribution,WH-QLD,Warehouse,Part-Time,2025-12-10,80868,EMP-00509
+EMP-00851,James Walker,Warehouse Manager,Distribution,WH-QLD,Warehouse,Casual,2016-09-21,114620,EMP-00842
+EMP-00852,Lucas Taylor,Picker,Distribution,WH-QLD,Warehouse,Full-Time,2022-08-19,129679,EMP-00564
+EMP-00853,Charlotte Robinson,Picker,Distribution,WH-QLD,Warehouse,Casual,2018-11-25,112243,EMP-00560
+EMP-00854,James Walker,Picker,Distribution,WH-QLD,Warehouse,Part-Time,2014-06-07,73322,EMP-00764
+EMP-00855,Olivia Brown,Picker,Distribution,WH-QLD,Warehouse,Casual,2024-07-08,71411,EMP-00513
+EMP-00856,Isla Jones,Packer,Distribution,WH-QLD,Warehouse,Part-Time,2023-08-16,82684,EMP-00137
+EMP-00857,Henry Wilson,Packer,Distribution,WH-QLD,Warehouse,Full-Time,2023-03-13,97809,EMP-00673
+EMP-00858,Liam Patel,Packer,Distribution,WH-QLD,Warehouse,Full-Time,2020-08-24,60457,EMP-00760
+EMP-00859,Ava Kim,Packer,Distribution,WH-QLD,Warehouse,Part-Time,2024-08-27,81553,EMP-00076
+EMP-00860,Sophia Kim,Packer,Distribution,WH-QLD,Warehouse,Part-Time,2017-09-07,93069,EMP-00478
+EMP-00861,Ava Patel,Forklift Operator,Distribution,WH-QLD,Warehouse,Casual,2024-04-07,86517,EMP-00211
+EMP-00862,William Williams,Forklift Operator,Distribution,WH-QLD,Warehouse,Casual,2021-07-20,115218,EMP-00573
+EMP-00863,Olivia Smith,Forklift Operator,Distribution,WH-QLD,Warehouse,Full-Time,2024-05-21,79898,EMP-00693
+EMP-00864,Henry Murphy,Forklift Operator,Distribution,WH-QLD,Warehouse,Part-Time,2016-08-17,107016,EMP-00728
+EMP-00865,William Walker,Forklift Operator,Distribution,WH-QLD,Warehouse,Full-Time,2025-09-01,104097,EMP-00214
+EMP-00866,Noah Kim,Forklift Operator,Distribution,WH-QLD,Warehouse,Full-Time,2026-02-27,57164,EMP-00376
+EMP-00867,Mia Nguyen,Forklift Operator,Distribution,WH-QLD,Warehouse,Full-Time,2019-01-16,100289,EMP-00475
+EMP-00868,Isla Wilson,Forklift Operator,Distribution,WH-QLD,Warehouse,Full-Time,2023-06-15,57061,EMP-00230
+EMP-00869,Mia Wilson,Inventory Analyst,Distribution,WH-QLD,Warehouse,Casual,2015-11-07,107767,EMP-00177
+EMP-00870,Jack Robinson,Inventory Analyst,Distribution,WH-QLD,Warehouse,Part-Time,2016-04-04,78741,EMP-00428
+EMP-00871,Charlotte Walker,Inventory Analyst,Distribution,WH-QLD,Warehouse,Full-Time,2024-08-06,65243,EMP-00542
+EMP-00872,James Lee,Inventory Analyst,Distribution,WH-QLD,Warehouse,Casual,2023-06-10,99881,EMP-00469
+EMP-00873,Ruby Taylor,Inventory Analyst,Distribution,WH-QLD,Warehouse,Part-Time,2015-09-14,85945,EMP-00363
+EMP-00874,Ethan Robinson,Fleet Manager,Fleet Management,WH-QLD,Warehouse,Casual,2016-06-26,60754,EMP-00150
+EMP-00875,Ethan Chen,Fleet Manager,Fleet Management,WH-QLD,Warehouse,Part-Time,2017-03-27,96854,EMP-00216
+EMP-00876,Isla Brown,Fleet Manager,Fleet Management,WH-QLD,Warehouse,Casual,2017-08-03,79091,EMP-00694
+EMP-00877,Ava Brown,Driver,Fleet Management,WH-QLD,Warehouse,Part-Time,2019-01-26,82758,EMP-00102
+EMP-00878,William Brown,Driver,Fleet Management,WH-QLD,Warehouse,Full-Time,2019-05-08,102445,EMP-00690
+EMP-00879,Henry Garcia,Driver,Fleet Management,WH-QLD,Warehouse,Part-Time,2016-06-05,72810,EMP-00645
+EMP-00880,Liam Robinson,Mechanic,Fleet Management,WH-QLD,Warehouse,Part-Time,2015-02-19,94341,EMP-00114
+EMP-00881,Oliver Jones,Mechanic,Fleet Management,WH-QLD,Warehouse,Full-Time,2019-11-01,92254,EMP-00631
+EMP-00882,William Murphy,Mechanic,Fleet Management,WH-QLD,Warehouse,Casual,2023-05-11,141439,EMP-00050
+EMP-00883,Grace Jones,Mechanic,Fleet Management,WH-QLD,Warehouse,Casual,2019-02-10,123888,EMP-00563
+EMP-00884,Lucas Robinson,Route Planner,Fleet Management,WH-QLD,Warehouse,Full-Time,2016-12-31,74348,EMP-00646
+EMP-00885,Sophia Walker,Route Planner,Fleet Management,WH-QLD,Warehouse,Part-Time,2021-12-11,86530,EMP-00776
+EMP-00886,Amelia Singh,Route Planner,Fleet Management,WH-QLD,Warehouse,Part-Time,2021-12-21,80219,EMP-00069
+EMP-00887,Noah Patel,Warehouse Manager,Distribution,WH-WA,Warehouse,Casual,2021-04-09,132339,EMP-00163
+EMP-00888,Olivia Chen,Warehouse Manager,Distribution,WH-WA,Warehouse,Full-Time,2016-08-05,106717,EMP-00406
+EMP-00889,Isla Walker,Warehouse Manager,Distribution,WH-WA,Warehouse,Full-Time,2015-01-15,81745,EMP-00706
+EMP-00890,Grace Wilson,Picker,Distribution,WH-WA,Warehouse,Full-Time,2025-08-09,135917,EMP-00012
+EMP-00891,Sophia Wilson,Picker,Distribution,WH-WA,Warehouse,Full-Time,2024-07-20,127038,EMP-00679
+EMP-00892,Oliver Nguyen,Picker,Distribution,WH-WA,Warehouse,Part-Time,2016-10-29,84499,EMP-00778
+EMP-00893,Sophia Garcia,Picker,Distribution,WH-WA,Warehouse,Casual,2023-05-09,112272,EMP-00529
+EMP-00894,Ava Garcia,Picker,Distribution,WH-WA,Warehouse,Casual,2017-10-16,80364,EMP-00563
+EMP-00895,James Chen,Picker,Distribution,WH-WA,Warehouse,Part-Time,2015-10-21,84801,EMP-00328
+EMP-00896,Ethan Smith,Picker,Distribution,WH-WA,Warehouse,Full-Time,2019-04-26,124133,EMP-00723
+EMP-00897,Isla Jones,Packer,Distribution,WH-WA,Warehouse,Full-Time,2019-05-24,109768,EMP-00619
+EMP-00898,William Patel,Packer,Distribution,WH-WA,Warehouse,Casual,2025-11-11,61066,EMP-00782
+EMP-00899,Oliver Singh,Packer,Distribution,WH-WA,Warehouse,Casual,2018-03-26,65955,EMP-00668
+EMP-00900,Ruby Murphy,Packer,Distribution,WH-WA,Warehouse,Full-Time,2025-08-05,125767,EMP-00169
+EMP-00901,James Wilson,Forklift Operator,Distribution,WH-WA,Warehouse,Full-Time,2017-05-05,70629,EMP-00106
+EMP-00902,Ethan Robinson,Forklift Operator,Distribution,WH-WA,Warehouse,Full-Time,2014-04-28,66200,EMP-00664
+EMP-00903,Ruby Murphy,Forklift Operator,Distribution,WH-WA,Warehouse,Part-Time,2021-05-13,58607,EMP-00201
+EMP-00904,Lucas Singh,Forklift Operator,Distribution,WH-WA,Warehouse,Part-Time,2026-02-23,55208,EMP-00018
+EMP-00905,Isla Lee,Forklift Operator,Distribution,WH-WA,Warehouse,Casual,2018-10-02,98250,EMP-00174
+EMP-00906,Noah Nguyen,Forklift Operator,Distribution,WH-WA,Warehouse,Full-Time,2020-07-09,88910,EMP-00733
+EMP-00907,Ethan Wilson,Forklift Operator,Distribution,WH-WA,Warehouse,Full-Time,2025-08-06,119493,EMP-00655
+EMP-00908,Charlotte Brown,Inventory Analyst,Distribution,WH-WA,Warehouse,Casual,2018-09-28,78815,EMP-00781
+EMP-00909,Sophia Nguyen,Inventory Analyst,Distribution,WH-WA,Warehouse,Full-Time,2022-06-05,73467,EMP-00282
+EMP-00910,Lucas Kim,Inventory Analyst,Distribution,WH-WA,Warehouse,Casual,2016-10-22,114646,EMP-00161
+EMP-00911,Grace Chen,Inventory Analyst,Distribution,WH-WA,Warehouse,Full-Time,2022-01-19,106084,EMP-00894
+EMP-00912,Sophia Jones,Inventory Analyst,Distribution,WH-WA,Warehouse,Full-Time,2017-04-12,68633,EMP-00779
+EMP-00913,Olivia Garcia,Inventory Analyst,Distribution,WH-WA,Warehouse,Casual,2020-05-12,100686,EMP-00657
+EMP-00914,James Garcia,Inventory Analyst,Distribution,WH-WA,Warehouse,Full-Time,2020-12-24,112199,EMP-00265
+EMP-00915,Grace Williams,Fleet Manager,Fleet Management,WH-WA,Warehouse,Full-Time,2020-11-02,113418,EMP-00877
+EMP-00916,Ava Chen,Fleet Manager,Fleet Management,WH-WA,Warehouse,Part-Time,2020-10-04,70285,EMP-00464
+EMP-00917,Sophia Nguyen,Fleet Manager,Fleet Management,WH-WA,Warehouse,Part-Time,2017-12-13,91612,EMP-00319
+EMP-00918,Noah Robinson,Fleet Manager,Fleet Management,WH-WA,Warehouse,Full-Time,2020-09-24,98909,EMP-00882
+EMP-00919,Grace Brown,Fleet Manager,Fleet Management,WH-WA,Warehouse,Casual,2014-06-30,71211,EMP-00833
+EMP-00920,Ruby Murphy,Driver,Fleet Management,WH-WA,Warehouse,Part-Time,2017-03-18,62287,EMP-00232
+EMP-00921,Olivia Robinson,Driver,Fleet Management,WH-WA,Warehouse,Part-Time,2024-05-14,60281,EMP-00596
+EMP-00922,Olivia Lee,Driver,Fleet Management,WH-WA,Warehouse,Casual,2025-06-21,101412,EMP-00394
+EMP-00923,Ethan Patel,Driver,Fleet Management,WH-WA,Warehouse,Part-Time,2016-07-05,62024,EMP-00443
+EMP-00924,Grace Patel,Mechanic,Fleet Management,WH-WA,Warehouse,Casual,2018-12-06,82950,EMP-00488
+EMP-00925,Ava Jones,Mechanic,Fleet Management,WH-WA,Warehouse,Part-Time,2024-08-06,134564,EMP-00882
+EMP-00926,Oliver Nguyen,Route Planner,Fleet Management,WH-WA,Warehouse,Casual,2025-07-27,125965,EMP-00059
+EMP-00927,Ava Wilson,Route Planner,Fleet Management,WH-WA,Warehouse,Part-Time,2016-06-07,125892,EMP-00822
+EMP-00928,William Murphy,Route Planner,Fleet Management,WH-WA,Warehouse,Full-Time,2015-01-16,71153,EMP-00065
+EMP-00929,Henry Patel,Route Planner,Fleet Management,WH-WA,Warehouse,Part-Time,2025-06-17,117936,EMP-00408
+EMP-00930,William Jones,Route Planner,Fleet Management,WH-WA,Warehouse,Part-Time,2014-08-24,95255,EMP-00175
+EMP-00931,Noah Jones,Route Planner,Fleet Management,WH-WA,Warehouse,Full-Time,2023-03-25,109822,EMP-00766
+EMP-00932,Olivia Jones,Warehouse Manager,Distribution,WH-SA,Warehouse,Casual,2023-09-13,96452,EMP-00009
+EMP-00933,Isla Garcia,Warehouse Manager,Distribution,WH-SA,Warehouse,Casual,2022-11-24,76196,EMP-00592
+EMP-00934,Sophia Williams,Warehouse Manager,Distribution,WH-SA,Warehouse,Casual,2016-04-03,61181,EMP-00029
+EMP-00935,Olivia Garcia,Warehouse Manager,Distribution,WH-SA,Warehouse,Full-Time,2018-03-04,101777,EMP-00766
+EMP-00936,Henry Garcia,Picker,Distribution,WH-SA,Warehouse,Full-Time,2014-07-12,101426,EMP-00339
+EMP-00937,Grace Robinson,Picker,Distribution,WH-SA,Warehouse,Casual,2017-01-07,111662,EMP-00284
+EMP-00938,James Walker,Picker,Distribution,WH-SA,Warehouse,Full-Time,2018-06-28,89115,EMP-00179
+EMP-00939,Henry Williams,Picker,Distribution,WH-SA,Warehouse,Full-Time,2017-01-14,127254,EMP-00107
+EMP-00940,Amelia Murphy,Packer,Distribution,WH-SA,Warehouse,Casual,2023-03-24,79688,EMP-00267
+EMP-00941,Ethan Taylor,Packer,Distribution,WH-SA,Warehouse,Part-Time,2014-09-27,113353,EMP-00668
+EMP-00942,Olivia Murphy,Forklift Operator,Distribution,WH-SA,Warehouse,Part-Time,2024-01-18,57535,EMP-00619
+EMP-00943,Liam Singh,Forklift Operator,Distribution,WH-SA,Warehouse,Full-Time,2017-06-05,84858,EMP-00003
+EMP-00944,James Singh,Forklift Operator,Distribution,WH-SA,Warehouse,Full-Time,2023-04-09,102641,EMP-00884
+EMP-00945,Liam Garcia,Forklift Operator,Distribution,WH-SA,Warehouse,Full-Time,2019-05-20,113861,EMP-00736
+EMP-00946,Isla Chen,Inventory Analyst,Distribution,WH-SA,Warehouse,Full-Time,2022-11-19,109851,EMP-00400
+EMP-00947,Olivia Jones,Inventory Analyst,Distribution,WH-SA,Warehouse,Casual,2020-07-01,61428,EMP-00413
+EMP-00948,Lucas Taylor,Inventory Analyst,Distribution,WH-SA,Warehouse,Part-Time,2022-01-02,138034,EMP-00093
+EMP-00949,Jack Garcia,Fleet Manager,Fleet Management,WH-SA,Warehouse,Full-Time,2026-01-03,73945,EMP-00940
+EMP-00950,Olivia Chen,Fleet Manager,Fleet Management,WH-SA,Warehouse,Casual,2020-07-04,125174,EMP-00891
+EMP-00951,Mia Singh,Fleet Manager,Fleet Management,WH-SA,Warehouse,Part-Time,2017-04-17,93358,EMP-00777
+EMP-00952,Lucas Taylor,Fleet Manager,Fleet Management,WH-SA,Warehouse,Full-Time,2020-04-12,69802,EMP-00048
+EMP-00953,Lucas Lee,Fleet Manager,Fleet Management,WH-SA,Warehouse,Part-Time,2023-01-27,80092,EMP-00126
+EMP-00954,James Garcia,Fleet Manager,Fleet Management,WH-SA,Warehouse,Full-Time,2022-05-05,142658,EMP-00373
+EMP-00955,Oliver Patel,Driver,Fleet Management,WH-SA,Warehouse,Casual,2016-10-17,96110,EMP-00442
+EMP-00956,Isla Chen,Driver,Fleet Management,WH-SA,Warehouse,Casual,2022-03-31,68988,EMP-00244
+EMP-00957,Amelia Wilson,Driver,Fleet Management,WH-SA,Warehouse,Full-Time,2024-01-08,104215,EMP-00719
+EMP-00958,Grace Chen,Driver,Fleet Management,WH-SA,Warehouse,Full-Time,2023-07-14,106728,EMP-00701
+EMP-00959,Amelia Nguyen,Mechanic,Fleet Management,WH-SA,Warehouse,Casual,2014-10-16,68713,EMP-00066
+EMP-00960,Oliver Smith,Mechanic,Fleet Management,WH-SA,Warehouse,Casual,2024-05-16,70077,EMP-00629
+EMP-00961,Isla Singh,Mechanic,Fleet Management,WH-SA,Warehouse,Casual,2021-10-23,69070,EMP-00351
+EMP-00962,Ava Patel,Route Planner,Fleet Management,WH-SA,Warehouse,Full-Time,2018-05-09,90709,EMP-00011
+EMP-00963,Liam Smith,Route Planner,Fleet Management,WH-SA,Warehouse,Full-Time,2018-07-01,68249,EMP-00504
+EMP-00964,Ethan Taylor,Route Planner,Fleet Management,WH-SA,Warehouse,Part-Time,2015-01-22,118828,EMP-00629
+EMP-00965,Olivia Nguyen,Route Planner,Fleet Management,WH-SA,Warehouse,Full-Time,2022-11-11,88190,EMP-00046
+EMP-00966,Olivia Brown,Warehouse Manager,Distribution,WH-TAS,Warehouse,Part-Time,2016-04-29,87164,EMP-00794
+EMP-00967,Grace Robinson,Warehouse Manager,Distribution,WH-TAS,Warehouse,Part-Time,2017-02-07,112913,EMP-00954
+EMP-00968,James Williams,Warehouse Manager,Distribution,WH-TAS,Warehouse,Part-Time,2015-02-25,78882,EMP-00155
+EMP-00969,William Nguyen,Warehouse Manager,Distribution,WH-TAS,Warehouse,Casual,2017-01-25,108996,EMP-00716
+EMP-00970,Grace Murphy,Warehouse Manager,Distribution,WH-TAS,Warehouse,Casual,2017-05-15,103230,EMP-00609
+EMP-00971,Ava Wilson,Warehouse Manager,Distribution,WH-TAS,Warehouse,Casual,2024-09-23,76425,EMP-00791
+EMP-00972,Jack Lee,Warehouse Manager,Distribution,WH-TAS,Warehouse,Casual,2025-10-07,106551,EMP-00550
+EMP-00973,Lucas Murphy,Picker,Distribution,WH-TAS,Warehouse,Full-Time,2024-12-20,101964,EMP-00363
+EMP-00974,Henry Taylor,Picker,Distribution,WH-TAS,Warehouse,Casual,2019-03-31,58792,EMP-00543
+EMP-00975,Noah Walker,Picker,Distribution,WH-TAS,Warehouse,Casual,2023-06-13,130594,EMP-00852
+EMP-00976,Ruby Singh,Picker,Distribution,WH-TAS,Warehouse,Casual,2024-05-26,68726,EMP-00642
+EMP-00977,Ava Kim,Picker,Distribution,WH-TAS,Warehouse,Full-Time,2020-01-13,71834,EMP-00808
+EMP-00978,Ava Singh,Packer,Distribution,WH-TAS,Warehouse,Part-Time,2019-12-10,131142,EMP-00675
+EMP-00979,Grace Nguyen,Packer,Distribution,WH-TAS,Warehouse,Part-Time,2018-03-07,60789,EMP-00167
+EMP-00980,Grace Singh,Packer,Distribution,WH-TAS,Warehouse,Full-Time,2019-08-26,137748,EMP-00400
+EMP-00981,Henry Singh,Packer,Distribution,WH-TAS,Warehouse,Part-Time,2022-12-11,106923,EMP-00196
+EMP-00982,Charlotte Brown,Packer,Distribution,WH-TAS,Warehouse,Full-Time,2017-05-10,133504,EMP-00930
+EMP-00983,Ethan Wilson,Packer,Distribution,WH-TAS,Warehouse,Casual,2017-12-19,74191,EMP-00892
+EMP-00984,William Walker,Packer,Distribution,WH-TAS,Warehouse,Full-Time,2021-11-23,122643,EMP-00909
+EMP-00985,Henry Williams,Forklift Operator,Distribution,WH-TAS,Warehouse,Part-Time,2020-02-08,76635,EMP-00563
+EMP-00986,Liam Murphy,Forklift Operator,Distribution,WH-TAS,Warehouse,Part-Time,2023-01-02,127088,EMP-00250
+EMP-00987,Oliver Murphy,Forklift Operator,Distribution,WH-TAS,Warehouse,Part-Time,2023-03-15,57424,EMP-00434
+EMP-00988,Noah Taylor,Forklift Operator,Distribution,WH-TAS,Warehouse,Casual,2022-01-16,115574,EMP-00723
+EMP-00989,Sophia Singh,Forklift Operator,Distribution,WH-TAS,Warehouse,Part-Time,2014-04-04,87033,EMP-00254
+EMP-00990,Jack Smith,Inventory Analyst,Distribution,WH-TAS,Warehouse,Part-Time,2021-06-17,115942,EMP-00477
+EMP-00991,Isla Taylor,Inventory Analyst,Distribution,WH-TAS,Warehouse,Full-Time,2016-08-15,134868,EMP-00425
+EMP-00992,Ava Patel,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Casual,2021-08-04,98784,EMP-00572
+EMP-00993,Charlotte Nguyen,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Part-Time,2025-02-08,92227,EMP-00043
+EMP-00994,Sophia Robinson,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Casual,2024-03-19,66063,EMP-00203
+EMP-00995,Amelia Walker,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Casual,2024-08-24,97648,EMP-00398
+EMP-00996,Henry Patel,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Full-Time,2019-06-14,72378,EMP-00841
+EMP-00997,James Walker,Fleet Manager,Fleet Management,WH-TAS,Warehouse,Part-Time,2019-10-04,131518,EMP-00975
+EMP-00998,Ava Jones,Driver,Fleet Management,WH-TAS,Warehouse,Part-Time,2019-09-10,137891,EMP-00937
+EMP-00999,Jack Garcia,Driver,Fleet Management,WH-TAS,Warehouse,Casual,2018-03-25,67577,EMP-00881
+EMP-01000,Sophia Singh,Driver,Fleet Management,WH-TAS,Warehouse,Part-Time,2022-09-20,78815,EMP-00237
+EMP-01001,Jack Brown,Driver,Fleet Management,WH-TAS,Warehouse,Casual,2026-01-22,133511,EMP-00152
+EMP-01002,Lucas Robinson,Mechanic,Fleet Management,WH-TAS,Warehouse,Part-Time,2024-07-22,142576,EMP-00857
+EMP-01003,Henry Wilson,Mechanic,Fleet Management,WH-TAS,Warehouse,Part-Time,2025-03-12,83671,EMP-00467
+EMP-01004,Jack Smith,Mechanic,Fleet Management,WH-TAS,Warehouse,Part-Time,2015-03-07,125421,EMP-00076
+EMP-01005,Lucas Lee,Mechanic,Fleet Management,WH-TAS,Warehouse,Part-Time,2023-04-15,115377,EMP-00119
+EMP-01006,Noah Chen,Mechanic,Fleet Management,WH-TAS,Warehouse,Full-Time,2022-03-24,140669,EMP-00826
+EMP-01007,Olivia Taylor,Mechanic,Fleet Management,WH-TAS,Warehouse,Part-Time,2024-07-24,122610,EMP-00714
+EMP-01008,Charlotte Taylor,Route Planner,Fleet Management,WH-TAS,Warehouse,Full-Time,2024-05-26,132313,EMP-00513
+EMP-01009,Lucas Wilson,Route Planner,Fleet Management,WH-TAS,Warehouse,Part-Time,2020-01-24,138154,EMP-00075
+EMP-01010,Ethan Robinson,Warehouse Manager,Distribution,WH-NT,Warehouse,Part-Time,2025-03-17,123208,EMP-00476
+EMP-01011,Ethan Murphy,Warehouse Manager,Distribution,WH-NT,Warehouse,Full-Time,2025-09-19,139532,EMP-00487
+EMP-01012,Liam Brown,Picker,Distribution,WH-NT,Warehouse,Part-Time,2014-08-02,110559,EMP-00161
+EMP-01013,Grace Smith,Picker,Distribution,WH-NT,Warehouse,Part-Time,2017-09-16,130028,EMP-00969
+EMP-01014,Charlotte Chen,Picker,Distribution,WH-NT,Warehouse,Full-Time,2018-05-02,95894,EMP-00164
+EMP-01015,James Kim,Picker,Distribution,WH-NT,Warehouse,Part-Time,2014-02-27,73951,EMP-00656
+EMP-01016,Charlotte Singh,Picker,Distribution,WH-NT,Warehouse,Part-Time,2014-04-23,131386,EMP-00024
+EMP-01017,Jack Jones,Picker,Distribution,WH-NT,Warehouse,Part-Time,2016-05-25,137251,EMP-00545
+EMP-01018,Amelia Jones,Picker,Distribution,WH-NT,Warehouse,Casual,2021-01-05,136833,EMP-00674
+EMP-01019,Ava Robinson,Packer,Distribution,WH-NT,Warehouse,Casual,2019-05-22,85525,EMP-00045
+EMP-01020,Mia Smith,Packer,Distribution,WH-NT,Warehouse,Full-Time,2023-05-04,111588,EMP-00698
+EMP-01021,Ava Jones,Packer,Distribution,WH-NT,Warehouse,Part-Time,2024-12-07,81875,EMP-00947
+EMP-01022,Henry Brown,Packer,Distribution,WH-NT,Warehouse,Casual,2025-11-19,111051,EMP-00766
+EMP-01023,Liam Lee,Packer,Distribution,WH-NT,Warehouse,Casual,2021-08-24,91738,EMP-00789
+EMP-01024,Isla Brown,Packer,Distribution,WH-NT,Warehouse,Full-Time,2022-11-25,125866,EMP-00386
+EMP-01025,Mia Nguyen,Forklift Operator,Distribution,WH-NT,Warehouse,Part-Time,2023-11-19,119317,EMP-00878
+EMP-01026,Ruby Kim,Forklift Operator,Distribution,WH-NT,Warehouse,Part-Time,2024-06-28,67566,EMP-00111
+EMP-01027,Henry Singh,Forklift Operator,Distribution,WH-NT,Warehouse,Part-Time,2021-10-07,61087,EMP-00956
+EMP-01028,Grace Garcia,Forklift Operator,Distribution,WH-NT,Warehouse,Casual,2025-01-10,108039,EMP-00701
+EMP-01029,Ava Nguyen,Forklift Operator,Distribution,WH-NT,Warehouse,Full-Time,2014-07-12,75876,EMP-00443
+EMP-01030,Isla Taylor,Inventory Analyst,Distribution,WH-NT,Warehouse,Casual,2024-02-06,96928,EMP-00465
+EMP-01031,Olivia Walker,Inventory Analyst,Distribution,WH-NT,Warehouse,Part-Time,2018-07-03,121031,EMP-00490
+EMP-01032,Ethan Robinson,Inventory Analyst,Distribution,WH-NT,Warehouse,Part-Time,2026-02-04,114125,EMP-00855
+EMP-01033,Mia Brown,Fleet Manager,Fleet Management,WH-NT,Warehouse,Casual,2024-05-31,71051,EMP-00659
+EMP-01034,Henry Taylor,Fleet Manager,Fleet Management,WH-NT,Warehouse,Part-Time,2021-10-07,117209,EMP-00460
+EMP-01035,Amelia Smith,Fleet Manager,Fleet Management,WH-NT,Warehouse,Casual,2024-11-20,65739,EMP-00204
+EMP-01036,Charlotte Lee,Fleet Manager,Fleet Management,WH-NT,Warehouse,Part-Time,2022-10-17,80412,EMP-00340
+EMP-01037,Sophia Garcia,Fleet Manager,Fleet Management,WH-NT,Warehouse,Part-Time,2023-11-19,66139,EMP-00937
+EMP-01038,James Robinson,Driver,Fleet Management,WH-NT,Warehouse,Full-Time,2015-04-30,74624,EMP-00997
+EMP-01039,Noah Murphy,Driver,Fleet Management,WH-NT,Warehouse,Part-Time,2015-12-28,123232,EMP-00305
+EMP-01040,Ruby Kim,Driver,Fleet Management,WH-NT,Warehouse,Casual,2017-04-26,112479,EMP-00385
+EMP-01041,Sophia Wilson,Driver,Fleet Management,WH-NT,Warehouse,Part-Time,2015-03-07,103980,EMP-00227
+EMP-01042,Oliver Singh,Mechanic,Fleet Management,WH-NT,Warehouse,Full-Time,2024-03-13,69890,EMP-00441
+EMP-01043,Grace Lee,Mechanic,Fleet Management,WH-NT,Warehouse,Full-Time,2024-11-20,98153,EMP-00216
+EMP-01044,Henry Robinson,Mechanic,Fleet Management,WH-NT,Warehouse,Part-Time,2018-01-13,107423,EMP-00988
+EMP-01045,Olivia Singh,Mechanic,Fleet Management,WH-NT,Warehouse,Full-Time,2014-04-13,122243,EMP-00218
+EMP-01046,Mia Williams,Mechanic,Fleet Management,WH-NT,Warehouse,Full-Time,2019-02-16,61537,EMP-00355
+EMP-01047,Sophia Walker,Mechanic,Fleet Management,WH-NT,Warehouse,Casual,2023-10-15,95740,EMP-00024
+EMP-01048,Jack Robinson,Route Planner,Fleet Management,WH-NT,Warehouse,Part-Time,2023-07-21,114899,EMP-00378
+EMP-01049,Isla Patel,Route Planner,Fleet Management,WH-NT,Warehouse,Part-Time,2014-11-21,95951,EMP-00505
+EMP-01050,Isla Lee,Route Planner,Fleet Management,WH-NT,Warehouse,Part-Time,2026-03-10,76982,EMP-00217
+EMP-01051,Charlotte Chen,Route Planner,Fleet Management,WH-NT,Warehouse,Full-Time,2014-04-13,67476,EMP-01050
+EMP-01052,Liam Lee,Warehouse Manager,Distribution,WH-ACT,Warehouse,Part-Time,2014-08-13,89272,EMP-00882
+EMP-01053,Ruby Brown,Warehouse Manager,Distribution,WH-ACT,Warehouse,Full-Time,2019-10-13,91861,EMP-00981
+EMP-01054,William Wilson,Warehouse Manager,Distribution,WH-ACT,Warehouse,Full-Time,2024-12-19,66777,EMP-00872
+EMP-01055,Henry Walker,Warehouse Manager,Distribution,WH-ACT,Warehouse,Casual,2014-06-27,76502,EMP-00805
+EMP-01056,Grace Garcia,Warehouse Manager,Distribution,WH-ACT,Warehouse,Part-Time,2022-05-10,107903,EMP-00716
+EMP-01057,Ethan Smith,Warehouse Manager,Distribution,WH-ACT,Warehouse,Casual,2024-03-19,128106,EMP-00332
+EMP-01058,Oliver Chen,Picker,Distribution,WH-ACT,Warehouse,Part-Time,2017-08-21,77030,EMP-00286
+EMP-01059,Grace Taylor,Picker,Distribution,WH-ACT,Warehouse,Full-Time,2015-04-28,73588,EMP-00280
+EMP-01060,Jack Wilson,Picker,Distribution,WH-ACT,Warehouse,Full-Time,2025-05-21,66146,EMP-00532
+EMP-01061,Liam Taylor,Picker,Distribution,WH-ACT,Warehouse,Part-Time,2014-06-20,123959,EMP-00623
+EMP-01062,William Murphy,Picker,Distribution,WH-ACT,Warehouse,Full-Time,2022-02-06,93265,EMP-00706
+EMP-01063,Jack Chen,Picker,Distribution,WH-ACT,Warehouse,Casual,2023-02-08,133050,EMP-00459
+EMP-01064,James Singh,Picker,Distribution,WH-ACT,Warehouse,Casual,2016-10-11,74905,EMP-00907
+EMP-01065,Isla Murphy,Picker,Distribution,WH-ACT,Warehouse,Casual,2024-01-07,103819,EMP-00259
+EMP-01066,William Williams,Packer,Distribution,WH-ACT,Warehouse,Full-Time,2017-02-11,128001,EMP-00908
+EMP-01067,Mia Chen,Packer,Distribution,WH-ACT,Warehouse,Part-Time,2017-06-28,63899,EMP-00514
+EMP-01068,James Robinson,Packer,Distribution,WH-ACT,Warehouse,Part-Time,2014-08-11,61100,EMP-00340
+EMP-01069,Grace Lee,Packer,Distribution,WH-ACT,Warehouse,Full-Time,2017-11-04,89456,EMP-00294
+EMP-01070,Charlotte Williams,Packer,Distribution,WH-ACT,Warehouse,Full-Time,2018-07-15,111436,EMP-00790
+EMP-01071,Olivia Patel,Forklift Operator,Distribution,WH-ACT,Warehouse,Casual,2024-09-03,78023,EMP-00031
+EMP-01072,Grace Walker,Forklift Operator,Distribution,WH-ACT,Warehouse,Casual,2023-05-27,117204,EMP-00608
+EMP-01073,Grace Williams,Forklift Operator,Distribution,WH-ACT,Warehouse,Part-Time,2015-12-31,118710,EMP-00120
+EMP-01074,Sophia Jones,Forklift Operator,Distribution,WH-ACT,Warehouse,Casual,2022-03-03,93019,EMP-01037
+EMP-01075,Sophia Lee,Forklift Operator,Distribution,WH-ACT,Warehouse,Full-Time,2017-10-01,58105,EMP-00465
+EMP-01076,William Williams,Forklift Operator,Distribution,WH-ACT,Warehouse,Part-Time,2020-08-19,126620,EMP-01071
+EMP-01077,Sophia Singh,Inventory Analyst,Distribution,WH-ACT,Warehouse,Full-Time,2022-05-26,94102,EMP-00491
+EMP-01078,Grace Lee,Inventory Analyst,Distribution,WH-ACT,Warehouse,Part-Time,2015-01-01,91601,EMP-00812
+EMP-01079,Charlotte Walker,Inventory Analyst,Distribution,WH-ACT,Warehouse,Casual,2020-01-26,82295,EMP-00073
+EMP-01080,Sophia Lee,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Full-Time,2025-10-28,77168,EMP-00599
+EMP-01081,William Brown,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Part-Time,2019-12-19,92678,EMP-00654
+EMP-01082,Charlotte Patel,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Full-Time,2025-10-16,69442,EMP-01023
+EMP-01083,James Taylor,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Full-Time,2024-11-16,120711,EMP-00658
+EMP-01084,William Garcia,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Full-Time,2021-01-03,85933,EMP-00991
+EMP-01085,Amelia Taylor,Fleet Manager,Fleet Management,WH-ACT,Warehouse,Part-Time,2018-08-12,89207,EMP-00869
+EMP-01086,Olivia Jones,Driver,Fleet Management,WH-ACT,Warehouse,Part-Time,2018-11-09,81041,EMP-00565
+EMP-01087,Grace Jones,Driver,Fleet Management,WH-ACT,Warehouse,Part-Time,2015-09-09,134911,EMP-00164
+EMP-01088,Noah Lee,Driver,Fleet Management,WH-ACT,Warehouse,Full-Time,2023-03-01,107714,EMP-00103
+EMP-01089,Lucas Jones,Driver,Fleet Management,WH-ACT,Warehouse,Full-Time,2016-06-16,65018,EMP-00204
+EMP-01090,Olivia Kim,Driver,Fleet Management,WH-ACT,Warehouse,Full-Time,2017-05-21,92682,EMP-00177
+EMP-01091,William Kim,Driver,Fleet Management,WH-ACT,Warehouse,Casual,2021-09-15,88154,EMP-00571
+EMP-01092,Liam Garcia,Mechanic,Fleet Management,WH-ACT,Warehouse,Casual,2024-12-15,117033,EMP-00841
+EMP-01093,Isla Wilson,Mechanic,Fleet Management,WH-ACT,Warehouse,Part-Time,2023-11-26,144351,EMP-00357
+EMP-01094,Noah Singh,Mechanic,Fleet Management,WH-ACT,Warehouse,Full-Time,2025-03-21,139518,EMP-00761
+EMP-01095,Lucas Jones,Route Planner,Fleet Management,WH-ACT,Warehouse,Casual,2022-09-13,107958,EMP-00021
+EMP-01096,Grace Wilson,Route Planner,Fleet Management,WH-ACT,Warehouse,Full-Time,2023-05-23,66863,EMP-00197
+EMP-01097,Olivia Singh,Route Planner,Fleet Management,WH-ACT,Warehouse,Part-Time,2024-08-28,119318,EMP-00479

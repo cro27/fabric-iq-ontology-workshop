@@ -1,0 +1,36 @@
+You are an assistant that helps build demonstration scenarios for Microsoft Fabric. 
+We need data for a fictional company called "KW" who are a supermarket chain with stores in every Australian capital city. 
+There are also warehouses in each Australian state that have inwards goods that are then distributed to stores through their transportation fleet. 
+KW have a number of departments including, stores, sales, distribution, fleet management, marketing, HR, and IT. 
+Head office is located in Melbourne and contains HR, marketing and IT departments. 
+We need connected data for each department which will be used in a lakehouse and an Eventhouse for real-time data. 
+We will build an ontology over this data to demonstrate Fabric IQ.   
+
+Store data should include product names and prices, stock levels, code names of freezers and fridges which are IoT connected, and location information including street address, longitude and latitude, fridge and freezer information such as ID code, model, minimum safe temperature in Celsius, store ID. We will use this data to to give insights to store managers to help make great business decisions.
+
+Distribution information should include suppliers, products (items and sku's), buffer stock, stock levels in and out, forklifts, Picking times, pick rates, priority customers, pick errors, weights, tare weight, bulk replacement times. We will use this data to give insights to warehouse managers to help make great business decisions.
+
+Transportation data should include trucks, destination, routes, drivers, location data (latitude and longitude), cargo details and other data used by logistics managers for optimisation and to make great business decisions.
+
+Sales data should include sales from each store including, date, product including chiller or dry items, quantity, unit price, tax rate, profit, salesperson, customer. 
+
+HR data should include data around workforce at stores, warehouses, head office, including part-time, fulltime, casual, skillsets such as forklift and heavy vehicle skills, job roles, performance KPI's, turnover rates, absenteeism, training requirements, organisational hierarchy.  
+
+Marketing data should include customer information, demographics, campaigns run and planned, performance metrics. 
+
+All id's used must match across all tables, so for example a drivers employee id should be the same in the driver and employee tables. 
+
+Add any important data if you think I have missed any. We want this to be as close to a real world scenario as possible.
+
+Ensure that data is consistent across tables. For example make sure employee ID's in tables such as store, sales, driver, etc, all link back to employee ID's and roles in the employees table, and do the same for any other tables in the dataset that relate to each other. 
+ 
+Generate csv files for download, a notebook to create the schema, a notebook to ingest the csv files, and a notebook to create the semantic model. 
+  
+We also need real-time data sent from store fridges and freezers and trucks. To create this you will need to build python scripts to generate data at the required intervals. This data will be sent to an Azure Event Hub for ingestion into Fabric so you will need to use the appropriate client libraries. The real-time data feed should have the following properties:
+
+Fridge/freezer data will include the a timestamp, store ID, fridge or freezer ID, temperature in Celsius, humidity level, a Boolean to indicate if the door is open or closed. This data is sent every 5 minutes and can be used to alert store managers to problems that would affected chilled items.
+Truck data will include location data (longitude, latitude), timestamp, starting location (warehouse ID) and destination location (StoreID). This data is sent every 30 minutes and is used by logistics managers for fleet tracking and route optimisation.
+
+Please also create a .md file detailing the steps need to install, how to run the python scripts, and demonstration suggestions. 
+Also come up with some clever ideas we can run the demo so we can show off how great Fabric is. 
+

@@ -1,0 +1,472 @@
+{
+  "ruleCount": 19,
+  "rules": [
+    {
+      "lineageTag": "aa95fd9d-c9cf-4493-9ad4-f2a005581fe8",
+      "name": "Customer ID required",
+      "description": "Ensures each customer can be uniquely identified and referenced reliably.",
+      "statement": "Every Customer record must have a non-empty customer_id.",
+      "referencedEntities": [
+        {
+          "entity": "Customer",
+          "propertyScope": "specific",
+          "properties": ["customer_id"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "high" },
+        { "name": "scope", "value": "Customer" },
+        { "name": "type", "value": "Completeness" }
+      ]
+    },
+    {
+      "lineageTag": "f239cfa0-c1bb-41c6-9f84-8c05f6850e98",
+      "name": "Sales customer reference must exist",
+      "description": "Prevents sales records from pointing to missing customers.",
+      "statement": "Every Sales.customer_id must match an existing Customer.customer_id.",
+      "referencedEntities": [
+        {
+          "entity": "Sales",
+          "propertyScope": "specific",
+          "properties": ["customer_id"]
+        },
+        {
+          "entity": "Customer",
+          "propertyScope": "specific",
+          "properties": ["customer_id"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "high" },
+        { "name": "scope", "value": "Sales" },
+        { "name": "type", "value": "Referential Integrity" }
+      ]
+    },
+    {
+      "lineageTag": "d945f44b-b4cf-480b-8dca-963cb4e27461",
+      "name": "Sale line sale reference must exist",
+      "description": "Ensures each sale line belongs to a real sales transaction.",
+      "statement": "Every SaleLine.sale_id must match an existing Sales.sale_id.",
+      "referencedEntities": [
+        {
+          "entity": "SaleLine",
+          "propertyScope": "specific",
+          "properties": ["sale_id"]
+        },
+        {
+          "entity": "Sales",
+          "propertyScope": "specific",
+          "properties": ["sale_id"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "high" },
+        { "name": "scope", "value": "SaleLine" },
+        { "name": "type", "value": "Referential Integrity" }
+      ]
+    },
+    {
+      "lineageTag": "28d7ae41-858a-4bd0-892c-76184c6570ce",
+      "name": "Sale line product reference must exist",
+      "description": "Ensures each sold line item refers to a real product.",
+      "statement": "Every SaleLine.product_id must match an existing Product.product_id.",
+      "referencedEntities": [
+        {
+          "entity": "SaleLine",
+          "propertyScope": "specific",
+          "properties": ["product_id"]
+        },
+        {
+          "entity": "Product",
+          "propertyScope": "specific",
+          "properties": ["product_id"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "High" },
+        { "name": "scope", "value": "SaleLine" },
+        { "name": "type", "value": "Referntial Integrity" }
+      ]
+    },
+    {
+      "lineageTag": "be8c8ba9-b5df-4817-b548-21dc1a271f8d",
+      "name": "Campaign start date must precede end date",
+      "description": "Prevents invalid campaign periods.",
+      "statement": "For every Campaign, start_date must be less than or equal to end_date.",
+      "referencedEntities": [
+        {
+          "entity": "Campaign",
+          "propertyScope": "specific",
+          "properties": ["start_date", "end_date"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "Medium" },
+        { "name": "scope", "value": "Campaign" },
+        { "name": "type", "value": "Temporal consistency" }
+      ]
+    },
+    {
+      "lineageTag": "134f851d-8106-46dd-a027-72b252f01da9",
+      "name": "Promotion start date must precede end date",
+      "description": "Prevents invalid promotion windows.",
+      "statement": "For every Promotion, start_date must be less than or equal to end_date.",
+      "referencedEntities": [
+        {
+          "entity": "Promotion",
+          "propertyScope": "specific",
+          "properties": ["start_date", "end_date"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "Medium" },
+        { "name": "scope", "value": "Promotion" },
+        { "name": "type", "value": "Temporal consistency" }
+      ]
+    },
+    {
+      "lineageTag": "d931ff5c-1864-41e5-82b8-0d92ea202adf",
+      "name": "Non-negative numeric values",
+      "description": "Catches obvious bad data in financial, volume, and usage fields.",
+      "statement": "Numeric quantity, amount, price, cost, and usage fields must be greater than or equal to zero unless business logic explicitly allows negatives.",
+      "referencedEntities": [
+        {
+          "entity": "Sales",
+          "propertyScope": "specific",
+          "properties": ["subtotal", "tax_total", "total"]
+        },
+        {
+          "entity": "SaleLine",
+          "propertyScope": "specific",
+          "properties": ["qty", "line_total"]
+        },
+        {
+          "entity": "Campaign",
+          "propertyScope": "specific",
+          "properties": ["budget_aud"]
+        },
+        {
+          "entity": "CampaignPerformance",
+          "propertyScope": "specific",
+          "properties": ["revenue_aud"]
+        },
+        {
+          "entity": "InwardsGoods",
+          "propertyScope": "specific",
+          "properties": ["qty_in", "unit_cost"]
+        },
+        {
+          "entity": "EnergyConsumption",
+          "propertyScope": "specific",
+          "properties": ["kwh", "cost_aud"]
+        },
+        {
+          "entity": "Wastage",
+          "propertyScope": "specific",
+          "properties": ["qty"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "Medium" },
+        { "name": "scope", "value": "Multiple entities" },
+        { "name": "type", "value": "Range validation" }
+      ]
+    },
+    {
+      "lineageTag": "969971e5-2e69-425e-b9f4-8457b5e06972",
+      "name": "Fridge telemetry values must be valid",
+      "description": "Ensures telemetry is usable and physically plausible.",
+      "statement": "Fridge.humidity_pct must be between 0 and 100, temperature_c must be between min_safe_temp_c and max_safe_temp_c, and telemetry readings must include event_time.",
+      "referencedEntities": [
+        {
+          "entity": "Fridge",
+          "propertyScope": "specific",
+          "properties": [
+            "event_time",
+            "temperature_c",
+            "humidity_pct",
+            "min_safe_temp_c",
+            "max_safe_temp_c"
+          ]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "High" },
+        { "name": "scope", "value": "Fridge" },
+        { "name": "type", "value": "Sensor data validation" }
+      ]
+    },
+    {
+      "lineageTag": "f1d5a571-0508-4527-95c2-a9611e8777e8",
+      "name": "PII must be masked before exposure",
+      "description": "Prevents personal data from being exposed in readable form.",
+      "statement": "Any property containing personal data must be masked or redacted before it is shown in query results, dashboards, exports, logs, or downstream reports.",
+      "referencedEntities": [
+        {
+          "entity": "Driver",
+          "propertyScope": "specific",
+          "properties": ["name"]
+        },
+        {
+          "entity": "Employee",
+          "propertyScope": "specific",
+          "properties": ["name"]
+        },
+        {
+          "entity": "Customer",
+          "propertyScope": "specific",
+          "properties": ["name", "email", "date_of_birth", "postcode"]
+        },
+        {
+          "entity": "Supplier",
+          "propertyScope": "specific",
+          "properties": ["contact_email"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "high" },
+        { "name": "scope", "value": "PII / personal data" },
+        { "name": "type", "value": "Data protection" }
+      ]
+    },
+    {
+      "lineageTag": "6472d0b0-5d45-4294-9b70-2fa75967099b",
+      "name": "Store stock should not be negative",
+      "description": "For every StoreStock record, qty_on_hand must be greater than or equal to 0, and reorder_point must be greater than or equal to 0.",
+      "statement": "Prevents invalid inventory states where on-hand stock or reorder threshold is below zero.",
+      "referencedEntities": [
+        {
+          "entity": "StoreStock",
+          "propertyScope": "specific",
+          "properties": ["qty_on_hand", "reorder_point"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": [
+        { "name": "severity", "value": "medium" },
+        { "name": "type", "value": "Range validation" },
+        { "name": "scope", "value": "StoreStock" }
+      ]
+    },
+    {
+      "lineageTag": "f6222cf6-0bfa-4997-aa05-350cf7ab18f3",
+      "name": "Sales total must reconcile",
+      "description": "Ensures the sales header total matches subtotal plus tax.",
+      "statement": "For every Sales record, total must equal subtotal + tax_total.",
+      "referencedEntities": [
+        {
+          "entity": "Sales",
+          "propertyScope": "specific",
+          "properties": ["subtotal", "tax_total", "total"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "8c0f3b83-8589-4206-9e31-c41534873969",
+      "name": "Sale line quantity must be positive",
+      "description": "Prevents zero or negative sale line quantities.",
+      "statement": "Every SaleLine.qty must be greater than 0.",
+      "referencedEntities": [
+        {
+          "entity": "SaleLine",
+          "propertyScope": "specific",
+          "properties": ["qty"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "f409b4eb-ed62-41d0-b026-041578ed8c19",
+      "name": "Employee cannot report to self",
+      "description": "Prevents circular self-management on employee records.",
+      "statement": "For every Employee, manager_employee_id must not equal employee_id.",
+      "referencedEntities": [
+        {
+          "entity": "Employee",
+          "propertyScope": "specific",
+          "properties": ["employee_id", "manager_employee_id"]
+        }
+      ],
+      "referencedRelationships": ["EmployeeReportsToEmployee"],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "6208b010-cfee-43dd-918b-25b2ddcf7fc9",
+      "name": "Employee skill certification dates must be ordered",
+      "description": "Prevents certification windows from being inverted.",
+      "statement": "For every EmployeeSkill record, certified_date must be less than or equal to expiry_date.",
+      "referencedEntities": [
+        {
+          "entity": "EmployeeSkill",
+          "propertyScope": "specific",
+          "properties": ["certified_date", "expiry_date"]
+        }
+      ],
+      "referencedRelationships": [],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "7d33d402-58d0-468e-9df2-aae9911f7744",
+      "name": "Product supplier reference must exist",
+      "description": "Prevents products from pointing to missing suppliers.",
+      "statement": "Every Product.supplier_id must match an existing Supplier.supplier_id.",
+      "referencedEntities": [
+        {
+          "entity": "Product",
+          "propertyScope": "specific",
+          "properties": ["supplier_id"]
+        },
+        {
+          "entity": "Supplier",
+          "propertyScope": "specific",
+          "properties": ["supplier_id"]
+        }
+      ],
+      "referencedRelationships": ["ProductSuppliedBySupplier"],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "d9ecaceb-dd85-42d3-9c82-9fa7532e4ae2",
+      "name": "Inwards goods references must exist",
+      "description": "Prevents inbound receipts from pointing to missing product, supplier, or warehouse records.",
+      "statement": "Every InwardsGoods.product_id, InwardsGoods.supplier_id, and InwardsGoods.warehouse_id must match existing Product.product_id, Supplier.supplier_id, and Warehouse.warehouse_id values.",
+      "referencedEntities": [
+        {
+          "entity": "InwardsGoods",
+          "propertyScope": "specific",
+          "properties": ["product_id", "supplier_id", "warehouse_id"]
+        },
+        {
+          "entity": "Product",
+          "propertyScope": "specific",
+          "properties": ["product_id"]
+        },
+        {
+          "entity": "Supplier",
+          "propertyScope": "specific",
+          "properties": ["supplier_id"]
+        },
+        {
+          "entity": "Warehouse",
+          "propertyScope": "specific",
+          "properties": ["warehouse_id"]
+        }
+      ],
+      "referencedRelationships": [
+        "InwardsGoodsForProduct",
+        "InwardsGoodsFromSupplier",
+        "InwardsGoodsAtWarehouse"
+      ],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "5b9124a6-1dcf-4400-a62f-600ed88ba7a9",
+      "name": "Store and warehouse managers must exist",
+      "description": "Prevents store and warehouse manager references from pointing to missing employees.",
+      "statement": "Every Store.manager_employee_id and Warehouse.manager_employee_id must match an existing Employee.employee_id.",
+      "referencedEntities": [
+        {
+          "entity": "Store",
+          "propertyScope": "specific",
+          "properties": ["manager_employee_id"]
+        },
+        {
+          "entity": "Warehouse",
+          "propertyScope": "specific",
+          "properties": ["manager_employee_id"]
+        },
+        {
+          "entity": "Employee",
+          "propertyScope": "specific",
+          "properties": ["employee_id"]
+        }
+      ],
+      "referencedRelationships": [
+        "StoreManagedByEmployee",
+        "WarehouseManagedByEmployee"
+      ],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "25e0a633-5472-4d1d-b37d-640d972a071a",
+      "name": "Operational event dates must be present",
+      "description": "Ensures operational events are dated.",
+      "statement": "Every Sales.sale_date, InwardsGoods.receipt_date, PickEvent.pick_date, and Wastage.date must be present.",
+      "referencedEntities": [
+        {
+          "entity": "Sales",
+          "propertyScope": "specific",
+          "properties": ["sale_date"]
+        },
+        {
+          "entity": "InwardsGoods",
+          "propertyScope": "specific",
+          "properties": ["receipt_date"]
+        },
+        {
+          "entity": "PickEvent",
+          "propertyScope": "specific",
+          "properties": ["pick_date"]
+        },
+        {
+          "entity": "Wastage",
+          "propertyScope": "specific",
+          "properties": ["date"]
+        }
+      ],
+      "referencedRelationships": [
+        "SalesOnDate",
+        "InwardsGoodsOnDate",
+        "PickEventOnDate",
+        "WastageOnDate"
+      ],
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "lineageTag": "833ce0c7-70a4-47ae-a580-af96c25b1da7",
+      "name": "Performance KPI score must be between 0 and 100",
+      "description": "Assumes the KPI scorecard uses a normalized 0 to 100 scale.",
+      "statement": "For every PerformanceKPI record, kpi_score must be between 0 and 100.",
+      "referencedEntities": [
+        {
+          "entity": "PerformanceKPI",
+          "propertyScope": "specific",
+          "properties": ["kpi_score"]
+        }
+      ],
+      "referencedRelationships": ["PerformanceKPIForEmployee"],
+      "synonyms": [],
+      "annotations": []
+    }
+  ]
+}

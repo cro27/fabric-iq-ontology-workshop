@@ -1,0 +1,43 @@
+product_id,sku,name,category,storage_type,unit_cost,unit_price,tax_rate,is_chilled,is_frozen,supplier_id,weight_kg,buffer_stock
+PRD-0001,SKU000001,Milk 2L,Dairy,chilled,16.21,21.27,0.0,true,false,SUP-007,1.066,293
+PRD-0002,SKU000002,Greek Yoghurt 1kg,Dairy,chilled,9.42,13.56,0.0,true,false,SUP-015,0.445,225
+PRD-0003,SKU000003,Tasty Cheese 500g,Dairy,chilled,17.7,21.61,0.0,true,false,SUP-006,0.262,274
+PRD-0004,SKU000004,Butter 250g,Dairy,chilled,17.84,23.75,0.0,true,false,SUP-006,1.187,194
+PRD-0005,SKU000005,Cream 300ml,Dairy,chilled,7.46,10.4,0.0,true,false,SUP-002,2.399,381
+PRD-0006,SKU000006,White Loaf 700g,Bakery,ambient,6.56,8.41,0.0,false,false,SUP-018,2.083,195
+PRD-0007,SKU000007,Sourdough 600g,Bakery,ambient,5.13,7.25,0.0,false,false,SUP-005,1.1,348
+PRD-0008,SKU000008,Croissants 4pk,Bakery,ambient,12.21,17.45,0.0,false,false,SUP-010,2.908,389
+PRD-0009,SKU000009,Bagels 6pk,Bakery,ambient,7.54,10.17,0.0,false,false,SUP-003,1.032,242
+PRD-0010,SKU000010,Bananas 1kg,Produce,ambient,11.87,15.22,0.0,false,false,SUP-005,2.06,400
+PRD-0011,SKU000011,Apples 1kg,Produce,ambient,16.49,20.17,0.0,false,false,SUP-014,1.599,59
+PRD-0012,SKU000012,Carrots 1kg,Produce,ambient,7.04,8.77,0.0,false,false,SUP-007,1.124,298
+PRD-0013,SKU000013,Spinach 200g,Produce,ambient,4.1,5.94,0.0,false,false,SUP-005,0.37,101
+PRD-0014,SKU000014,Avocado each,Produce,ambient,9.53,12.72,0.0,false,false,SUP-017,0.258,222
+PRD-0015,SKU000015,Beef Mince 500g,Meat,chilled,15.87,21.5,0.0,true,false,SUP-013,0.59,142
+PRD-0016,SKU000016,Chicken Breast 1kg,Meat,chilled,15.1,21.03,0.0,true,false,SUP-006,2.205,72
+PRD-0017,SKU000017,Pork Chops 500g,Meat,chilled,7.87,10.77,0.0,true,false,SUP-008,2.913,362
+PRD-0018,SKU000018,Lamb Shanks 1kg,Meat,chilled,5.7,7.91,0.0,true,false,SUP-015,0.817,172
+PRD-0019,SKU000019,Atlantic Salmon 400g,Seafood,chilled,6.12,8.58,0.0,true,false,SUP-016,2.726,149
+PRD-0020,SKU000020,Prawns 500g,Seafood,chilled,7.13,10.24,0.0,true,false,SUP-015,1.466,194
+PRD-0021,SKU000021,Barramundi 400g,Seafood,chilled,14.18,18.8,0.0,true,false,SUP-014,2.904,152
+PRD-0022,SKU000022,Frozen Peas 1kg,Frozen,frozen,14.58,18.0,0.1,false,true,SUP-009,0.299,296
+PRD-0023,SKU000023,Ice Cream 2L,Frozen,frozen,15.83,21.19,0.1,false,true,SUP-004,2.177,314
+PRD-0024,SKU000024,Frozen Pizza,Frozen,frozen,15.44,19.63,0.1,false,true,SUP-006,0.927,312
+PRD-0025,SKU000025,Fish Fingers 425g,Frozen,frozen,3.33,4.36,0.1,false,true,SUP-008,2.478,228
+PRD-0026,SKU000026,Berries 500g,Frozen,frozen,16.8,21.9,0.1,false,true,SUP-013,1.581,170
+PRD-0027,SKU000027,Pasta 500g,Pantry,ambient,7.44,9.08,0.1,false,false,SUP-008,0.23,100
+PRD-0028,SKU000028,Rice 1kg,Pantry,ambient,15.23,20.75,0.1,false,false,SUP-005,0.542,196
+PRD-0029,SKU000029,Olive Oil 1L,Pantry,ambient,16.58,21.85,0.1,false,false,SUP-005,2.313,290
+PRD-0030,SKU000030,Tomato Sauce 700g,Pantry,ambient,8.52,10.24,0.1,false,false,SUP-003,0.204,160
+PRD-0031,SKU000031,Salt 1kg,Pantry,ambient,15.16,20.27,0.1,false,false,SUP-017,1.356,197
+PRD-0032,SKU000032,Cola 2L,Beverages,ambient,4.89,6.02,0.1,false,false,SUP-008,1.347,368
+PRD-0033,SKU000033,Sparkling Water 1.25L,Beverages,ambient,8.66,10.63,0.1,false,false,SUP-016,1.851,58
+PRD-0034,SKU000034,Orange Juice 2L,Beverages,ambient,11.67,15.68,0.1,false,false,SUP-005,0.98,50
+PRD-0035,SKU000035,Coffee Beans 1kg,Beverages,ambient,11.37,14.33,0.1,false,false,SUP-014,0.684,392
+PRD-0036,SKU000036,Potato Chips 175g,Snacks,ambient,2.27,3.28,0.1,false,false,SUP-003,2.867,328
+PRD-0037,SKU000037,Chocolate Block 200g,Snacks,ambient,9.53,13.79,0.1,false,false,SUP-018,0.208,290
+PRD-0038,SKU000038,Muesli Bars 6pk,Snacks,ambient,1.55,2.01,0.1,false,false,SUP-012,0.873,58
+PRD-0039,SKU000039,Laundry Powder 2kg,Household,ambient,6.94,8.45,0.1,false,false,SUP-008,2.239,371
+PRD-0040,SKU000040,Dish Liquid 750ml,Household,ambient,2.58,3.47,0.1,false,false,SUP-011,0.53,230
+PRD-0041,SKU000041,Paper Towels 4pk,Household,ambient,10.19,14.3,0.1,false,false,SUP-006,2.517,400
+PRD-0042,SKU000042,Toilet Paper 12pk,Household,ambient,8.79,12.08,0.1,false,false,SUP-006,2.463,82

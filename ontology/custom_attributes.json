@@ -1,0 +1,313 @@
+{
+  "entities": [
+    {
+      "name": "Fridge",
+      "description": "Refrigerated unit installed at a store, with live telemetry.",
+      "synonyms": ["Refrigerator", "Cold Unit", "Cooling Unit", "Display Fridge"],
+      "customAttributes": {
+        "unit": "celsius"
+      },
+      "keyProperties": ["fridge_id"],
+      "backingTable": {
+        "sourceType": "LakehouseTable",
+        "itemKind": "Lakehouse",
+        "sourceSchema": "dbo",
+        "sourceTableName": "dim_fridge",
+        "sqlDatabase": "KWlakehouse"
+      },
+      "additionalBackingTables": [
+        {
+          "table": {
+            "sourceType": "KustoTable",
+            "databaseName": "KWeventhouse",
+            "sourceTableName": "fridge_telemetry",
+            "timestampColumn": "event_time"
+          },
+          "type": "TimeSeries",
+          "orderingColumn": "event_time",
+          "relationship": "Fridge_fridge_telemetry_join"
+        }
+      ],
+      "properties": [
+        {
+          "name": "fridge_id",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "fridge_id"
+            }
+          }
+        },
+        {
+          "name": "store_id",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "store_id"
+            }
+          }
+        },
+        {
+          "name": "code_name",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "code_name"
+            }
+          }
+        },
+        {
+          "name": "unit_type",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "unit_type"
+            }
+          }
+        },
+        {
+          "name": "model",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "model"
+            }
+          }
+        },
+        {
+          "name": "min_safe_temp_c",
+          "dataType": "double",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "min_safe_temp_c"
+            }
+          }
+        },
+        {
+          "name": "max_safe_temp_c",
+          "dataType": "double",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "max_safe_temp_c"
+            }
+          }
+        },
+        {
+          "name": "install_date",
+          "dataType": "dateTime",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "install_date"
+            }
+          }
+        },
+        {
+          "name": "status",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_fridge",
+              "column": "status"
+            }
+          }
+        },
+        {
+          "name": "event_time",
+          "dataType": "dateTime",
+          "propertyType": "TimeSeries",
+          "synonyms": ["Event Time", "Telemetry Time", "Reading Time"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "fridge_telemetry",
+              "column": "event_time"
+            },
+            "orderingColumn": {
+              "table": "fridge_telemetry",
+              "column": "event_time"
+            }
+          }
+        },
+        {
+          "name": "temperature_c",
+          "dataType": "double",
+          "propertyType": "TimeSeries",
+          "synonyms": ["Temperature", "Fridge Temperature", "Cold Room Temperature"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "fridge_telemetry",
+              "column": "temperature_c"
+            },
+            "orderingColumn": {
+              "table": "fridge_telemetry",
+              "column": "event_time"
+            }
+          }
+        },
+        {
+          "name": "humidity_pct",
+          "dataType": "double",
+          "propertyType": "TimeSeries",
+          "synonyms": ["Humidity", "Relative Humidity", "Humidity Percent"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "fridge_telemetry",
+              "column": "humidity_pct"
+            },
+            "orderingColumn": {
+              "table": "fridge_telemetry",
+              "column": "event_time"
+            }
+          }
+        },
+        {
+          "name": "door_open",
+          "dataType": "string",
+          "synonyms": ["Door Open", "Door State", "Door Status"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "fridge_telemetry",
+              "column": "door_open"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customer",
+      "description": "Retail customer or shopper.",
+      "synonyms": ["Shopper", "Buyer", "Consumer", "Client"],
+      "keyProperties": ["customer_id"],
+      "backingTable": {
+        "sourceType": "LakehouseTable",
+        "itemKind": "Lakehouse",
+        "sourceSchema": "dbo",
+        "sourceTableName": "dim_customer",
+        "sqlDatabase": "KWlakehouse"
+      },
+      "properties": [
+        {
+          "name": "customer_id",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "customer_id"
+            }
+          }
+        },
+        {
+          "name": "name",
+          "dataType": "string",
+          "customAttributes": {
+            "sensitivity": "PII"
+          },
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "name"
+            }
+          }
+        },
+        {
+          "name": "email",
+          "dataType": "string",
+          "customAttributes": {
+            "sensitivity": "PII"
+          },
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "email"
+            }
+          }
+        },
+        {
+          "name": "date_of_birth",
+          "dataType": "dateTime",
+          "synonyms": ["DOB", "Birth Date", "Date of Birth"],
+          "customAttributes": {
+            "sensitivity": "PII"
+          },
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "date_of_birth"
+            }
+          }
+        },
+        {
+          "name": "gender",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "gender"
+            }
+          }
+        },
+        {
+          "name": "postcode",
+          "dataType": "string",
+          "synonyms": ["Postcode", "Postal Code", "ZIP Code"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "postcode"
+            }
+          }
+        },
+        {
+          "name": "state",
+          "dataType": "string",
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "state"
+            }
+          }
+        },
+        {
+          "name": "joined_date",
+          "dataType": "dateTime",
+          "synonyms": ["Join Date", "Date Joined", "Member Since"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "joined_date"
+            }
+          }
+        },
+        {
+          "name": "loyalty_tier",
+          "dataType": "string",
+          "synonyms": ["Loyalty Level", "Reward Tier", "Membership Tier"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "loyalty_tier"
+            }
+          }
+        },
+        {
+          "name": "preferred_channel",
+          "dataType": "string",
+          "synonyms": ["Preferred Contact Channel", "Shopping Channel Preference", "Channel Preference"],
+          "backingConfiguration": {
+            "valueColumn": {
+              "table": "dim_customer",
+              "column": "preferred_channel"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

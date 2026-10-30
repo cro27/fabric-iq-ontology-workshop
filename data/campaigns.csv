@@ -1,0 +1,41 @@
+campaign_id,name,channel,start_date,end_date,budget_aud,target_segment,status
+CMP-001,Family Sale,Email,2025-09-04,2025-09-23,161546,Students,Active
+CMP-002,Save Big Bonus,Social,2025-12-26,2026-02-14,105342,Foodies,Paused
+CMP-003,Fresh Bonus,TV,2026-03-11,2026-05-02,479547,Seniors,Paused
+CMP-004,Save Big Picks,App Push,2025-07-12,2025-09-07,669433,Foodies,Completed
+CMP-005,Winter Rewards,Email,2026-03-14,2026-04-01,293768,Health-Conscious,Planned
+CMP-006,Pantry Bonus,Radio,2025-11-29,2026-01-11,1296234,Budget,Completed
+CMP-007,BBQ Picks,TV,2026-01-13,2026-03-14,740090,Health-Conscious,Paused
+CMP-008,Healthy Festival,Radio,2025-09-03,2025-10-07,572409,Families,Planned
+CMP-009,Fresh Bonus,In-Store,2026-03-30,2026-04-06,648498,Seniors,Paused
+CMP-010,Save Big Rewards,Email,2026-03-17,2026-03-27,1439379,Singles,Paused
+CMP-011,Summer Picks,Loyalty,2025-08-19,2025-10-14,1275368,Students,Planned
+CMP-012,Healthy Sale,TV,2025-06-12,2025-07-15,1099259,Foodies,Completed
+CMP-013,Save Big Festival,Email,2025-07-11,2025-07-31,400947,Health-Conscious,Planned
+CMP-014,Family Picks,Radio,2026-03-27,2026-05-16,977897,Singles,Active
+CMP-015,Fresh Festival,App Push,2026-03-18,2026-04-08,1331831,Health-Conscious,Paused
+CMP-016,Winter Rewards,TV,2025-08-10,2025-08-20,1039096,Foodies,Paused
+CMP-017,Healthy Sale,App Push,2026-01-31,2026-02-22,791779,Singles,Completed
+CMP-018,Fresh Bonus,Social,2025-06-03,2025-06-18,583636,Seniors,Active
+CMP-019,Fresh Picks,App Push,2025-09-28,2025-11-27,873529,Families,Planned
+CMP-020,Fresh Festival,Social,2025-06-25,2025-07-16,210106,Students,Completed
+CMP-021,Pantry Bonus,Social,2025-08-21,2025-09-01,790714,Singles,Completed
+CMP-022,Save Big Festival,Loyalty,2025-11-15,2025-11-25,1366641,Seniors,Active
+CMP-023,Summer Bonus,Social,2026-04-07,2026-04-26,1310888,Health-Conscious,Completed
+CMP-024,Fresh Bonus,App Push,2025-08-29,2025-10-24,1266467,Seniors,Completed
+CMP-025,Family Bonus,Loyalty,2026-03-10,2026-04-04,364998,Students,Active
+CMP-026,BBQ Rewards,Loyalty,2025-11-15,2025-12-04,1340379,Foodies,Paused
+CMP-027,Winter Sale,TV,2026-02-03,2026-03-04,99888,Foodies,Paused
+CMP-028,Healthy Picks,App Push,2025-06-26,2025-07-19,220307,Seniors,Planned
+CMP-029,Winter Bonus,Email,2025-08-14,2025-08-24,1298685,Families,Active
+CMP-030,Fresh Rewards,Radio,2026-04-05,2026-05-17,1083472,Students,Paused
+CMP-031,Family Bonus,Radio,2025-08-11,2025-09-19,551948,Families,Active
+CMP-032,Winter Bonus,Loyalty,2025-10-28,2025-12-01,387959,Foodies,Completed
+CMP-033,Winter Picks,TV,2025-09-08,2025-10-12,777373,Families,Paused
+CMP-034,Summer Festival,In-Store,2025-07-26,2025-08-06,1011095,Singles,Active
+CMP-035,Healthy Sale,App Push,2025-08-04,2025-09-01,441650,Foodies,Planned
+CMP-036,Pantry Festival,Loyalty,2025-06-17,2025-06-26,671264,Families,Active
+CMP-037,Fresh Sale,Social,2026-02-10,2026-03-10,870131,Families,Completed
+CMP-038,Pantry Festival,In-Store,2025-09-24,2025-11-08,79640,Families,Planned
+CMP-039,Fresh Festival,TV,2025-07-02,2025-07-22,602659,Foodies,Paused
+CMP-040,Summer Sale,App Push,2025-12-13,2026-01-21,1258209,Students,Paused

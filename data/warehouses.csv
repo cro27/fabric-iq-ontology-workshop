@@ -1,0 +1,9 @@
+warehouse_id,name,state,address,city,latitude,longitude,size_sqm,warehouse_type,manager_employee_id
+WH-NSW,KW NSW Distribution Centre,NSW,"337 Industrial Dr, Sydney",Sydney,-33.985352,151.132695,11358,Multi-temp,EMP-00759
+WH-VIC,KW VIC Distribution Centre,VIC,"389 Industrial Dr, Melbourne",Melbourne,-37.696029,144.939583,15164,Ambient,EMP-00803
+WH-QLD,KW QLD Distribution Centre,QLD,"268 Industrial Dr, Brisbane",Brisbane,-27.439182,153.089946,21746,Ambient,EMP-00845
+WH-WA,KW WA Distribution Centre,WA,"239 Industrial Dr, Perth",Perth,-31.925458,115.713311,21848,Chilled,EMP-00887
+WH-SA,KW SA Distribution Centre,SA,"152 Industrial Dr, Adelaide",Adelaide,-35.031765,138.551597,11169,Chilled,EMP-00932
+WH-TAS,KW TAS Distribution Centre,TAS,"443 Industrial Dr, Hobart",Hobart,-42.92896,147.190227,12090,Chilled,EMP-00966
+WH-NT,KW NT Distribution Centre,NT,"50 Industrial Dr, Darwin",Darwin,-12.447722,130.881228,14300,Multi-temp,EMP-01010
+WH-ACT,KW ACT Distribution Centre,ACT,"45 Industrial Dr, Canberra",Canberra,-35.417207,149.066732,15628,Ambient,EMP-01052

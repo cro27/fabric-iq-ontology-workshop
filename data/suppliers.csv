@@ -1,0 +1,19 @@
+supplier_id,name,country,contact_email,lead_time_days,quality_score,tier
+SUP-001,Outback Organics,AU,contact1@outbackorganics.com,17,0.921,Tier 2
+SUP-002,Murray Dairy Co-op,AU,contact2@murraydairyco-op.com,12,0.952,Tier 3
+SUP-003,Tasman Seafood,AU,contact3@tasmanseafood.com,5,0.883,Tier 1
+SUP-004,Riverina Produce,AU,contact4@riverinaproduce.com,9,0.878,Tier 3
+SUP-005,Great Ocean Beverages,AU,contact5@greatoceanbeverages.com,5,0.956,Tier 3
+SUP-006,Sunshine Bakery,AU,contact6@sunshinebakery.com,3,0.875,Tier 3
+SUP-007,Top End Tropicals,AU,contact7@topendtropicals.com,16,0.915,Tier 3
+SUP-008,Adelaide Hills Wine,AU,contact8@adelaidehillswine.com,19,0.913,Tier 3
+SUP-009,Pacific Imports,NZ,contact9@pacificimports.com,21,0.939,Tier 3
+SUP-010,Asia Foods Trading,SG,contact10@asiafoodstrading.com,11,0.971,Tier 3
+SUP-011,Euro Gourmet,IT,contact11@eurogourmet.com,11,0.871,Tier 1
+SUP-012,California Fresh,US,contact12@californiafresh.com,16,0.912,Tier 2
+SUP-013,Highland Meats,AU,contact13@highlandmeats.com,9,0.933,Tier 2
+SUP-014,Reef Honey,AU,contact14@reefhoney.com,17,0.86,Tier 2
+SUP-015,Coastal Catch,AU,contact15@coastalcatch.com,15,0.855,Tier 2
+SUP-016,Snowy Mountains Brewing,AU,contact16@snowymountainsbrewing.com,10,0.861,Tier 1
+SUP-017,Kakadu Foods,AU,contact17@kakadufoods.com,20,0.933,Tier 2
+SUP-018,Yarra Valley Farms,AU,contact18@yarravalleyfarms.com,15,0.931,Tier 3
