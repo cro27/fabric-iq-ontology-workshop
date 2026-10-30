@@ -92,20 +92,65 @@ items remain the data and access-control boundary.
 
 ### Contents
 
+* [The KW scenario: connected retail, contextual AI](#the-kw-scenario-connected-retail-contextual-ai)
+* [At a glance](#at-a-glance)
 * [1. Asset map and preparation](#1-asset-map-and-preparation)
+  * [Pack inventory](#pack-inventory)
+  * [Data model at a glance](#data-model-at-a-glance)
+  * [Preflight checklist](#preflight-checklist)
   * [Local Python setup and requirements](#local-python-setup-and-requirements)
   * [Resource planning](#resource-planning)
 * [2. Build the Fabric data foundation](#2-build-the-fabric-data-foundation)
-  * [Historical data and semantic model](#22-load-the-historical-data)
-  * [Eventhouse and telemetry](#24-set-up-telemetry)
+  * [2.1 Create the workspace and items](#21-create-the-workspace-and-items)
+  * [2.2 Load the historical data](#22-load-the-historical-data)
+  * [2.3 Build the semantic model](#23-build-the-semantic-model)
+  * [2.4 Set up telemetry](#24-set-up-telemetry)
+    * [Create the Eventhouse tables](#create-the-eventhouse-tables)
+    * [Create a workspace identity](#create-a-workspace-identity)
+    * [Set up Event Hubs](#set-up-event-hubs)
+    * [Configure the local producers](#configure-the-local-producers)
+    * [Set up Eventstream](#set-up-eventstream)
+    * [Start and verify the producers](#start-and-verify-the-producers)
+    * [Foundation completion checklist](#foundation-completion-checklist)
 * [3. Create the ontology with the Fabric Ontology Agent](#3-create-the-ontology-with-the-fabric-ontology-agent)
+  * [3.1 Start the guided build](#31-start-the-guided-build)
+  * [3.2 Suggested concepts and source mapping](#32-suggested-concepts-and-source-mapping)
+  * [Suggested Prompt starter for the Ontology Agent](#suggested-prompt-starter-for-the-ontology-agent)
 * [4. Add property metadata and business rules](#4-add-property-metadata-and-business-rules)
+  * [4.1 Property metadata from custom_attributes.json](#41-property-metadata-from-custom_attributesjson)
+  * [4.2 Add the draft business rules](#42-add-the-draft-business-rules)
 * [5. Build a Fabric data agent using the ontology](#5-build-a-fabric-data-agent-using-the-ontology)
+  * [5.1 Create and configure](#51-create-and-configure)
+  * [5.2 Create the Lakehouse-only comparison agent](#52-create-the-lakehouse-only-comparison-agent)
+  * [KW Tables Analyst agent instructions](#kw-tables-analyst-agent-instructions)
+  * [What changes between the agents](#what-changes-between-the-agents)
+  * [Keep the comparison honest](#keep-the-comparison-honest)
 * [6. Connect Copilot Studio to the ontology-grounded agent](#6-connect-copilot-studio-to-the-ontology-grounded-agent)
+  * [6.1 Connect using Fabric IQ Ontology MCP](#61-connect-using-fabric-iq-ontology-mcp)
+  * [6.2 Optional: Connect to the Fabric Data Agent](#62-optional-connect-to-the-fabric-data-agent)
 * [7. Workshop exercises and sample questions](#7-workshop-exercises-and-sample-questions)
+  * [Suggested 15-minute walkthrough](#suggested-15-minute-walkthrough)
+  * [Compare the two agents](#compare-the-two-agents)
   * [Seven demonstration stories](#seven-demonstration-stories)
+    * [Story 1: Save the ice cream](#story-1-save-the-ice-cream)
+    * [Story 2: Where is my truck](#story-2-where-is-my-truck)
+    * [Story 3: Find the bleed](#story-3-find-the-bleed)
+    * [Story 4: FY26 closeout](#story-4-fy26-closeout)
+    * [Story 5: Plan the campaign](#story-5-plan-the-campaign)
+    * [Story 6: Workforce readiness](#story-6-workforce-readiness)
+    * [Story 7: Sustainability tile](#story-7-sustainability-tile)
+  * [Controlled comparison: questions and evidence](#controlled-comparison-questions-and-evidence)
+  * [Capture what actually happened](#capture-what-actually-happened)
+  * [Workshop wrap-up](#workshop-wrap-up)
+  * [Sample questions for the Ontology Agent](#sample-questions-for-the-ontology-agent)
+  * [Sample questions for the Fabric data agent and Copilot Studio agent](#sample-questions-for-the-fabric-data-agent-and-copilot-studio-agent)
 * [8. Troubleshooting and next steps](#8-troubleshooting-and-next-steps)
+  * [Local environment and data foundation](#local-environment-and-data-foundation)
+    * [Resolve missing Event Hubs Send permission](#resolve-missing-event-hubs-send-permission)
+  * [Ontology and agents](#ontology-and-agents)
+  * [Next-steps checklist](#next-steps-checklist)
 * [9. Regenerate or extend the sample data](#9-regenerate-or-extend-the-sample-data)
+  * [Simulation details for rehearsal](#simulation-details-for-rehearsal)
 * [References and source provenance](#references-and-source-provenance)
 
 ## 1. Asset map and preparation
@@ -787,11 +832,17 @@ validation or masking. An ontology-grounded answer still needs review.
 
 ### 6.1 Connect using Fabric IQ Ontology MCP
 
-1. Create a new agent in the new Copilot Studio experience using the standard harness.
+1. Create a new agent in the new Copilot Studio experience using the **standard harness**.
 2. Open **Tools**, select **Add a tool**, and search for **Fabric IQ MCP**.
+
+   ![Add the Fabric IQ MCP tool in Copilot Studio](./images/instructions/copilotstudio3.png)
+
 3. Create a new connection referencing your workspace ID and ontology ID. These
    GUIDs are available in the browser URL of your ontology: the workspace ID follows
    `/groups/` and the ontology ID follows `/ontologies/`.
+
+   ![Configure the Fabric IQ Ontology MCP connection in Copilot Studio](./images/instructions/copilotstudio4.png)
+
 4. Provide a description:
 
    ```text
@@ -808,36 +859,30 @@ validation or masking. An ontology-grounded answer still needs review.
    defined when generating answers.
    ```
 
+   ![Copilot Studio agent instructions and configuration](./images/instructions/copilotstudio5.png)
+
 5. Test questions in the Copilot Studio test pane.
+
+   ![Test the ontology-grounded agent in Copilot Studio](./images/instructions/copilotstudio6.png)
+
 6. Publish only after validating identity, user permissions, the data scope,
    responses, and organizational approval for sending responses outside Fabric.
 
-### 6.2 Optional: Use the Fabric Agent MCP
+### 6.2 Optional: Connect to the Fabric Data Agent
 
-As mentioned, you can publish the Fabric data agent that uses the KW ontology, then expose it to Copilot Studio through the data agent's Model Context Protocol (MCP) endpoint. To use this method follow these steps:
-
-#### 6.2.1 Publish and copy the data-agent MCP details
-1. Publish `KW Fabric IQ Analyst` in Fabric.
-2. Open the data agent's **Settings** and select **Model Context Protocol**.
-3. Copy the MCP server URL and tool name/description. The endpoint is available
-   only after publishing.
-4. Confirm the Copilot Studio maker and intended users have access to the workspace,
-   data agent, ontology, and underlying data. Coordinate tenant settings and the
-   authentication approach with the Fabric and Power Platform administrators.
-
-#### 6.2.2 Add the data-agent MCP tool in Copilot Studio
+As mentioned, you can publish the Fabric data agent that uses the KW ontology, then expose it to Copilot Studio. There are multiple ways to do this in Copilot Studio, as a Tool, as an Agent, as an MCP server. The following method adds a Fabric Data Agent as an external Agent. Consult the documentation to see all available methods, [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio):
 
 1. Create or open the agent in the new Copilot Studio experience using the standard harness.
-2. Open **Tools**, select **Add a tool > New tool > Model Context Protocol**.
-3. Enter a clear server name and description, then paste the Fabric data-agent MCP URL.
-4. Configure supported OAuth 2.0 authentication for Fabric. The source guide states
-   that the Fabric data-agent MCP endpoint requires an authenticated Fabric bearer
-   token and does not support dynamic client registration; do not use anonymous
-   access or assume dynamic discovery will work.
-5. Create or select the connection, add the MCP server to the agent, save, and test
-   questions in the Copilot Studio test pane.
-6. Publish only after validating identity, user permissions, the data scope,
+2. Open **Agents**, select **+Add > Connect to an external agent > Microsoft Fabric (Preview)**.
+3. Create a new connection with Display name
+4. Login with your user credentials and select Next
+5. Select the Fabric Data Agent **KW Fabric IQ Analyst**
+6. Click Add and Configure
+7. Test questions in the Copilot Studio test pane.
+8. Publish only after validating identity, user permissions, the data scope,
    responses, and organizational approval for sending responses outside Fabric.
+
+   ![Connect the Fabric data agent in Copilot Studio](./images/instructions/dataagent2.png)
 
 > [!WARNING]
 > Fabric data-agent MCP calls can send responses outside Fabric's compliance boundary
@@ -1216,5 +1261,5 @@ as preview and may change.
 * [Create an Ontology (Preview) Agent in Copilot Studio](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-agent-copilot-studio)
 * [Fabric data agent as an MCP server](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-mcp-server)
 * [Fabric data agent tenant settings](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings)
-* [Connect Copilot Studio to an MCP server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent)
+* [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio)
 * [Native Fabric IQ tool in Copilot Studio (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/fabric-iq-connect)
