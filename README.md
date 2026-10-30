@@ -32,9 +32,11 @@ agent layer).
 
 ## What's in the box
 
-```
-KW/
-├── data/                              # 25 interlinked CSVs (~110 MB)
+```text
+fabric-iq-ontology-workshop/
+├── Instructions.md                   # end-to-end workshop guide
+├── KW Prompt.txt                     # prompt used to generate the dataset, notebooks and scripts
+├── data/                             # 27 interlinked synthetic CSVs (~59 MiB)
 │   ├── stores.csv, warehouses.csv, fridges_freezers.csv
 │   ├── products.csv, suppliers.csv, store_stock.csv, promotions.csv
 │   ├── inwards_goods.csv, shipments.csv, shipment_lines.csv
@@ -45,20 +47,43 @@ KW/
 │   ├── campaigns.csv, campaign_performance.csv
 │   └── energy_consumption.csv, wastage.csv
 ├── notebooks/
-│   ├── 01_create_schema.ipynb         # builds Delta schema in KWlakehouse
-│   ├── 02_ingest_csvs.ipynb           # loads CSVs from Files/ into tables
-│   └── 03_build_semantic_model.ipynb  # builds Direct Lake model via semantic-link (recommended)
+│   ├── 01_create_schema.ipynb         # creates the Delta table schema
+│   ├── 01_create_schema_nopart.ipynb  # alternative schema without partitioning
+│   ├── 02_ingest_csvs.ipynb           # loads CSVs from Files/KW/raw/
+│   └── 03_build_semantic_model.ipynb  # builds the Direct Lake semantic model
+├── ontology/
+│   ├── custom_attributes.json        # property metadata, synonyms, and bindings
+│   └── rules.json                    # ontology business rules and references
 ├── scripts/
-│   ├── generate_data.py               # re-roll the entire dataset (seeded)
-│   ├── fridge_telemetry_producer.py   # every 5 min → Event Hub
-│   ├── truck_telemetry_producer.py    # every 30 min → Event Hub
+│   ├── generate_data.py              # regenerates the historical dataset (seeded)
+│   ├── fridge_telemetry_producer.py  # sends fridge events to Event Hubs
+│   ├── truck_telemetry_producer.py   # sends truck events to Event Hubs
+│   ├── test_fridge.py                # fridge diagnostic script
+│   ├── test_fridge_EH.py             # fridge Event Hubs diagnostic script
+│   ├── test_truck_EH.py              # truck Event Hubs diagnostic script
+│   ├── requirements.txt             # local telemetry dependencies
+│   └── .env.example                 # configuration template, no credentials
+├── telemetry/
+│   ├── fridge_telemetry_1week.csv    # sample fridge readings
+│   └── truck_telemetry_1week.csv     # sample truck readings
+├── KWagent/                         # optional Foundry Python ontology MCP agent sample
+│   ├── agent.py
+│   ├── README.md
 │   ├── requirements.txt
 │   └── .env.example
-├── semantic_model/
-│   ├── KW_model.tmdl           # full semantic model in TMDL (alternative path)
-│   └── build_semantic_model.py        # Tabular Editor wrapper (alternative path)
-└── README.md                          # you are here
+├── images/
+│   ├── instructions/               # workshop logo and Eventstream screenshot
+│   └── readme/
+│       └── ontology.png            # ontology graph screenshot
+├── .gitignore                      # excludes credentials, environments, and caches
+├── LICENSE                         # MIT License
+└── README.md                       # workshop overview
 ```
+
+Review notebook configuration before running: imported copies may contain legacy
+Lakehouse names. Use `KWlakehouse` and follow the configuration steps in
+[Instructions.md](./Instructions.md). Local environment files and virtual
+environments are not included in the repository.
 
 ---
 
