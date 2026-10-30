@@ -8,6 +8,8 @@ how explicit business meaning helps agents interpret questions, navigate
 relationships, and explain answers across sales, inventory, logistics, and operations.
 Optional live telemetry extends the scenario to cold-chain monitoring.
 
+![KW ontology graph showing retail entities and their relationships in Microsoft Fabric](./images/readme/ontology.png)
+
 ## Workshop guide
 
 Follow [Instructions.md](./Instructions.md) for the end-to-end workshop, including
