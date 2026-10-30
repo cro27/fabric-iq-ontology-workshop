@@ -1,5 +1,7 @@
 # KW — Microsoft Fabric IQ Workshop
 
+> **[Download workshop ZIP](https://github.com/cro27/fabric-iq-ontology-workshop/releases/download/v0.1.0/fabric-iq-ontology-workshop-v0.1.0.zip)** — Get the complete v0.1.0 workshop package, then extract it and follow `Instructions.md`.
+
 Learn how to turn connected retail data into shared business context for AI with
 **Microsoft Fabric IQ**. In this hands-on workshop, you build a data foundation,
 model business entities and relationships in an ontology, and compare a
