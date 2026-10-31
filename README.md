@@ -1,6 +1,6 @@
 # KW — Microsoft Fabric IQ Workshop
 
-> **[Download workshop ZIP](https://github.com/cro27/fabric-iq-ontology-workshop/releases/download/v0.1.0/fabric-iq-ontology-workshop-v0.1.0.zip)** — Get the complete v0.1.0 workshop package, then extract it and follow `Instructions.md`.
+> **[Download workshop ZIP](https://github.com/cro27/fabric-iq-ontology-workshop/releases/download/v0.1.1/fabric-iq-ontology-workshop-v0.1.1.zip)** — Get the complete v0.1.1 workshop package, then extract it and follow `Instructions.md`.
 
 Learn how to turn connected retail data into shared business context for AI with
 **Microsoft Fabric IQ**. In this hands-on workshop, you build a data foundation,
@@ -8,7 +8,8 @@ model business entities and relationships in an ontology, and compare a
 Lakehouse-only data agent with an ontology-grounded agent. The purpose is to explore
 how explicit business meaning helps agents interpret questions, navigate
 relationships, and explain answers across sales, inventory, logistics, and operations.
-Optional live telemetry extends the scenario to cold-chain monitoring.
+Live telemetry extends the core workshop to cold-chain monitoring. Optional
+external-agent connections use Copilot Studio or Microsoft Foundry IQ.
 
 ![KW ontology graph showing retail entities and their relationships in Microsoft Fabric](./images/readme/ontology.png)
 

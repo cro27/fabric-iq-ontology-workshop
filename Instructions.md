@@ -1,6 +1,6 @@
 ---
 description: "End-to-end KW Fabric IQ workshop: local setup, data ingestion, telemetry, semantic model, ontology, agents, and demonstrations."
-ms.date: 2026-10-30
+ms.date: 2026-10-31
 ms.topic: tutorial
 ---
 
@@ -15,9 +15,10 @@ Workshop guide source date: 20 October 2026.
 A practical path from connected Fabric data to a governed ontology and conversational agents.
 KW is fictional. The supplied pack uses synthetic sample data.
 
-Follow sections 1-6 in order for the end-to-end build. Live telemetry is optional:
-you can complete the historical-data, ontology, and agent comparison without it.
-Sections 7-9 cover demonstrations, troubleshooting, and extending the sample.
+Follow sections 1-5 in order to build the core workshop, including live telemetry.
+Section 6 is the only optional section: connect external agents to Fabric IQ using
+Copilot Studio or Microsoft Foundry IQ. Sections 7-9 cover demonstrations,
+troubleshooting, and extending the sample.
 
 ## The KW scenario: connected retail, contextual AI
 
@@ -38,12 +39,12 @@ crosses departmental boundaries rather than stopping at a single table or dashbo
 
 * A connected data foundation: historical sales, inventory, waste, customers, workforce,
   campaigns and logistics in `KWlakehouse`.
-* Operational awareness: optional fridge and truck telemetry in `KWeventhouse`, with
+* Operational awareness: live fridge and truck telemetry in `KWeventhouse`, with
   Eventstream ingestion and separate real-time dashboards or Activator scenarios.
 * Business context for AI: an ontology that connects entities such as Store, Sale,
   Product and Fridge to source data, relationships, terminology and descriptive rules.
 * Conversational analytics: compare a Lakehouse-only Fabric data agent with an
-  ontology-grounded Fabric data agent, then expose the latter through Copilot Studio.
+  ontology-grounded Fabric data agent, with external-agent connections in section 6.
 * Responsible interpretation: inspect the source, period, calculation, joins and
   limitations behind an answer; distinguish correlation from causation and context
   from security enforcement.
@@ -57,16 +58,17 @@ and handles ambiguity. The goal is not to show that a table-grounded agent canno
 answer, but to explore how Fabric IQ makes domain meaning explicit, reusable and
 inspectable rather than leaving every consumer to infer it.
 
-Begin with the shared historical-data comparison. Add live telemetry afterwards as an
-extension, not as evidence that one agent is better: the Lakehouse-only baseline cannot
-answer questions about sources it cannot access.
+Begin with the shared historical-data comparison. Then explore the live telemetry
+built in section 2 as an additional-source scenario, not as evidence that one agent
+is better: the Lakehouse-only baseline cannot answer questions about sources it
+cannot access.
 
 ## At a glance
 
 This accelerator turns the KW sample pack into a hands-on Fabric IQ workshop.
-Participants work with historical retail and operations data, optional live IoT
-telemetry, a business ontology, two Fabric data agents for comparison, and a
-Copilot Studio front end.
+Participants work with historical retail and operations data, live IoT telemetry,
+a business ontology, and two Fabric data agents for comparison. Section 6 adds
+external agents through Copilot Studio or Microsoft Foundry IQ.
 
 ### The experience chain
 
@@ -75,7 +77,11 @@ CSV files and IoT events
   -> Lakehouse and Eventhouse
   -> semantic model and ontology
   -> Fabric data agent grounded on the ontology
-  -> Copilot Studio agent via the data agent's MCP endpoint
+
+Optional external-agent connections (section 6):
+  ontology -> Copilot Studio agent via Fabric IQ Ontology MCP
+  Fabric data agent -> Copilot Studio external agent
+  ontology -> Foundry IQ knowledge base -> Foundry agent
 ```
 
 The ontology is the shared business context: it gives names, properties, relationships,
@@ -85,15 +91,18 @@ items remain the data and access-control boundary.
 
 ### What participants will build
 
-* A repeatable KW workshop workspace with a Lakehouse and, optionally, Eventhouse streaming
+* A repeatable KW workshop workspace with a Lakehouse and Eventhouse streaming
 * An ontology drafted and reviewed with the Fabric Ontology Agent, then bound to the prepared data
 * Two Fabric data agents: KW Tables Analyst (`KWlakehouse` tables only) and KW Fabric IQ Analyst (ontology-grounded)
-* A Copilot Studio agent that calls the published data agent as an MCP tool
+* In optional section 6, a Copilot Studio or Foundry agent grounded in Fabric IQ
 
 ### Contents
 
 * [The KW scenario: connected retail, contextual AI](#the-kw-scenario-connected-retail-contextual-ai)
 * [At a glance](#at-a-glance)
+* [Prerequisites](#prerequisites)
+  * [Core workshop prerequisites](#core-workshop-prerequisites)
+  * [External-agent prerequisites for optional section 6](#external-agent-prerequisites-for-optional-section-6)
 * [1. Asset map and preparation](#1-asset-map-and-preparation)
   * [Pack inventory](#pack-inventory)
   * [Data model at a glance](#data-model-at-a-glance)
@@ -125,9 +134,14 @@ items remain the data and access-control boundary.
   * [KW Tables Analyst agent instructions](#kw-tables-analyst-agent-instructions)
   * [What changes between the agents](#what-changes-between-the-agents)
   * [Keep the comparison honest](#keep-the-comparison-honest)
-* [6. Connect Copilot Studio to the ontology-grounded agent](#6-connect-copilot-studio-to-the-ontology-grounded-agent)
-  * [6.1 Connect using Fabric IQ Ontology MCP](#61-connect-using-fabric-iq-ontology-mcp)
-  * [6.2 Optional: Connect to the Fabric Data Agent](#62-optional-connect-to-the-fabric-data-agent)
+* [6. Connect external agents to Fabric IQ](#6-connect-external-agents-to-fabric-iq)
+  * [6.1 Connect Copilot Studio Agent](#61-connect-copilot-studio-agent)
+    * [Method 1: Connect using Fabric IQ Ontology MCP](#method-1-connect-using-fabric-iq-ontology-mcp)
+    * [Method 2: Connect to the Fabric data agent](#method-2-connect-to-the-fabric-data-agent)
+  * [6.2 Connect Microsoft Foundry IQ](#62-connect-microsoft-foundry-iq)
+    * [Prepare the Foundry project and permissions](#prepare-the-foundry-project-and-permissions)
+    * [Create the ontology knowledge source and knowledge base](#create-the-ontology-knowledge-source-and-knowledge-base)
+    * [Create the Foundry agent and test grounding](#create-the-foundry-agent-and-test-grounding)
 * [7. Workshop exercises and sample questions](#7-workshop-exercises-and-sample-questions)
   * [Suggested 15-minute walkthrough](#suggested-15-minute-walkthrough)
   * [Compare the two agents](#compare-the-two-agents)
@@ -152,6 +166,61 @@ items remain the data and access-control boundary.
 * [9. Regenerate or extend the sample data](#9-regenerate-or-extend-the-sample-data)
   * [Simulation details for rehearsal](#simulation-details-for-rehearsal)
 * [References and source provenance](#references-and-source-provenance)
+
+## Prerequisites
+
+Confirm these prerequisites before starting the build. Live telemetry, including
+Azure Event Hubs and local producers, is part of the core workshop. External-agent
+prerequisites apply only if you complete section 6.
+
+### Core workshop prerequisites
+
+* A Microsoft Entra account with access to Microsoft Fabric and a workspace
+  assigned to a Fabric capacity of F2 or higher
+* Workspace permissions to create and configure the Lakehouse, notebooks,
+  semantic model, ontology, and Fabric data agents, plus read access to the
+  connected data sources
+* Tenant and [region availability](https://learn.microsoft.com/en-us/fabric/admin/region-availability#fabric-workload-and-feature-availability)
+  for the Fabric ontology item, Fabric Ontology
+  Agent, and Fabric data agents, with the relevant tenant settings enabled
+* A local copy of the [latest release ZIP](https://github.com/cro27/fabric-iq-ontology-workshop/releases/download/v0.1.1/fabric-iq-ontology-workshop-v0.1.1.zip), including the historical CSV files,
+  notebooks, ontology metadata, and agent instructions
+* A browser with access to Fabric; the historical-data notebooks run in Fabric
+  and do not require a local Python environment
+* An Azure subscription with permission to provision a Standard-tier Event Hubs
+  namespace and two event hubs, plus an administrator able to assign the required
+  data-plane roles
+* A Fabric workspace identity with `Azure Event Hubs Data Receiver` access and a
+  separate producer identity with `Azure Event Hubs Data Sender` access
+* Permission to create and configure an Eventstream, Eventhouse, and KQL database
+  in the workshop workspace
+* PowerShell, uv, and Python 3.11 for the local telemetry producers, with
+  dependencies installed through
+  [local Python setup](#local-python-setup-and-requirements)
+
+> [!IMPORTANT]
+> Confirm current capacity, licensing, preview availability, and tenant settings
+> with your administrator before the workshop. A Fabric capacity of F2 or higher
+> is required, but capacity alone does not guarantee that every ontology, data
+> agent, or Copilot Studio feature is available. See
+> [resource planning](#resource-planning).
+
+### External-agent prerequisites for optional section 6
+
+* For Copilot Studio, access and licensing, permission to create and test an agent,
+  and availability of the selected Fabric connection in your environment
+* For Foundry IQ, an Azure subscription with permission to create Foundry
+  resources, a Foundry project with a model deployment, and access to the
+  project's Azure AI Search resource
+* The Foundry project's managed identity assigned `Reader` on the Fabric capacity
+  resource, plus `Cognitive Services User` and `Search Index Data Contributor`
+  on the Azure AI Search resource
+* For Foundry IQ, Edge or Chrome signed in with the same identity that can access
+  both the Foundry project and the Fabric workspace
+
+Use the supplied synthetic data. Apply your organization's privacy, access,
+retention, and governance controls before substituting real data or publishing
+agent responses outside Fabric.
 
 ## 1. Asset map and preparation
 
@@ -236,8 +305,8 @@ Default live intervals are five minutes per fridge/freezer and 30 minutes per tr
   ontology/Fabric items, and read access to the Lakehouse/Eventhouse sources.
 * Confirm the source notebooks and files are present; run the Lakehouse notebooks
   in [section 2](#2-build-the-fabric-data-foundation) in order.
-* For live telemetry, confirm Event Hubs, Eventstream, KQL database, and credentials
-  are ready. The ontology and agent walkthrough can be demonstrated without live Event Hubs.
+* Confirm Event Hubs, Eventstream, KQL database, and credentials are ready for the
+  core live-telemetry build.
 * Use the supplied synthetic data only. If partners substitute real data, apply their
   privacy, access, retention, and Purview controls before connecting agents.
 
@@ -291,15 +360,15 @@ configuration, not a guarantee of feature availability on every SKU.
 | Resource                                      | Workshop configuration                                     |
 | --------------------------------------------- | ---------------------------------------------------------- |
 | Microsoft Fabric capacity                     | Capacity assigned to the `KW Demo` workspace               |
-| Event Hubs namespace, optional telemetry path | Standard tier                                              |
+| Event Hubs namespace                          | Standard tier                                              |
 | Event Hub `kw-fridge-telemetry`               | Four partitions                                            |
 | Event Hub `kw-truck-telemetry`                | Two partitions                                             |
 | Fabric Lakehouse                              | `KWlakehouse`                                              |
-| Fabric Eventhouse and KQL database            | `KWeventhouse` containing `KW_rt`, optional telemetry path |
+| Fabric Eventhouse and KQL database            | `KWeventhouse` containing `KW_rt`                          |
 
-The README mentions F2+ or trial capacity as a starting point. Verify the
-requirements of ontology, data agents, and Copilot Studio separately in your
-tenant before committing to a capacity choice.
+Use a Fabric capacity of F2 or higher for this workshop. Verify the requirements
+of ontology, data agents, and Copilot Studio separately in your tenant before
+committing to a capacity choice.
 
 ## 2. Build the Fabric data foundation
 
@@ -310,7 +379,7 @@ sources. The steps consolidate the README run book and the workshop guide.
 
 1. Create a Fabric workspace named `KW Demo`.
 2. Create a Lakehouse named `KWlakehouse`.
-3. For the real-time path, create an Eventhouse named `KWeventhouse` and a KQL
+3. Create an Eventhouse named `KWeventhouse` and a KQL
    database named `KW_rt`.
 4. Open the Lakehouse SQL analytics endpoint and record its server name if your
    semantic-model authoring path requires it.
@@ -398,9 +467,8 @@ provided measures without authoring them manually.
 
 ### 2.4 Set up telemetry
 
-Skip this section for a historical-only workshop. For live telemetry, complete
-the Eventhouse, Event Hubs permissions, configuration, and Eventstream setup
-before starting the producers.
+Live telemetry is part of the core workshop. Complete the Eventhouse, Event Hubs
+permissions, configuration, and Eventstream setup before starting the producers.
 
 #### Create the Eventhouse tables
 
@@ -822,15 +890,22 @@ run. Source coverage, prompts, permissions, model behaviour and query examples c
 all change results. Rules and PII labels remain descriptive context, not executed
 validation or masking. An ontology-grounded answer still needs review.
 
-## 6. Connect Copilot Studio to the ontology-grounded agent
+## 6. Connect external agents to Fabric IQ
 
-> [RECOMMENDED]
->
-> Use the Fabric IQ MCP (Preview) – Fabric IQ Ontology MCP. 
->
-> While you can publish the Fabric data agent that uses the KW ontology, then expose it to Copilot Studio through the data agent's Model Context Protocol (MCP) endpoint, using the built in Fabric IQ MCP (Preview) inferences the requests in Copilot Studio which provides model choice. 
+> [!NOTE]
+> This is the only optional section in the workshop. Complete the Fabric data
+> foundation, live telemetry, ontology, and data agents in sections 1-5 first.
+> Choose Copilot Studio, Microsoft Foundry IQ, or both, depending on your access.
 
-### 6.1 Connect using Fabric IQ Ontology MCP
+### 6.1 Connect Copilot Studio Agent
+
+Use either of the following methods. Fabric IQ Ontology MCP connects directly to
+the ontology and lets Copilot Studio handle inference with its selected model.
+The external-agent method delegates questions to the published Fabric data agent.
+
+#### Method 1: Connect using Fabric IQ Ontology MCP
+
+This is the recommended Copilot Studio method for this workshop.
 
 1. Create a new agent in the new Copilot Studio experience using the **standard harness**.
 2. Open **Tools**, select **Add a tool**, and search for **Fabric IQ MCP**.
@@ -868,16 +943,19 @@ validation or masking. An ontology-grounded answer still needs review.
 6. Publish only after validating identity, user permissions, the data scope,
    responses, and organizational approval for sending responses outside Fabric.
 
-### 6.2 Optional: Connect to the Fabric Data Agent
+#### Method 2: Connect to the Fabric data agent
 
-As mentioned, you can publish the Fabric data agent that uses the KW ontology, then expose it to Copilot Studio. There are multiple ways to do this in Copilot Studio, as a Tool, as an Agent, as an MCP server. The following method adds a Fabric Data Agent as an external Agent. Consult the documentation to see all available methods, [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio):
+Publish **KW Fabric IQ Analyst** from section 5, then add it as an external agent
+in Copilot Studio. Fabric data agents also support tool and MCP integration
+routes; this method uses the external-agent connection. See
+[Consume a Fabric data agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio).
 
 1. Create or open the agent in the new Copilot Studio experience using the standard harness.
 2. Open **Agents**, select **+Add > Connect to an external agent > Microsoft Fabric (Preview)**.
-3. Create a new connection with Display name
-4. Login with your user credentials and select Next
-5. Select the Fabric Data Agent **KW Fabric IQ Analyst**
-6. Click Add and Configure
+3. Create a new connection with a display name.
+4. Sign in with your user credentials and select **Next**.
+5. Select the Fabric data agent **KW Fabric IQ Analyst**.
+6. Select **Add and Configure**.
 7. Test questions in the Copilot Studio test pane.
 8. Publish only after validating identity, user permissions, the data scope,
    responses, and organizational approval for sending responses outside Fabric.
@@ -885,9 +963,117 @@ As mentioned, you can publish the Fabric data agent that uses the KW ontology, t
    ![Connect the Fabric data agent in Copilot Studio](./images/instructions/dataagent2.png)
 
 > [!WARNING]
-> Fabric data-agent MCP calls can send responses outside Fabric's compliance boundary
+> External-agent connections can send responses outside Fabric's compliance boundary
 > or region, where the consuming service's terms and data handling policies apply.
 > Confirm this data movement is approved before connecting or publishing.
+
+### 6.2 Connect Microsoft Foundry IQ
+
+Ground a Foundry agent directly in the KW ontology through a Foundry IQ knowledge
+source and knowledge base. This route does not require publishing the Fabric data
+agent or using its MCP endpoint.
+
+The steps below summarize
+[Build a Foundry IQ agent grounded in an ontology (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-agent-foundry-iq)
+and the portal path in
+[Get started with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/get-started-code?tabs=portal).
+Use the linked documentation for current portal labels and preview requirements.
+
+> [!IMPORTANT]
+> Ontology grounding through Foundry IQ is in preview. The Foundry project must
+> already exist, and the KW ontology must be available in the Fabric workspace
+> before you create its knowledge source.
+
+#### Prepare the Foundry project and permissions
+
+1. Complete the Foundry quickstart to provision a Foundry project and deploy a
+   model. In the portal, test the model in **Build**, then open **Agents**, create
+   a sample agent, add instructions, and test a follow-up question. The portal
+   path does not require local SDK installation or code.
+2. In the Azure portal, open **Access control (IAM)** on the Fabric capacity
+   resource hosting `KW Demo`. Assign **Reader** to the Foundry project's managed
+   identity at that resource's scope.
+3. Open **Access control (IAM)** on the project's Azure AI Search resource.
+   Assign both **Cognitive Services User** and **Search Index Data Contributor**
+   to the same Foundry project managed identity at the Search resource's scope.
+   For Search role assignment guidance, see
+   [Assign roles for development](https://learn.microsoft.com/en-us/azure/search/search-security-rbac#assign-roles-for-development).
+   Missing required role assignments can cause a 403 error.
+4. Open the Foundry project in Edge or Chrome using the same signed-in identity
+   that has access to the Fabric workspace and the ontology's connected sources.
+
+#### Create the ontology knowledge source and knowledge base
+
+1. In the Foundry portal, go to **Knowledge > Knowledge bases**
+   and select **+ New knowledge base**.
+2. Select **Fabric IQ** as the knowledge type. In the embedded **OneLake catalog**,
+   browse to `KW Demo` and select the KW ontology created in section 3. Only
+   ontology items your identity can read appear. Confirm the selection to return
+   to the knowledge source form.
+3. Set the source **Name** to `kw-ontology-source`. Add a **Description** covering
+   KW stores, products, sales, logistics, and cold-chain telemetry, then select
+   **Create**.
+4. Set the knowledge base **Name** to `kwretailknowledge`. Knowledge base names
+   must be all lowercase, with no spaces or special characters. Its
+   **Description** helps the agent decide when to retrieve from it. Use a
+   description such as:
+
+   ```text
+   Consult this knowledge base to answer questions on KW retail operations
+   ```
+
+5. Choose the knowledge base's model and reasoning effort. Select Answer Synthesis
+   and provide **Answer instructions**, for example:
+
+   ```text
+   Format the answers in a human readable format with opening and closing statements. And in the closing also add some recommendation or suggestions.
+   No need to add tables for list, just show them in bullet points with other data as sub bullets
+   ```
+
+   Set **Retrieval instructions**, for example:
+
+   ```text
+   Retrieve the most relevant retail operations content from connected sources.
+   Combine information across sources when needed, but only return answers that are supported by retrieved evidence.
+   ```
+
+6. Save the knowledge base and confirm that `kw-ontology-source` is attached.
+
+#### Create the Foundry agent and test grounding
+
+1. Go to **Agents > + New agent**. Name the agent `KW Foundry IQ Analyst`, select a
+   model deployment, and add these suggested instructions:
+
+   ```text
+   You are a helpful agent to answer questions on retail operations.
+   Answer questions using the retail knowledge base.
+   Only return answers that are supported by retrieved evidence.
+   Always cite the entities you used.
+   Ask if you can further breakdown, drill into or provide more information to the answer.
+   ```
+
+2. In the agent's **Knowledge** section, select **+ Add knowledge** and attach
+   `kwretailknowledge`.
+3. Review the model, instructions, and knowledge connection, then save the agent.
+   The saved agent is available for chat testing and API calls.
+4. Open **Chat** and test the following retail operations question:
+
+   ```text
+   what stores have the most wastage
+   ```
+
+   Clarify the date range and whether wastage means quantity or cost if the
+   agent asks.
+5. Check that the agent consulted `kwretailknowledge`, used the intended
+   store and wastage relationships, and returned rankings that match the
+   underlying Lakehouse data for the chosen period and metric.
+6. If the agent skips retrieval or produces unsupported answers, refine its system
+   prompt and the knowledge base description, then repeat the same questions.
+   For a 403 error, verify the project managed identity's **Reader** role on the
+   Fabric capacity, both roles on Azure AI Search, and the signed-in user's
+   Fabric access rather than changing the prompt.
+7. Validate effective permissions, response accuracy, and approved data movement
+   before sharing the agent.
 
 ## 7. Workshop exercises and sample questions
 
@@ -898,16 +1084,16 @@ As mentioned, you can publish the Fabric data agent that uses the KW ontology, t
 | 0-2 min   | KW business scenario and workspace items.                                       | Introduce a fictional retailer and a connected set of sales, inventory, workforce, and sensor data.                                              |
 | 2-5 min   | Lakehouse tables, semantic model, and ontology canvas.                          | Show how physical tables become business concepts and relationships; open the Fridge-to-telemetry binding.                                       |
 | 5-8 min   | Ontology rules and Customer/Fridge property metadata.                           | Explain shared definitions and context. State clearly that rules and PII annotations are not security enforcement.                               |
-| 8-12 min  | Lakehouse-only and ontology-grounded data agents; brief Copilot Studio handoff. | Ask the same historical-data question in fresh chats. Compare interpretation, query, evidence and limitations.                                   |
-| 12-15 min | Optional live Eventhouse stream or one more business question.                  | Observe a changing sensor reading and discuss how it changes operational risk; close with next steps for applying the approach to your own data. |
+| 8-12 min  | Lakehouse-only and ontology-grounded data agents.                               | Ask the same historical-data question in fresh chats. Compare interpretation, query, evidence and limitations.                                   |
+| 12-15 min | Live Eventhouse stream and a telemetry-grounded business question.              | Observe a changing sensor reading and discuss how it changes operational risk; close with next steps for applying the approach to your own data. |
 
 ### Compare the two agents
 
 Use minutes 8-12 for a side-by-side historical-data comparison. Open `KW Tables
 Analyst` and `KW Fabric IQ Analyst` in separate tabs, start fresh chats, and ask one
-identical question. Inspect both generated queries and explanations before moving
-to Copilot Studio. If you also explore live telemetry, label it as an additional-source
-scenario rather than a controlled comparison.
+identical question. Inspect both generated queries and explanations. Then explore
+live telemetry as an additional-source scenario rather than a controlled
+comparison. Include an external-agent handoff only if you completed section 6.
 
 ### Seven demonstration stories
 
@@ -1175,8 +1361,8 @@ Contributor is not a substitute for Event Hubs Data Sender. See
   relationship evidence, and data refresh expectations.
 * Classify sensitive properties and prove masking/access controls at the data layer;
   use synthetic data for workshops.
-* Test ontology, Fabric data agent, and Copilot Studio separately before rehearsing
-  the end-to-end flow.
+* Test the ontology and Fabric data agents before rehearsing the end-to-end flow.
+  If you complete section 6, test each external-agent connection separately.
 * Document preview dependencies, tenant settings, region/compliance approval,
   and the owner responsible for each connection.
 
@@ -1251,6 +1437,9 @@ Microsoft Learn on 20 October 2026. This consolidation does not revalidate produ
 availability or limits. Fabric ontology and Ontology Agent features are described
 as preview and may change.
 
+The Foundry IQ steps in section 6.2 were summarized from the Microsoft Learn
+ontology integration guide and Foundry quickstart on 31 October 2026.
+
 * [Ontology overview (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview)
 * [Use the Ontology Agent (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-use-ontology-agent)
 * [Create entity types and properties (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-entity-types)
@@ -1263,3 +1452,17 @@ as preview and may change.
 * [Fabric data agent tenant settings](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings)
 * [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio)
 * [Native Fabric IQ tool in Copilot Studio (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/fabric-iq-connect)
+* [Build a Foundry IQ agent grounded in an ontology (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-agent-foundry-iq)
+* [Get started with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/get-started-code?tabs=portal)
+* [Assign Azure AI Search roles for development](https://learn.microsoft.com/en-us/azure/search/search-security-rbac#assign-roles-for-development)
+* [Fabric workload and feature region availability](https://learn.microsoft.com/en-us/fabric/admin/region-availability#fabric-workload-and-feature-availability)
+* [Latest workshop release ZIP](https://github.com/cro27/fabric-iq-ontology-workshop/releases/download/v0.1.1/fabric-iq-ontology-workshop-v0.1.1.zip)
+* [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+* [Semantic Link Labs](https://github.com/microsoft/semantic-link-labs)
+* [Tabular Editor](https://tabulareditor.com)
+* [Fabric workspace identity](https://learn.microsoft.com/en-us/fabric/security/workspace-identity)
+* [Create an event hub using Azure portal](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
+* [Install the Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
+* [Add an Azure Event Hubs source to an eventstream](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/add-source-azure-event-hubs)
+* [Process events using the SQL code editor](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor)
+* [Event Hubs authorization guidance](https://learn.microsoft.com/azure/event-hubs/authorize-access-azure-active-directory)
